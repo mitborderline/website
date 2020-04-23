@@ -1,0 +1,727 @@
+<html>
+
+<head>
+  <title>Murals</title>
+  <link rel='icon' href='./images/assets/circleLogo.png' type='image/x-icon'>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+
+
+  <style>
+    body {
+      font-family: 'Capriola', sans-serif;
+      font-size: 2vw;
+      background-color: #454543;
+    }
+
+    .active a{
+      color: #ff7360 !important;
+    }
+
+    .nav-item:hover:not(.active) a{
+      color: #34d4ae !important;
+    }
+
+    .sticky {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 999;
+}
+
+    body p{
+      font-family: 'Century Gothic', sans-serif;
+    }
+    
+    .container-fluid {
+      margin: 0 5% 5% 5%;
+    }
+
+    .accordion, .intro {
+      color: white;
+      width: 90%;
+    }
+
+    .accordion .fas {
+      margin: 5px;
+    }
+
+    .card-header {
+      padding: 0;
+    }
+
+    .season-title {
+      font-weight: bold;
+      color: #34d4ae;
+    }
+
+    .mural {
+      padding: 8px;
+    }
+
+    .mural img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .mural:hover img {
+      border: 5px solid #34d4ae;
+      cursor: pointer;
+      opacity: 0.3;
+    }
+
+    .mural:hover .details {
+      display: block;
+      cursor: pointer;
+    }
+
+    .details {
+      font: 'Capriola', sans-serif;
+      font-weight: bold;
+      font-size: 2vw;
+      color: black;
+      position: absolute;
+      display: none;
+      top: 20%;
+      width: 95%;
+      align: center;
+      text-align: center;
+    }
+
+    .title {
+      color: #ff7360;
+    }
+
+    .close {
+      font-size: 54;
+    }
+
+    .modal-dialog {
+      width: 100%;
+      margin: 0px;
+    }
+
+    #imageViewer {
+      max-height: 80vh;
+    }
+
+    #desiredSize {
+      display: none;
+      max-width: 80vw;
+      max-height: 80vh;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark sticky">
+    <!-- Brand/logo   -->
+    <a class="navbar-brand" href="index.html"> <img
+      src="./images/assets/grayLogo.png" alt="Coexist" style="width: 80px;">
+    </a>
+    
+    <!-- Hamburger -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link" href="about.html">
+        About
+      </a></li>
+      <li class="nav-item"><a class="nav-link" href="AR.html"> 
+        AR
+      </a></li>
+      <li class="nav-item active"><a class="nav-link" href="#">
+        Murals
+      </a></li>
+      <li class="nav-item"><a class="nav-link" href="blog.html">
+        Blog
+      </a></li>
+      <li class="nav-item"><a class="nav-link" href="team.html">
+        Team
+      </a></li>
+    </ul>
+  </div>
+  </nav>
+
+<br>
+
+  <div class="container-fluid">
+    <div class="intro">
+      <p>Hover over each mural for more info, and click to see the full size image.
+        Mural images with the "AR" icon have augmented reality animations, viewable through Artivive. Read more about
+        Borderline augmented reality here.</p>
+    </div>
+    <div class="accordion" id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link season-title" type="button" data-toggle="collapse" data-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <i class="fas fa-minus float-left "></i>
+              Fall 2019
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Precious" src="./images/fa2019/Precious.jpg">
+                <div class="details">
+                  <p class="title">Precious</p>
+                  <p>Muralist: Raphi Kang</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="SucculentMineral" src="./images/fa2019/SucculentMineral.jpg">
+                <div class="details">
+                  <p class="title">Succulent Mineral</p>
+                  <p>Muralist: Jocelin Su</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Admitted" src="./images/fa2019/Admitted.jpg">
+                <div class="details">
+                  <p class="title">Admitted</p>
+                  <p>Muralist: Eva Smerekanych</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="OverWhaleMing" src="./images/fa2019/OverWhaleMing.jpg" />
+                <div class="details">
+                  <p class="title">Over-whale-mingly Beautiful</p>
+                  <p>Muralist: Amy Zhong</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="EmojiHourglass" src="./images/fa2019/EmojiHourglass.jpg">
+                <div class="details">
+                  <p class="title">Emoji Hourglass</p>
+                  <p>Muralist: Tianyuan "Margaret" Zheng</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="SomeCats" src="./images/fa2019/SomeCats.jpg" />
+                <div class="details">
+                  <p class="title">Some Cats Live, Some Cats Die</p>
+                  <p>Muralist: Patricia Gao</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Big Egg" src="./images/fa2019/BigEgg.jpg" />
+                <div class="details">
+                  <p class="title">Big Egg</p>
+                  <p>Muralist: Talia Blum</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Continuity" src="./images/fa2019/Continuity.jpg">
+                <div class="details">
+                  <p class="title">Continuity</p>
+                  <p>Muralist: Laura Cui</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Ella" src="./images/fa2019/Ella.jpg" />
+                <div class="details">
+                  <p class="title">Ella puede soñar, y tú también! / She can dream, and you can too!</p>
+                  <p>Muralist: Olga Medrano Martin del Campo</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Power to the People" src="./images/fa2019/PowerToThePeople.jpg" />
+                <div class="details">
+                  <p class="title">Power to the People</p>
+                  <p>Muralist: Audrey Gatta</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Yes You Can" src="./images/fa2019/YesYouCan.jpg">
+                <div class="details">
+                  <p class="title">Yes You Can</p>
+                  <p>Muralist: Anqi Li</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Bling Bling" src="./images/fa2019/BlingBling.jpg" />
+                <div class="details">
+                  <p class="title">Bling Bling is Jonghyun</p>
+                  <p>Muralist: Yenthanh Le</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed season-title" type="button" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <i class="fas fa-plus float-left "></i>
+              Spring 2019 (Banana Lounge)
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Precious" src="./images/sp2019/BL1.jpg">
+                <div class="details">
+                  <p class="title">Banana Fever</p>
+                  <p>Muralist: Dipo Doherty</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="SucculentMineral" src="./images/sp2019/BL2.jpg">
+                <div class="details">
+                  <p class="title">Succulent Mineral</p>
+                  <p>Muralist: Jessica Horowitz</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Admitted" src="./images/sp2019/BL3.jpg">
+                <div class="details">
+                  <p class="title">Admitted</p>
+                  <p>Muralist: Lara Ketonen</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="EmojiHourglass" src="./images/sp2019/BL5.jpg">
+                <div class="details">
+                  <p class="title">Koi Pond</p>
+                  <p>Muralist: Gloria Lin</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="SomeCats" src="./images/sp2019/BL4.jpg" />
+                <div class="details">
+                  <p class="title">Some Cats Live, Some Cats Die</p>
+                  <p>Muralist: Jessica Xu</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="OverWhaleMing" src="./images/sp2019/BL6.jpg" />
+                <div class="details">
+                  <p class="title">Over-whale-mingly Beautiful</p>
+                  <p>Muralist: Juliana Green</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Continuity" src="./images/sp2019/BL7.jpg">
+                <div class="details">
+                  <p class="title">Continuity</p>
+                  <p>Muralist: Megan Fu</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Big Egg" src="./images/sp2019/BL8.jpg" />
+                <div class="details">
+                  <p class="title">Big Egg</p>
+                  <p>Muralist: Megan Ochalek</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Ella" src="./images/sp2019/BL9.jpg" />
+                <div class="details">
+                  <p class="title">Helen's Friends</p>
+                  <p>Muralist: Patricia Gao</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed season-title" type="button" data-toggle="collapse"
+              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <i class="fas fa-plus float-left "></i>
+              Fall 2018
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Precious" src="./images/sp2019/BL1.jpg">
+                <div class="details">
+                  <p class="title">Banana Fever</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Dipo Doherty</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="SucculentMineral" src="./images/sp2019/BL2.jpg">
+                <div class="details">
+                  <p class="title">Succulent Mineral</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Jessica Horowitz</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Admitted" src="./images/sp2019/BL3.jpg">
+                <div class="details">
+                  <p class="title">Admitted</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Lara Ketonen</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="EmojiHourglass" src="./images/sp2019/BL5.jpg">
+                <div class="details">
+                  <p class="title">Koi Pond</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Gloria Lin</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="SomeCats" src="./images/sp2019/BL4.jpg" />
+                <div class="details">
+                  <p class="title">Some Cats Live, Some Cats Die</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Jessica Xu</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="OverWhaleMing" src="./images/sp2019/BL6.jpg" />
+                <div class="details">
+                  <p class="title">Over-whale-mingly Beautiful</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Juliana Green</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Continuity" src="./images/sp2019/BL7.jpg">
+                <div class="details">
+                  <p class="title">Continuity</p>
+                  <p>Fall 2019</p>
+                  <p>Muralist: Megan Fu</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Big Egg" src="./images/sp2019/BL8.jpg" />
+                <div class="details">
+                  <p class="title">Big Egg</p>
+                  <p>Fall 2019</p>
+                  <p>Muralist: Megan Ochalek</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Ella" src="./images/sp2019/BL9.jpg" />
+                <div class="details">
+                  <p class="title">Helen's Friends</p>
+                  <p>Fall 2019</p>
+                  <p>Muralist: Patricia Gao</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed season-title" type="button" data-toggle="collapse"
+              data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <i class="fas fa-plus float-left "></i>
+
+              Fall 2017
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Precious" src="./images/sp2019/BL1.jpg">
+                <div class="details">
+                  <p class="title">Banana Fever</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Dipo Doherty</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="SucculentMineral" src="./images/sp2019/BL2.jpg">
+                <div class="details">
+                  <p class="title">Succulent Mineral</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Jessica Horowitz</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Admitted" src="./images/sp2019/BL3.jpg">
+                <div class="details">
+                  <p class="title">Admitted</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Lara Ketonen</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="EmojiHourglass" src="./images/sp2019/BL5.jpg">
+                <div class="details">
+                  <p class="title">Koi Pond</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Gloria Lin</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="SomeCats" src="./images/sp2019/BL4.jpg" />
+                <div class="details">
+                  <p class="title">Some Cats Live, Some Cats Die</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Jessica Xu</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="OverWhaleMing" src="./images/sp2019/BL6.jpg" />
+                <div class="details">
+                  <p class="title">Over-whale-mingly Beautiful</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Juliana Green</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Continuity" src="./images/sp2019/BL7.jpg">
+                <div class="details">
+                  <p class="title">Continuity</p>
+                  <p>Fall 2019</p>
+                  <p>Muralist: Megan Fu</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Big Egg" src="./images/sp2019/BL8.jpg" />
+                <div class="details">
+                  <p class="title">Big Egg</p>
+                  <p>Fall 2019</p>
+                  <p>Muralist: Megan Ochalek</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Ella" src="./images/sp2019/BL9.jpg" />
+                <div class="details">
+                  <p class="title">Helen's Friends</p>
+                  <p>Fall 2019</p>
+                  <p>Muralist: Patricia Gao</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed season-title" type="button" data-toggle="collapse"
+              data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <i class="fas fa-plus float-left "></i>
+              Spring 2017
+            </button>
+          </h2>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Precious" src="./images/sp2019/BL1.jpg">
+                <div class="details">
+                  <p class="title">Banana Fever</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Dipo Doherty</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="SucculentMineral" src="./images/sp2019/BL2.jpg">
+                <div class="details">
+                  <p class="title">Succulent Mineral</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Jessica Horowitz</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Admitted" src="./images/sp2019/BL3.jpg">
+                <div class="details">
+                  <p class="title">Admitted</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Lara Ketonen</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="EmojiHourglass" src="./images/sp2019/BL5.jpg">
+                <div class="details">
+                  <p class="title">Koi Pond</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Gloria Lin</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="SomeCats" src="./images/sp2019/BL4.jpg" />
+                <div class="details">
+                  <p class="title">Some Cats Live, Some Cats Die</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Jessica Xu</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="OverWhaleMing" src="./images/sp2019/BL6.jpg" />
+                <div class="details">
+                  <p class="title">Over-whale-mingly Beautiful</p>
+                  <p>Spring 2019</p>
+                  <p>Muralist: Juliana Green</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Continuity" src="./images/sp2019/BL7.jpg">
+                <div class="details">
+                  <p class="title">Continuity</p>
+                  <p>Fall 2019</p>
+                  <p>Muralist: Megan Fu</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Big Egg" src="./images/sp2019/BL8.jpg" />
+                <div class="details">
+                  <p class="title">Big Egg</p>
+                  <p>Fall 2019</p>
+                  <p>Muralist: Megan Ochalek</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Ella" src="./images/sp2019/BL9.jpg" />
+                <div class="details">
+                  <p class="title">Helen's Friends</p>
+                  <p>Fall 2019</p>
+                  <p>Muralist: Patricia Gao</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <br>
+
+  <div class="modal fade" id="imageModal">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <div class="modal-dialog">
+      <img src="" id="imageViewer">
+    </div>
+  </div>
+
+  <!-- Copy of imageViewer for size calculation; can't get modal imageViewer size -->
+  <img id="desiredSize" src="">
+
+  <script>
+
+    $(document).ready(function () {
+      resizeMurals();
+    });
+
+    $(window).resize(function () {
+      resizeMurals();
+      calculateImageViewer();
+    });
+
+    $('.season-title').on('click', function (e) {
+      // toggle plus/minus icons
+      $(this).find('i').toggleClass('fas fa-plus fas fa-minus');
+    });
+
+    $('.mural').on('click', function () {
+      let src = $(this).find('img').attr('src');
+
+      $('#imageViewer').attr('src', src);
+      $('#desiredSize').attr('src', src);
+
+      calculateImageViewer();
+
+      // popup modal dialog
+      $('#imageModal').modal('show');
+    });
+
+    // keep images square
+    function resizeMurals() {
+      let width = $('.show').find('.mural').width();
+      if (typeof width === 'undefined'){
+         width = $(".card").width() / 3 - 10;
+      } 
+      $('.mural').height(width);
+    }
+
+    // size and center full size image
+    function calculateImageViewer() {
+      // get desired and viewport width and height
+      let width = $('#desiredSize').width();
+      let height = $('#desiredSize').height();
+      let vw = window.innerWidth;
+      let vh = window.innerHeight;
+
+      //  alert(vw + ", " + vh + "; " + width + ", " + height);
+
+      // set imageViewer to desired width
+      $('#imageViewer').width(width);
+
+      // adjust image in the center
+      $('.modal-dialog').css("top", (vh - height) / 2 + "px");
+      $('.modal-dialog').css("left", (vw - width) / 2 + "px");
+    }
+
+  </script>
+
+</body>
+
+</html>
