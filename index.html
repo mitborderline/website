@@ -26,6 +26,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-color: #454543;
+      overflow-y: hidden;
     }
 
     .logo {
@@ -36,6 +37,16 @@
       right: 0;
       bottom: 0;
       margin: auto;
+    }
+
+    .credits {
+      position: absolute;
+      bottom: 5%;
+      right: 5%;
+      color: white;
+      font-family: 'Poiret One', cursive;
+      font-weight: bold;
+      font-size: small;
     }
 
     @media only screen and (max-width: 600px) {
@@ -81,8 +92,9 @@
     </div>
   </nav>
 
-  <div class="title">
-    <img class="logo" src="./images/assets/splashLogo.png" alt="Borderline">
+  <div>
+    <span class="credits">animation by Danny Gelman '20</span>
+    <img class="logo" src="./images/assets/logoAnimation.gif" alt="Borderline">
   </div>
   </div>
 
