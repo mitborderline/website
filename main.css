@@ -1,0 +1,49 @@
+body {
+    font-family: 'Capriola', sans-serif;
+    font-size: large;
+    background-color: #454543;
+    overflow-x: hidden;
+  }
+
+  .navbar-brand{
+    float: left;
+  }
+
+
+.text-logo{
+  font-family: 'Poiret One', cursive; 
+  color: white;
+  float: left;
+}
+
+.active a {
+    color: #ff7360 !important;
+  }
+
+a {
+    color: #34d4ae;
+  }
+
+.nav-item:hover:not(.active) a {
+    color: #34d4ae !important;
+  }
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 999;
+  }
+
+body p {
+    font-family: 'Didact Gothic', sans-serif;
+  }
+
+.container-fluid {
+    margin: 0 5% 5% 5%;
+    color: white;
+  }
+
+.intro {
+    font-size: large;
+  }

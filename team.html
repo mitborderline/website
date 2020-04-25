@@ -14,61 +14,38 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="main.css">
 
   <style>
-    body {
-      font-family: 'Capriola', sans-serif;
-      font-size: 2vw;
-      background-color: #454543;
-    }
-
-    .active a {
-      color: #ff7360 !important;
-    }
-
-    a {
-  color: 34d4ae;
-}
-
-    .nav-item:hover:not(.active) a {
-      color: #34d4ae !important;
-    }
-
-    body p {
-      font-family: 'Didact Gothic', sans-serif;
-    }
-
-    .container-fluid {
-      margin: 0 5% 5% 5%;
-    }
-
-    .intro {
-      color: white;
-      width: 90%;
-    }
-
-    .mural {
+    .exec {
       padding: 10px;
     }
 
-    .mural img {
+    .exec img {
       width: 100%;
-      height: 100%;
     }
 
-    .mural:hover img {
+    .exec:hover img {
       transform: scale(0.9);
     }
 
-    .details {
+    .exec-titles {
       font: 'Capriola', sans-serif;
-      font-size: 2vw;
       color: #ff7360;
     }
 
+    .row img {
+      border-radius: 3px;
+    }
+
     .name {
-      color: white !important;
+      color: white;
+    }
+
+    .team-page {
+      width: 90%;
     }
   </style>
 </head>
@@ -76,7 +53,9 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-dark sticky">
     <!-- Brand/logo   -->
-    <a class="navbar-brand" href="index.html"> <img src="./images/assets/grayLogo.png" alt="Coexist" style="width: 80px;">
+    <a class="navbar-brand" href="index.html">
+      <div class="text-logo">The Borderline</div>
+      <img src="./images/assets/grayLogo.png" alt="Borderline" style="width: 80px;">
     </a>
 
     <!-- Hamburger -->
@@ -107,52 +86,52 @@
     </div>
   </nav>
 
-  <div class="container-fluid">
-    <div class="intro">
-      <p>Borderline is always looking for more artists, animators, and developers! Keep an eye out for our event and
-        recruitment emails,
-        or <a href="mailto:borderline-team@mit.edu?Subject=Interest" target="mail">email us</a>
+  <div class="container-fluid team-page">
+    <br>
+    <div>
+      <p class="intro">Borderline is always looking for more artists, animators, and developers! Keep an eye out for our
+        event and recruitment emails, or <a href="mailto:borderline-team@mit.edu?Subject=Interest" target="mail">email us</a>
         to get involved.
       </p>
       <hr>
       <h2>Executive Board</h2>
 
       <div class="row">
-        <div class="col-3 mural">
+        <div class="col-sm-3 exec">
           <a href="https://www.instagram.com/glo.ser/" target="exec">
             <img alt="Gloria Lin" src="./images/exec/GL.jpg" />
           </a>
-          <div class="details">
+          <div class="exec-titles">
             <p><span class="name">Gloria Lin</span><br>
               Great Overlord
             </p>
           </div>
         </div>
-        <div class="col-3 mural">
+        <div class="col-sm-3 exec">
           <a href="https://www.dannygelman.com/" target="exec">
             <img alt="Danny Gelman" src="./images/exec/DG.jpg">
           </a>
-          <div class="details">
+          <div class="exec-titles">
             <p><span class="name">Danny Gelman</span><br>
               Co-Animation Chair
             </p>
           </div>
         </div>
-        <div class="col-3 mural">
+        <div class="col-sm-3 exec">
           <a href="https://www.allangelman.com/" target="exec">
             <img alt="Allan Gelman" src="./images/exec/AG.jpg" />
           </a>
-          <div class="details">
+          <div class="exec-titles">
             <p><span class="name">Allan Gelman</span><br>
               Co-Animation Chair
             </p>
           </div>
         </div>
-        <div class="col-3 mural">
+        <div class="col-sm-3 exec">
           <a href="https://www.instagram.com/studio57crafts/" target="exec">
             <img alt="Jenny Zhang" src="./images/exec/JZ.jpg" />
           </a>
-          <div class="details">
+          <div class="exec-titles">
             <p><span class="name">Jenny Zhang</span><br>
               Co-Animation Chair
             </p>
@@ -160,44 +139,42 @@
         </div>
       </div>
 
-      <br><br>
-
       <div class="row">
-        <div class="col-3 mural">
+        <div class="col-sm-3 exec">
           <a href="https://www.margezart.com/" target="exec">
             <img alt="Margaret Zheng" src="./images/exec/MZ.jpg" />
           </a>
-          <div class="details">
+          <div class="exec-titles">
             <p><span class="name">Margaret Zheng</span><br>
               Co-Design Chair
             </p>
           </div>
         </div>
-        <div class="col-3 mural">
+        <div class="col-sm-3 exec">
           <!-- <a href="https://www.dannygelman.com/" target="exec"> -->
           <img alt="Joyce An" src="./images/exec/JA.png">
           <!-- </a> -->
-          <div class="details">
+          <div class="exec-titles">
             <p><span class="name">Joyce An</span><br>
               Co-Design Chair
             </p>
           </div>
         </div>
-        <div class="col-3 mural">
+        <div class="col-sm-3 exec">
           <a href="https://www.instagram.com/sky.gordon/" target="exec">
             <img alt="Sky Gordon" src="./images/exec/SG.jpg" />
           </a>
-          <div class="details">
+          <div class="exec-titles">
             <p><span class="name">Sky Gordon</span><br>
               Publicity Chair
             </p>
           </div>
         </div>
-        <div class="col-3 mural">
+        <div class="col-sm-3 exec">
           <!-- <a href="https://www.instagram.com/studio57crafts/" target="exec"> -->
           <img alt="Elaine Xiao" src="./images/exec/EX.jpg" />
           <!-- </a> -->
-          <div class="details">
+          <div class="exec-titles">
             <p><span class="name">Elaine Xiao</span><br>
               App Dev Chair
             </p>
@@ -205,44 +182,42 @@
         </div>
       </div>
 
-      <br><br>
-
       <div class="row">
-        <div class="col-3 mural">
+        <div class="col-sm-3 exec">
           <!-- <a href="https://www.dannygelman.com/" target="exec"> -->
           <img alt="Lucy Zhang" src="./images/exec/LZ.jpg">
           <!-- </a> -->
-          <div class="details">
+          <div class="exec-titles">
             <p><span class="name">Lucy Zhang</span><br>
               Finance Chair
             </p>
           </div>
         </div>
-        <div class="col-3 mural">
+        <div class="col-sm-3 exec">
           <!-- <a href="https://www.margezart.com/" target="exec"> -->
           <img alt="Rachel Chae" src="./images/exec/RC.png" />
           <!-- </a> -->
-          <div class="details">
+          <div class="exec-titles">
             <p><span class="name">Rachel Chae</span><br>
               Outreach Chair
             </p>
           </div>
         </div>
-        <div class="col-3 mural">
+        <div class="col-sm-3 exec">
           <!-- <a href="https://www.allangelman.com/" target="exec"> -->
           <img alt="Leon Yim" src="./images/exec/LY.jpg" />
           <!-- </a> -->
-          <div class="details">
+          <div class="exec-titles">
             <p><span class="name">Leon Yim</span><br>
               Advisor
             </p>
           </div>
         </div>
-        <div class="col-3 mural">
+        <div class="col-sm-3 exec">
           <!-- <a href="https://www.instagram.com/studio57crafts/" target="exec"> -->
           <img alt="Julia Rue" src="./images/exec/JR.jpg" />
           <!-- </a> -->
-          <div class="details">
+          <div class="exec-titles">
             <p><span class="name">Julia Rue</span><br>
               Founder
             </p>
@@ -254,26 +229,7 @@
 
   </div>
 
-
   <br>
-
-  <script>
-
-    $(document).ready(function () {
-      resizeMurals();
-    });
-
-    $(window).resize(function () {
-      resizeMurals();
-    });
-
-    // keep images square
-    function resizeMurals() {
-      let width = $('.mural').width();
-      $('.mural').height(width);
-    }
-
-  </script>
 
 </body>
 

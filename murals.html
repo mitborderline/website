@@ -14,42 +14,21 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+
 
 
   <style>
-    body {
-      font-family: 'Capriola', sans-serif;
-      font-size: 2vw;
-      background-color: #454543;
-    }
-
-    .active a {
-      color: #ff7360 !important;
-    }
-
-    .nav-item:hover:not(.active) a {
-      color: #34d4ae !important;
-    }
-
-    .sticky {
-      position: sticky;
-      top: 0;
-      background-color: black;
-      z-index: 999;
-    }
-
-    body p {
-      font-family: 'Didact Gothic', sans-serif;
-    }
-
     .container-fluid {
-      margin: 0 5% 5% 5%;
+      margin: 0 1% 5% 1%;
     }
 
     .accordion,
     .intro {
       color: white;
-      width: 90%;
+      width: 98%;
+      font-size: large;
     }
 
     .accordion .fas {
@@ -105,6 +84,7 @@
     }
 
     .close {
+      color:white;
       font-size: 54;
     }
 
@@ -128,7 +108,9 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-dark sticky">
     <!-- Brand/logo   -->
-    <a class="navbar-brand" href="index.html"> <img src="./images/assets/grayLogo.png" alt="Coexist"
+    <a class="navbar-brand" href="index.html"> 
+      <div class="text-logo">The Borderline</div>
+      <img src="./images/assets/grayLogo.png" alt="Borderline"
         style="width: 80px;">
     </a>
 
@@ -165,9 +147,11 @@
   <div class="container-fluid">
     <div class="intro">
       <p>Hover over each mural for more info, and click to see the full size image.
-        Mural images with the "AR" icon have augmented reality animations, viewable through Artivive. Read more about
-        Borderline augmented reality here.</p>
+        Mural images with the "AR" icon have augmented reality animations, viewable through
+        <a href="https://apps.apple.com/us/app/artivive/id1188737494" target="vive">Artivive</a>.
+        Read more about <a href="AR.html" target="vive">Borderline augmented reality.</a></p>
     </div>
+    <hr>
     <div class="accordion" id="accordion">
       <div class="card">
         <div class="card-header" id="headingOne">
@@ -670,6 +654,14 @@
   <img id="desiredSize" src="">
 
   <script>
+    var isMobile = (navigator.userAgent.match(/Android/i)
+      || navigator.userAgent.match(/webOS/i)
+      || navigator.userAgent.match(/iPhone/i)
+      || navigator.userAgent.match(/iPad/i)
+      || navigator.userAgent.match(/iPod/i)
+      || navigator.userAgent.match(/BlackBerry/i)
+      || navigator.userAgent.match(/Windows Phone/i)) ? true : false;
+    var mobileViewer = true;
 
     $(document).ready(function () {
       resizeMurals();
@@ -686,8 +678,14 @@
     });
 
     $('.mural').on('click', function () {
-      let src = $(this).find('img').attr('src');
+      if ( isMobile ){
+        // mobile device show Viewer only on 2nd click
+        mobileViewer = !mobileViewer;
+        if (!mobileViewer)
+          return;
+      }
 
+      let src = $(this).find('img').attr('src');
       $('#imageViewer').attr('src', src);
       $('#desiredSize').attr('src', src);
 
