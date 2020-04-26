@@ -19,33 +19,40 @@
   <link rel="stylesheet" href="main.css">
 
   <style>
-    .exec {
-      padding: 10px;
-    }
-
-    .exec img {
-      width: 100%;
-    }
-
-    .exec:hover img {
-      transform: scale(0.9);
-    }
-
-    .exec-titles {
-      font: 'Capriola', sans-serif;
-      color: #ff7360;
-    }
-
-    .row img {
-      border-radius: 3px;
-    }
-
-    .name {
-      color: white;
-    }
-
     .team-page {
       width: 90%;
+    }
+
+    h4 {
+      text-align: center;
+    }
+
+    #youTube {
+      height: 50%;
+    }
+
+    .ar {
+      text-align: center;
+    }
+
+    video {
+      width: 60%;
+      display: inline-block;
+    }
+
+    #gmap {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      #youTube {
+        height: 25%;
+      }
+
+      video {
+        width: 90%;
+      }
     }
   </style>
 </head>
@@ -85,140 +92,55 @@
 
   <div class="container-fluid team-page">
     <br>
-    <div>
-      <p class="intro">Borderline is always looking for more artists, animators, and developers! Keep an eye out for our
-        event and recruitment emails, or <a href="mailto:borderline-team@mit.edu?Subject=Interest" target="mail">email us</a>
-        to get involved.
+    <iframe id="youTube" width="100%" src="https://www.youtube.com/embed/0rUwgOZ4LUg" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+    <div class="intro">
+      <p>The Borderline began as a project to cover the 200 foot long wall in the tunnels under the campus of MIT. The
+        tunnel is a commonly used route between MIT Buildings 66 and E17 during bad weather; it is a useful connection
+        to get from point A to point B, but Borderline aimed to make it a destination through art and technology.
       </p>
+      <p>
+        In the spring of 2017, over 25 MIT-affiliated artists started painting murals in the tunnels. Since then,
+        Borderline has expanded to over 65 murals in the tunnels and Banana Lounge (26-110) on campus. More murals and
+        animations are being added every semester.
+      </p>
+      <p>Beyond the tunnels, Borderline has collaborated on projects with numerous organizations, such as the Museum of
+        Fine Arts in Boston and Porto Seguro Cultural Center in São Paulo, Brazil.
+        Borderline has been featured in
+        <a href="https://www3.bostonglobe.com/metro/2017/06/27/mit-students-create-mural-that-moves-when-viewed-through-smartphone/u1idI24UPjFoplIaPFroXP/story.html"
+          target="bg">The Boston Globe</a>,
+        <a href="https://www.vice.com/en_us/article/xw8bbn/mit-students-made-an-interactive-augmented-reality-mural"
+          target="vice">VICE Motherboard</a>, and other publications.
+      </p>
+      <p>The magic of Borderline comes in the form of augmented reality via the <a
+          href="https://apps.apple.com/us/app/artivive/id1188737494" target="vive">Artivive app</a>, available for
+        Android and iOS. Simply point your phone camera at the AR-enabled murals to unearth hidden animations!
+      </p>
+      <div class="ar">
+        <video loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">Your browser does not
+          support HTML5 video.
+          <source src="./images/assets/mingAnimation.mp4" type="video/mp4"></video>
+      </div>
       <hr>
-      <h2>Executive Board</h2>
+      <h4>Contact <br> <a href="mailto:borderline-team@mit.edu?Subject=Interest"
+          target="mail">borderline-team@mit.edu</a>
+        <a href="https://www.instagram.com/mitborderline/" target="_ig"><img width="24px" height="24px" alt="Instagram"
+            src="https://image.flaticon.com/icons/svg/174/174855.svg"></a>
+        <a href="https://www.facebook.com/mitborderline/" target="_fb"><img width="24px" height="24px" alt="Facebook"
+            src="https://image.flaticon.com/icons/svg/124/124010.svg"></a>
+      </h4>
+      <br>
+      <h4>Tunnels Location <br> </h4>
 
       <div class="row">
-        <div class="col-sm-3 exec">
-          <a href="https://www.instagram.com/glo.ser/" target="exec">
-            <img alt="Gloria Lin" src="./images/exec/GL.jpg" />
-          </a>
-          <div class="exec-titles">
-            <p><span class="name">Gloria Lin</span><br>
-              Great Overlord
-            </p>
-          </div>
+        <div class="col-sm-4">
+          <img width="100%" alt="Tunnels Map" src="./images/assets/tunnelMap.jpg">
         </div>
-        <div class="col-sm-3 exec">
-          <a href="https://www.dannygelman.com/" target="exec">
-            <img alt="Danny Gelman" src="./images/exec/DG.jpg">
-          </a>
-          <div class="exec-titles">
-            <p><span class="name">Danny Gelman</span><br>
-              Co-Animation Chair
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3 exec">
-          <a href="https://www.allangelman.com/" target="exec">
-            <img alt="Allan Gelman" src="./images/exec/AG.jpg" />
-          </a>
-          <div class="exec-titles">
-            <p><span class="name">Allan Gelman</span><br>
-              Co-Animation Chair
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3 exec">
-          <a href="https://www.instagram.com/studio57crafts/" target="exec">
-            <img alt="Jenny Zhang" src="./images/exec/JZ.jpg" />
-          </a>
-          <div class="exec-titles">
-            <p><span class="name">Jenny Zhang</span><br>
-              Co-Animation Chair
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-3 exec">
-          <a href="https://www.margezart.com/" target="exec">
-            <img alt="Margaret Zheng" src="./images/exec/MZ.jpg" />
-          </a>
-          <div class="exec-titles">
-            <p><span class="name">Margaret Zheng</span><br>
-              Co-Design Chair
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3 exec">
-          <!-- <a href="https://www.dannygelman.com/" target="exec"> -->
-          <img alt="Joyce An" src="./images/exec/JA.png">
-          <!-- </a> -->
-          <div class="exec-titles">
-            <p><span class="name">Joyce An</span><br>
-              Co-Design Chair
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3 exec">
-          <a href="https://www.instagram.com/sky.gordon/" target="exec">
-            <img alt="Sky Gordon" src="./images/exec/SG.jpg" />
-          </a>
-          <div class="exec-titles">
-            <p><span class="name">Sky Gordon</span><br>
-              Publicity Chair
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3 exec">
-          <!-- <a href="https://www.instagram.com/studio57crafts/" target="exec"> -->
-          <img alt="Elaine Xiao" src="./images/exec/EX.jpg" />
-          <!-- </a> -->
-          <div class="exec-titles">
-            <p><span class="name">Elaine Xiao</span><br>
-              App Dev Chair
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-sm-3 exec">
-          <!-- <a href="https://www.dannygelman.com/" target="exec"> -->
-          <img alt="Lucy Zhang" src="./images/exec/LZ.jpg">
-          <!-- </a> -->
-          <div class="exec-titles">
-            <p><span class="name">Lucy Zhang</span><br>
-              Finance Chair
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3 exec">
-          <!-- <a href="https://www.margezart.com/" target="exec"> -->
-          <img alt="Rachel Chae" src="./images/exec/RC.png" />
-          <!-- </a> -->
-          <div class="exec-titles">
-            <p><span class="name">Rachel Chae</span><br>
-              Outreach Chair
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3 exec">
-          <!-- <a href="https://www.allangelman.com/" target="exec"> -->
-          <img alt="Leon Yim" src="./images/exec/LY.jpg" />
-          <!-- </a> -->
-          <div class="exec-titles">
-            <p><span class="name">Leon Yim</span><br>
-              Advisor
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-3 exec">
-          <!-- <a href="https://www.instagram.com/studio57crafts/" target="exec"> -->
-          <img alt="Julia Rue" src="./images/exec/JR.jpg" />
-          <!-- </a> -->
-          <div class="exec-titles">
-            <p><span class="name">Julia Rue</span><br>
-              Founder
-            </p>
-          </div>
+        <div class="col-sm-8">
+          <iframe id="gmap"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47174.47155937263!2d-71.16149754530454!3d42.355218621588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a8dfa0f551%3A0x1d98765812e5e8c6!2s55%20Ames%20St%2C%20Cambridge%2C%20MA%2002142!5e0!3m2!1sen!2sus!4v1587864062719!5m2!1sen!2sus"
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </div>
 
