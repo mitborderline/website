@@ -55,10 +55,20 @@
       object-fit: cover;
     }
 
+    @media only screen and (max-width: 600px) {
+      .mural {
+        padding: 0.5px;
+      }
+
+      .title {
+        font-size: large !important;
+      }
+    }
+
     .mural:hover img {
       border: 5px solid #34d4ae;
       cursor: pointer;
-      opacity: 0.3;
+      opacity: 0.3
     }
 
     .mural:hover .details {
@@ -83,13 +93,8 @@
       color: #ff7360;
     }
 
-    .olga {
-      font-family: sans-serif;
-    }
-
     .close {
       color:white;
-      font-size: 54;
     }
 
     .modal-dialog {
@@ -147,8 +152,8 @@
 
   <div class="container-fluid">
     <div class="intro">
-      <p>Hover over each mural for more info, and click to see the full size image.
-        Mural images with the "AR" icon have augmented reality animations, viewable through
+      <p>Click or tap twice (mobile) to view the full size image.
+        Murals with the "AR" icon have augmented reality animations, viewable through
         <a href="https://apps.apple.com/us/app/artivive/id1188737494" target="vive">Artivive</a>.
     </div>
     <hr>
@@ -231,7 +236,7 @@
               <div class="col-4 mural">
                 <img alt="Ella" src="./images/fa2019/Ella.jpg" />
                 <div class="details">
-                  <p class="title olga">Ella puede soñar, y tú también! / She can dream, and you can too!</p>
+                  <p class="title">Ella puede sonar, y tu tambien! / She can dream, and you can too!</p>
                   <p>Muralist: Olga Medrano Martin del Campo</p>
                 </div>
               </div>
