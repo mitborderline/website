@@ -1,0 +1,307 @@
+<html>
+
+<head>
+  <title>Featured</title>
+  <link rel='icon' href='./images/assets/circleLogo.png' type='image/x-icon'>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css">
+
+  <style>
+    .project {
+      padding: 10px;
+    }
+
+    .project img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project:hover .project-titles {
+      display: block;
+      cursor: pointer;
+    }
+
+    .project:hover img {
+      cursor: pointer;
+      opacity: 0.2;
+      transform: scale(1.1);
+    }
+
+    .project-titles {
+      font-family: 'Didact Gothic', sans-serif;
+      letter-spacing: 3px;
+      font-weight: bold;
+      font-size: 2.5vw;
+      color: white;
+      position: absolute;
+      top: 25%;
+      left: 5px;
+      margin: auto;
+      width: 98%;
+      display: none;
+      text-align: center;
+    }
+
+    .team-page {
+      width: 90%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .project-titles {
+        font-size: small;
+        display: block;
+        width: 90%;
+        top: 10%;
+      }
+
+      .project {
+        padding: 0;
+      }
+
+      .project img {
+        opacity: 0.3
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark sticky">
+    <!-- Brand/logo   -->
+    <a class="navbar-brand" href="index.html">
+      <div class="text-logo">The Borderline</div>
+      <img src="./images/assets/grayLogo.png" alt="Borderline" style="width: 80px;">
+    </a>
+
+    <!-- Hamburger -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="about.html">
+            About
+          </a></li>
+        <li class="nav-item active"><a class="nav-link" href="#">
+            Featured
+          </a></li>
+        <li class="nav-item"><a class="nav-link" href="murals.html">
+            Murals
+          </a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">
+            Team
+          </a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid team-page">
+    <br>
+    <div>
+      <p>The Borderline began as <a href="about.html" target="_about">a project to cover the 200 foot long wall in the
+          tunnels </a>under the campus of MIT.
+        Since then, Borderline has launched other art initiatives while continuing to expand the tunnel murals.
+        Below are some featured projects, blog posts, and artist's statements.
+      </p>
+      <div class="row">
+        <div class="col-3 project">
+          <a href="featured.html" target="feat">
+            <img alt="Tunnel 66" src="./images/projects/tunnel66/thumbnail.png" />
+          </a>
+          <div class="project-titles">
+            Tunnel 66
+          </div>
+        </div>
+        <div class="col-3 project">
+          <a href="featured.html" target="feat">
+            <img alt="Banana Lounge" src="./images/projects/banana/thumbnail.jpg">
+          </a>
+          <div class="project-titles">
+            Borderline <br> x <br> UA Innovation
+          </div>
+        </div>
+        <div class="col-3 project">
+          <a href="featured.html" target="feat">
+            <img alt="Stata Mural" src="./images/projects/computing/thumbnail.jpg" />
+          </a>
+          <div class="project-titles">
+            College of Computing Opening
+          </div>
+        </div>
+        <div class="col-3 project">
+          <a href="featured.html" target="feat">
+            <img alt="Prison Mural Project" src="./images/projects/prison/mural.jpg" />
+          </a>
+          <div class="project-titles">
+            Prison Mural Project
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 project">
+          <a href="featured.html" target="feat">
+            <img alt="One World @ MIT" src="./images/projects/oneworld/thumbnail.jpg" />
+          </a>
+          <div class="project-titles">
+            One World <br>@ MIT
+          </div>
+        </div>
+        <div class="col-3 project">
+          <a href="featured.html" target="feat">
+            <img alt="Borderline x Brazil" src="./images/projects/brazil/thumbnail.jpg">
+          </a>
+          <div class="project-titles">
+            Borderline <br>x<br> Brazil
+          </div>
+        </div>
+        <div class="col-3 project">
+          <a href="featured.html" target="feat">
+            <img alt="Borderline at MFA" src="./images/projects/mfa/thumbnail.jpg" />
+          </a>
+          <div class="project-titles">
+            Borderline <br> at the MFA
+          </div>
+        </div>
+        <div class="col-3 project">
+          <a href="featured.html" target="feat">
+            <img alt="AR Campus Landmarks" src="./images/projects/campus/pset.jpg" />
+          </a>
+          <div class="project-titles">
+            AR Campus Landmarks
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <h3> Blog</h3>
+
+      <div class="row">
+        <div class="col-3 project">
+          <a href="blogs.html" target="blogs">
+            <img alt="Will You Marry Me?" src="./images/blog/proposal.jpg">
+          </a>
+          <div class="project-titles">
+            AR Marriage Proposal
+          </div>
+        </div>
+        <div class="col-3 project">
+          <a href="blogs.html" target="blogs">
+            <img alt="CPW" src="./images/blog/cpw1.jpg">
+          </a>
+          <div class="project-titles">
+            Campus Preview Weekend
+          </div>
+        </div>
+        <div class="col-3 project">
+          <a href="blogs.html" target="blogs">
+            <img alt="Borderline's Birthday" src="./images/blog/birthday1.jpg" />
+          </a>
+          <div class="project-titles">
+            Happy <br> Birthday, <br> Borderline!
+          </div>
+        </div>
+        <div class="col-3 project">
+          <a href="blogs.html" target="blogs">
+            <img alt="Grand Opening" src="./images/blog/opening1.jpg" />
+          </a>
+          <div class="project-titles">
+            Tunnels <br> Grand Opening
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <h3>Artist Spotlight</h3>
+
+      <div class="row">
+        <div class="col-3 project">
+          <a href="muralBlogs19.html" target="2019">
+            <img alt="2019 Artist's Corner" src="./images/blog/artist/limitless1.jpg">
+          </a>
+          <div class="project-titles">
+            2019
+          </div>
+        </div>
+        <div class="col-3 project">
+          <a href="muralBlogs18.html" target="2018">
+            <img alt="2018 Artist's Corner" src="./images/blog/artist/thatway1.jpg">
+          </a>
+          <div class="project-titles">
+            2018
+          </div>
+        </div>
+        <div class="col-3 project">
+          <a href="muralBlogs17.html" target="2017">
+            <img alt="2017 Artist's Corner" src="./images/blog/artist/meninism1.jpg" />
+          </a>
+          <div class="project-titles">
+            2017
+          </div>
+        </div>
+      </div>
+
+      <hr>
+      <h3>Press</h3>
+      <p>Borderline's in the news! Click to read more. For all inquiries, please contact <a href="mailto:borderline-team@mit.edu?Subject=Press"
+        target="mail">borderline-team@mit.edu</a>. <br>
+        <br> <a
+          href="https://www3.bostonglobe.com/metro/2017/06/27/mit-students-create-mural-that-moves-when-viewed-through-smartphone/u1idI24UPjFoplIaPFroXP/story.html"
+          target="bg">The Boston Globe</a>
+        <br> <a
+          href="https://www.vice.com/en_us/article/xw8bbn/mit-students-made-an-interactive-augmented-reality-mural"
+          target="vice">VICE Motherboard</a>
+        <br> <a
+          href="https://www3.bostonglobe.com/metro/2017/06/27/mit-students-create-mural-that-moves-when-viewed-through-smartphone/u1idI24UPjFoplIaPFroXP/story.html"
+          target="mitn">MIT News</a>
+        <br> <a href="https://studentlife.mit.edu/news/borderline-murals-bring-art-campus-tunnels" target="dsl">MIT
+          Division of Student Life</a>
+        <br> <a href="https://www.masslive.com/news/boston/2017/06/mit_unveils_tunnel_vision_bord.html"
+          target="masslv">MassLive</a>
+        <br> <a href="https://www.facebook.com/watch/?v=1485010601552591" target="dwd">Deustche Welle Digital</a>
+        <br> <a href="https://www.facebook.com/watch/?v=1373450759441719" target="vty">Virtuality</a>
+      </p>
+
+    </div>
+
+  </div>
+
+  <br>
+
+  <script>
+
+    $(document).ready(function () {
+      resizeProjects();
+    });
+
+    $(window).resize(function () {
+      resizeProjects();
+    });
+
+    // keep images square
+    function resizeProjects() {
+      let width = $('.project').width();
+      $('.project').height(width);
+      $('.details').height(width);
+    }
+  </script>
+
+</body>
+
+</html>
