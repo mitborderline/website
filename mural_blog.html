@@ -19,10 +19,34 @@
   <link rel="stylesheet" href="main.css">
 
   <style>
-    body {
-      background-color: #454543;
+    .blog {
+      width: 90%;
     }
 
+    .article {
+      display: inline-block;
+    }
+
+    .date {
+      color: #ff7360;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .images {
+      text-align: center;
+    }
+
+    h3 {
+      color: #34d4ae;
+    }
+
+    h3,
+    h5 {
+      text-align: center;
+    }
 
     @media only screen and (max-width: 600px) {
       .logo {
@@ -36,6 +60,7 @@
   <nav class="navbar navbar-expand-md navbar-dark sticky">
     <!-- Brand/logo   -->
     <a class="navbar-brand" href="#">
+      <div class="text-logo">The Borderline</div>
       <img src="./images/assets/grayLogo.png" alt="Borderline" style="width: 80px;">
     </a>
 
@@ -70,9 +95,343 @@
       </ul>
     </div>
   </nav>
-  <h3>Artist Spotlight</h3>
-  <p>This page is still under construction. Check back later!</p>
-  <br>
+
+  <button onclick="topFunction()" id="top-btn" title="Go to top">Go to Top</button>
+
+
+  <div class="container-fluid blog">
+    <br>
+    <h3>Artist Spotlight</h3>
+    <p>Below are articles featuring Borderline muralists from various years. Find out the stories behind their
+      murals!<br>
+      <div style="text-align:center">
+        <a href="#2017">2017</a> |
+        <a name="2018" href="#2018">2018</a> |
+        <a href="mural_blog.html">2019</a>
+      </div>
+    </p>
+    <hr>
+
+    <!-- 2018 -->
+    <br>
+    <a name="2018">
+      <h3>2018 Artist Spotlight</h3>
+    </a>
+    <hr>
+
+    <div class="article">
+      <h5>Firebird<br><br><span class="date">2018-12-04</span> </h5>
+      <br>
+      <div class="images">
+        <img width="61%" alt="Firebird" src="./images/blog/artist/firebird1.jpg">
+        <img width="27%" alt="Isa Munoz" src="./images/blog/artist/firebird2.jpg">
+      </div>
+      <p class="italic">Mural by Isabel Munoz ‘22</p>
+      <p>Isa’s design went through a challenging revision process to fit the space, but she’s very happy with the final
+        design, and is excited to see someone animate her firebird mural in the future. She’d like to see some flames
+        engulfing the dandelion seeds or lighting them on fire!</p>
+      <p>Isa’s art is very inspired by nature. She likes drawing outside, looking at birds and animals, and working to
+        upbeat music. Art is a way for her to relax and it’s a way of expression for her.
+        She wants to encourage everyone to come down to the tunnels to see the paintings for themselves because all the
+        murals show something about the people that made it. That’s the magic of art.</p>
+      <p>Isa would like to thank Jessica Xu and Sabrina Hare for pushing her to paint for Borderline!</p>
+
+      <p class="italic">Post by Lisa Peng</p>
+      <hr>
+    </div>
+
+
+    <div class="article">
+      <h5>Freedom Doves <br><span class="date">2018-12-04</span></h5>
+      <br>
+      <div class="images">
+        <img width="40%" alt="Freedom Doves" src="./images/fa2018/FreedomDoves.jpg">
+      </div>
+      <p class="italic">Mural by Elaine Xiao ‘22</p>
+      <p>Elaine has been doing art since she was 5 years old. You can really tell she has a passion for it by the way
+        she talks about it. Elaine enjoys art because when she’s just painting, nothing else matters. It’s just her, and
+        the painting. She likes to work for long periods of time, where she forgets the rest of the world and gets
+        absorbed in her work. Art is Elaine’s outlet for stress relief, so it’s an integral part of her routine. She
+        thinks art is important because it has the power to make people feel things. You can make people feel better,
+        and feel a wide range of emotions in general.</p>
+      <p>For this mural, Elaine wanted to paint doves and study them in an attempt to understand her irrational fear of
+        birds. She loves what birds symbolize afterall- freedom and weightlessness.</p>
+
+      <p class="italic">Post by Lisa Peng</p>
+      <hr>
+    </div>
+
+    <div class="article">
+      <h5>"That Way!" <br><span class="date">2018-12-04</span></h5>
+      <br>
+      <div class="images">
+        <img width="42%" alt="Ester" src="./images/blog/artist/thatway1.jpg">
+        <img width="50%" alt="That Way!" src="./images/blog/artist/thatway2.jpg">
+      </div>
+      <p class="italic">Mural by Ester Shmulyian ‘19</p>
+      <p>Having grown up around NYC, Ester developed a deep appreciation of mural art and public art. She likes walking
+        around the city to mural hunt and see how the landscape is changing every day. Open up the Artivive App on your
+        mobile and point the camera at Ester's picture below to hear her speak about why she finds art important!</p>
+      <p>She has also been very involved in sharing her love of public art through CITYarts, a program whose mission is
+        to "engage youth with professional artists in the creation of public art, including murals and mosaic. Through
+        this creative process, CITYarts empowers, educates, and connects youth and children locally and around the world
+        to become active participants in realizing their potential and transforming communities."</p>
+      <p>Now she’s leaving her mark on the walls of MIT. The idea for her mural, “That Way,” was originally inspired by
+        a recent trip to France, where she kept getting lost and kept asking strangers for directions. Ester thought
+        that since people seem to have a similar experience in the tunnels, this piece would be perfect here! She also
+        liked incorporating the big red button in her mural. Who knows what it does?</p>
+      <p>Fun Fact: As Ester was painting one day, Amelia, an MIT aeroastro student, happened to walk by and ended up
+        painting one of the hands!</p>
+      <p class="italic">Post by Lisa Peng</p>
+      <hr>
+    </div>
+
+    <div class="article">
+      <h5>"Komodo Dragon" <br><span class="date">2018-12-04</span></h5>
+      <br>
+      <div class="images">
+        <img width="40%" alt="Valentino" src="./images/blog/artist/komodo1.jpg">
+        <img width="51%" alt="Komodo Dragon" src="./images/blog/artist/komodo2.jpg">
+      </div>
+      <p class="italic">Mural by Valentino Sudaryo '19</p>
+      <p>Last summer, Valentino visited Komodo National Park in his home country, Indonesia, and was intrigued when
+        looking at Komodo Dragons (the largest living lizards in the world by the way!).
+        Valentino was immediately inspired to make art about these giant reptiles and started sketching out ideas the
+        month before Borderline applications were sent out. Valentino has been at MIT since the project's beginning, and
+        wanted to get involved before he graduated.</p>
+      <p>Valentino didn't want to make the mural realistic and instead chose to use a Batik style. Batik is an old
+        Indonesian fabric dyeing technique that's more commonly referred to nowadays as patterns like those that appear
+        in "Komodo Dragon" and Valentino's own shirt (pictured below). He also incorporated Indonesia's national motto,
+        Bhinneka Tunggal Ika (Unity in Diversity), into the mural. The result is a piece that's rich with many aspects
+        of Indonesian culture and art.</p>
+      <p>Valentino has had no formal background in art, and has just recently picked it up through youtube tutorials.
+        We're really excited to see his work in the tunnels now!</p>
+      <p>Valentino would like to thank his helper Luz Gomez for helping him work with the limited space between the
+        railings and with painting!</p>
+      <p class="italic">Post by Lisa Peng</p>
+      <hr>
+    </div>
+
+    <div class="article">
+      <h5>Blending In<br><span class="date">2018-04-23</span></h5>
+      <br>
+      <div class="images">
+        <img width="45%" alt="Blending In" src="./images/fa2018/BlendingIn.jpg">
+      </div>
+      <p class="italic">Mural by Sarah Dohadwala '21</p>
+      <p>Once, Sarah saw a real chameleon and decided to paint one. Her mural is the result of this spontaneous
+        fascination with this creature, upon seeing it for the first time in real life.
+        She wanted to paint this mural as a way to continue practicing art, as she has done a lot of traditional art in
+        high school. She plans to take art-related classes at MIT.</p>
+      <p>She had two sources of inspiration for this piece. The first is the already completed murals in the Tunnels
+        &lt; 3. The second is her art-spiration Agnes Cecile, who Sarah says “can make a bunch of splatters that she has
+        no control over into art.”<br>
+        Fun Fact: Sarah wears a ridiculously large career fair t-shirt as an apron!</p>
+      <a name="2017">
+        <p class="italic">Post by Danny Gelman</p>
+      </a>
+      <hr>
+    </div>
+
+    <!-- 2017 -->
+    <br>
+    <a name="2017">
+      <h3>2017 Spotlight</h3>
+    </a>
+    <hr>
+    <div class="article">
+      <h5>"Find Your Adventure" <br><span class="date">2018-08-25</span></h5>
+      <br>
+      <div class="images">
+        <img width="40%" alt="Find Your Adventure" src="./images/fa2017/FindYourAdventure.jpg">
+      </div>
+      <p class="italic">Mural by Maya Levy '21</p>
+      <p>Coming from thirty generations of Italian artists, Maya Levy is no stranger to art. Maya relates that when she
+        was only three years old, her grandmother sat her down in front of a bowl of fruit and said, "draw."
+        For Find your Adventure in the Borderline tunnel, Maya wanted to leave a mark on MIT and bring a piece of her
+        hometown, Aventura. A small section of Miami, Aventura's symbol is a sailboat, as Maya depicted in her mural.
+      </p>
+      <p>From making a timelapse video of painting a mural for her college applications, to painting sets for campus
+        group performances such as the Hamlet production, Maya has quite a bit of mural painting experience under her
+        belt. She particularly enjoys public art, as more people can see it and it makes a greater impact.</p>
+      <p>Maya finds inspiration in Made You Look, a YouTube makeup artist that does body art. She believes art is
+        incredibly important at MIT as it provides a relief from stress. She hopes that Borderline will have the
+        opportunity to expand all over campus!</p>
+      <p class="italic">Post by Jessica Xu</p>
+      <hr>
+    </div>
+
+    <div class="article">
+      <h5>"Free Hugs" <br><span class="date">2018-08-25</span></h5>
+      <br>
+      <div class="images">
+        <img width="40%" alt="Free Hugs" src="./images/fa2017/FreeHugs.jpg">
+      </div>
+      <p class="italic">Mural by Fiona Zhang '19</p>
+      <p>On cold, windy Boston days, MIT tunnels often provide respite for students wishing to travel between buildings
+        without going outdoors. For passersby with attentive eyes, six adorable cacti wait to be discovered throughout
+        the Borderline tunnel, offering free hugs and encouragement.</p>
+      <p>Painted by Arizona native Fiona Zhang, the cacti vary in form, expression, and style. Many of the cacti are
+        incorporated creatively into the styles of other Borderline murals, such as Marwa’s Bouken and Helen’s Stop and
+        Smell the Roses. For these cacti, Fiona was inspired by her home state, Arizona. “Nothing warms me up more than
+        a piece of home giving me some encouragement,” she said.</p>
+      <p>Art is an outlet and a welcome break from “thinking about math all day” for Fiona. “Nothing is better than
+        watching my work come to life. The ability to create something beautiful out of raw materials is fascinating.”
+        She describes her creative process as “done on the spot.” “99% of the time I have no idea what I am going to
+        create before I do it,” she said.</p>
+      <p class="italic">Post by Jessica Xu</p>
+      <hr>
+    </div>
+
+    <div class="article">
+      <h5>Split<br><span class="date">2018-05-10</span></h5>
+      <br>
+      <div class="images">
+        <img width="42%" alt="Split" src="./images/blog/artist/split.jpg">
+        <img width="37%" alt="Split Animation" src="./images/blog/artist/split.gif">
+      </div>
+      <p class="italic">Mural and Animation by Elissa He '21</p>
+      <p>Elissa has been drawing since she could walk, and drawing is still an integral part of her life today. She
+        believes art is a visual way to tell stories that can make people feel things. For Elissa, art is therefore the
+        most basic form of connection.</p>
+      <p>Elissa also really likes the intersection of science and art, and likes to negotiate the relationship between
+        the two. Art can sometimes be organic, but often times can be technical, rational, and analytical. Elissa is
+        also interested in “cross-sections, especially with unexpected insides,” which is what drew her to designing,
+        painting, and animating “Split.”</p>
+      <p>She is inspired by the work of Rebecca Mock, Jasmin Lai, Noelle Stevenson, and editorial illustrators.</p>
+      <p class="italic">Post by Allan Gelman</p>
+      <hr>
+    </div>
+
+    <div class="article">
+      <h5>Lilies<br><span class="date">2018-05-07</span></h5>
+      <br>
+      <div class="images">
+        <img width="30%" alt="Lilies" src="./images/fa2017/Lilies.jpg">
+      </div>
+      <p class="italic">Mural by Rachel Wu '19</p>
+      <p>Rachel sat down and thought to herself, ”what is the most cliche art thing I can think of?” And she came. up
+        with water and lily pads. But not the classic Monet lilies. Her piece depicts a silhouette swimming underwater
+        towards giant floating lily pads.</p>
+      <p>Instead of searching and forcing to come up with ideas, she waits for the ideas to come to her. She strives to
+        make work that is beautiful, has colors that work wonderfully together, and surreal. Her favorite artists are
+        yuumei and aquasixio because of how well they create the type of work she wants to make.</p>
+      <p>Rachel very wholesomely said, “The world needs more beautiful things - art is pure. It makes the world love.”
+      </p>
+      <p>Rachel would like to thank Julia Fiksinski '20 for helping to paint Lilies!</p>
+      <p class="italic">Post by Danny Gelman</p>
+      <hr>
+    </div>
+
+    <div class="article">
+      <h5>Peacock<br><span class="date">2018-05-03</span></h5>
+      <br>
+      <div class="images">
+        <img width="42%" alt="Split" src="./images/fa2017/Peacock.jpg">
+      </div>
+      <p class="italic">Mural and Animation by Khanh Nguyen '19</p>
+      <p>Khanh has not had too much formal art experience prior to coming to MIT. The semester she worked on this mural,
+        she was taking 21M.601 Drawing for Designers. She also painted a Hubweek mural.</p>
+      <p>Khanh believes that everyone has a creative side, and you just need to develop it by making creative things,
+        like art. Art is a very important outlet, especially at such a technical place like MIT, so it’s really
+        important not to forsake it.
+        Khanh’s art making process is very bold and daring, as she doesn’t sketch anything out beforehand. Instead she
+        just goes for it! She doesn’t like to be constricted by lines and wants the process to guide her final product.
+      </p>
+      <p class="italic">Post by Danny Gelman</p>
+      <hr>
+    </div>
+
+    <div class="article">
+      <h5>The Little Prince<br><span class="date">2018-05-03</span></h5>
+      <br>
+      <div class="images">
+        <img width="50%" alt="The Little Prince" src="./images/fa2017/TheLittlePrince.jpg">
+      </div><br>
+      <div class="images">
+        <img width="22%" alt="Concept Sketch" src="./images/blog/artist/fox1.jpg">
+        <img width="26%" alt="The Little Prince Animation" src="./images/blog/artist/fox.gif">
+        <img width="34%" alt="Jessica" src="./images/blog/artist/fox2.jpg">
+      </div>
+      <p class="italic">Mural and Animation by Jessica Xu '21</p>
+      <p class="italic">“L'essentiel est invisible pour les yeux.” -Fox from The Little Prince</p>
+      <p>Jessica really likes The Little Prince, a popular French children's book by Antoine de Saint-Exupéry. In the
+        book, Fox imparts some wisdom to the Little Prince: “Here is my secret...It is only with the heart that one can
+        see rightly; what is essential is invisible to the eye.” The words in her mural, beautifully written, is the
+        last part of the quote written in French.</p>
+      <p>Jessica strives to make art that gets people thinking about an idea or a concept in a new and interesting way.
+        In this case, that’s this beautiful quote that points to the importance of empathy and the heart. Jessica also
+        made an animation for her mural which highlights the story elements from The Little Prince, including a blooming
+        rose, glowing words, and orbiting asteroid.</p>
+      <p>Whenever Jessica finds something interesting, she’ll bookmark it for inspiration. One of her favorite artists
+        is David Caspar Friedrich, whose atmospheric artwork inspires her.</p>
+      <p>She also really loves how art can act as a bridge. In particular, she is very interested in the connection
+        between humans, art, and technology, which she explored in AP Studio Art 2D Design and now through getting
+        involved in Borderline.</p>
+      <p>Also, kudos to Jessica for painting her mural while being on crutches.</p>
+      <p class="italic">Post by Danny Gelman</p>
+      <hr>
+    </div>
+
+    <div class="article">
+      <h5>Musicians 3<br><span class="date">2018-04-25</span></h5>
+      <br>
+      <div class="images">
+        <img width="42%" alt="Work in Progress" src="./images/blog/artist/musicians1.jpg">
+        <img width="18%" alt="High School Inspiration" src="./images/blog/artist/musicians2.jpg">
+        <img width="34%" alt="Patricia" src="./images/blog/artist/musicians3.jpg">
+      </div>
+      <p class="italic">Mural by Patricia Gao '21</p>
+      <p>As many artists discover their passion, Patricia discovered her love for art by doodling over exams and
+        homework. Patricia really likes that art can have many different meanings. People can get inspired or moved by a
+        piece of work in a completely different way than Patricia intended and that’s really cool.</p>
+      <p>Patricia’s inspiration for her work is music, Van Gogh, and Picasso. Her piece draws from songs she listens to.
+        She makes her work very visually busy, just as Van Gogh, so no one gets bored while looking at it. And she
+        strives to make people contemplate and maybe even be confused over her work, just as people usually get over
+        Picasso’s abstract work. Her piece, "Musicians 3," is definitely all of those things, but also uniquely
+        something entirely new and different.</p>
+      <p>Fun fact: Patricia also took part in painting a similar mural at her high school in Provo, Utah (pictured
+        below), so now it’s connected to MIT!</p>
+      <p class="italic">Post by Danny Gelman</p>
+      <hr>
+    </div>
+
+    <!-- <div class="article">
+      <h5>Peacock<br><span class="date">2018-05-03</span></h5>
+      <br>
+      <div class="images">
+        <img width="42%" alt="Split" src="./images/fa2017/Peacock.jpg">
+      </div>
+      <p class="italic">Mural and Animation by Khanh Nguyen '19</p>
+
+      <p class="italic">Post by Danny Gelman</p>
+      <hr>
+    </div> -->
+
+    <br>
+  </div>
+
+
+  <script>
+    mybutton = document.getElementById("top-btn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 
 </body>
 

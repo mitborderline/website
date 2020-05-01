@@ -87,3 +87,24 @@ body p {
       display: none !important;
     }
   }
+
+  #top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #ff1e00;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  #top-btn:hover {
+    cursor: pointer;
+    background-color: #ff7360;
+  }
