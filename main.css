@@ -5,7 +5,7 @@ body {
     overflow-x: hidden;
   }
 
-  .navbar-brand{
+.navbar-brand{
     float: left;
   }
 
@@ -46,4 +46,47 @@ body p {
 
 .intro {
     font-size: large;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:black;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 3px;
+    color: white !important;
+  }
+
+#dc a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3px;
+    color: rgba(255,255,255,0.5) !important;
+  }
+
+#dc a:hover {
+    background-color: #262626;
+    color: #34d4ae !important;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .dropdown:hover .dropdown-content {
+      display: none !important;
+    }
+  }
+
+  h3 {
+    color: white;
   }

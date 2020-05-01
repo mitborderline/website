@@ -59,6 +59,10 @@
       width: 90%;
     }
 
+    h6 {
+      color: #ff7360;
+    }
+
     @media only screen and (max-width: 600px) {
       .project-titles {
         font-size: small;
@@ -98,9 +102,16 @@
         <li class="nav-item"><a class="nav-link" href="about.html">
             About
           </a></li>
-        <li class="nav-item active"><a class="nav-link" href="#">
+        <li class="nav-item active dropdown"><a class="nav-link" href="#">
             Featured
-          </a></li>
+          </a>
+          <div class="dropdown-content" id="dc">
+            <a href="projects.html">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="mural_blog.html">Artists</a>
+            <a href="#press">Press</a>
+          </div>
+        </li>
         <li class="nav-item"><a class="nav-link" href="murals.html">
             Murals
           </a></li>
@@ -114,14 +125,19 @@
   <div class="container-fluid team-page">
     <br>
     <div>
-      <p>The Borderline began as <a href="about.html" target="_about">a project to cover the 200 foot long wall in the
-          tunnels </a>under the campus of MIT.
-        Since then, Borderline has launched other art initiatives while continuing to expand the tunnel murals.
-        Below are some featured projects, blog posts, and artist's statements.
+      <p>The Borderline began as <a href="about.html" target="_about">a project to decorate the
+          tunnels </a>under MIT. Since then, Borderline has launched other art initiatives while continuing to expand
+        the tunnel murals.
+        <h6>Below are featured projects, blog posts, and artist's statements. Some articles are still under
+          construction, but feel free to poke around!</h6>
       </p>
+      <hr>
+      <a name="projects">
+        <h3>Projects</h3>
+      </a>
       <div class="row">
         <div class="col-3 project">
-          <a href="featured.html" target="feat">
+          <a href="projects.html" target="proj">
             <img alt="Tunnel 66" src="./images/projects/tunnel66/thumbnail.png" />
           </a>
           <div class="project-titles">
@@ -129,7 +145,7 @@
           </div>
         </div>
         <div class="col-3 project">
-          <a href="featured.html" target="feat">
+          <a href="projects.html" target="proj">
             <img alt="Banana Lounge" src="./images/projects/banana/thumbnail.jpg">
           </a>
           <div class="project-titles">
@@ -137,7 +153,7 @@
           </div>
         </div>
         <div class="col-3 project">
-          <a href="featured.html" target="feat">
+          <a href="projects.html" target="proj">
             <img alt="Stata Mural" src="./images/projects/computing/thumbnail.jpg" />
           </a>
           <div class="project-titles">
@@ -145,7 +161,7 @@
           </div>
         </div>
         <div class="col-3 project">
-          <a href="featured.html" target="feat">
+          <a href="projects.html" target="proj">
             <img alt="Prison Mural Project" src="./images/projects/prison/mural.jpg" />
           </a>
           <div class="project-titles">
@@ -156,7 +172,7 @@
 
       <div class="row">
         <div class="col-3 project">
-          <a href="featured.html" target="feat">
+          <a href="projects.html" target="proj">
             <img alt="One World @ MIT" src="./images/projects/oneworld/thumbnail.jpg" />
           </a>
           <div class="project-titles">
@@ -164,7 +180,7 @@
           </div>
         </div>
         <div class="col-3 project">
-          <a href="featured.html" target="feat">
+          <a href="projects.html" target="proj">
             <img alt="Borderline x Brazil" src="./images/projects/brazil/thumbnail.jpg">
           </a>
           <div class="project-titles">
@@ -172,7 +188,7 @@
           </div>
         </div>
         <div class="col-3 project">
-          <a href="featured.html" target="feat">
+          <a href="projects.html" target="proj">
             <img alt="Borderline at MFA" src="./images/projects/mfa/thumbnail.jpg" />
           </a>
           <div class="project-titles">
@@ -180,7 +196,7 @@
           </div>
         </div>
         <div class="col-3 project">
-          <a href="featured.html" target="feat">
+          <a href="projects.html" target="proj">
             <img alt="AR Campus Landmarks" src="./images/projects/campus/pset.jpg" />
           </a>
           <div class="project-titles">
@@ -190,11 +206,13 @@
       </div>
 
       <hr>
-      <h3> Blog</h3>
+      <a name="blog">
+        <h3>Blog</h3>
+      </a>
 
       <div class="row">
         <div class="col-3 project">
-          <a href="blogs.html" target="blogs">
+          <a href="blog.html" target="blog">
             <img alt="Will You Marry Me?" src="./images/blog/proposal.jpg">
           </a>
           <div class="project-titles">
@@ -202,7 +220,7 @@
           </div>
         </div>
         <div class="col-3 project">
-          <a href="blogs.html" target="blogs">
+          <a href="blog.html" target="blog">
             <img alt="CPW" src="./images/blog/cpw1.jpg">
           </a>
           <div class="project-titles">
@@ -210,7 +228,7 @@
           </div>
         </div>
         <div class="col-3 project">
-          <a href="blogs.html" target="blogs">
+          <a href="blog.html" target="blog">
             <img alt="Borderline's Birthday" src="./images/blog/birthday1.jpg" />
           </a>
           <div class="project-titles">
@@ -218,7 +236,7 @@
           </div>
         </div>
         <div class="col-3 project">
-          <a href="blogs.html" target="blogs">
+          <a href="blog.html" target="blog">
             <img alt="Grand Opening" src="./images/blog/opening1.jpg" />
           </a>
           <div class="project-titles">
@@ -228,11 +246,13 @@
       </div>
 
       <hr>
-      <h3>Artist Spotlight</h3>
+      <a name="artist">
+        <h3>Artist Spotlight</h3>
+      </a>
 
       <div class="row">
         <div class="col-3 project">
-          <a href="muralBlogs19.html" target="2019">
+          <a href="mural_blog.html" target="mb">
             <img alt="2019 Artist Spotlight" src="./images/blog/artist/limitless2.jpg">
           </a>
           <div class="project-titles">
@@ -240,7 +260,7 @@
           </div>
         </div>
         <div class="col-3 project">
-          <a href="muralBlogs18.html" target="2018">
+          <a href="mural_blog.html" target="mb">
             <img alt="2018 Artist Spotlight" src="./images/blog/artist/thatway1.jpg">
           </a>
           <div class="project-titles">
@@ -248,7 +268,7 @@
           </div>
         </div>
         <div class="col-3 project">
-          <a href="muralBlogs17.html" target="2017">
+          <a href="mural_blog.html" target="mb">
             <img alt="2017 Artist Spotlight" src="./images/blog/artist/meninism1.jpg" />
           </a>
           <div class="project-titles">
@@ -258,9 +278,11 @@
       </div>
 
       <hr>
-      <h3>Press</h3>
-      <p>Borderline's in the news! Click to read more. For all inquiries, please contact <a href="mailto:borderline-team@mit.edu?Subject=Press"
-        target="mail">borderline-team@mit.edu</a>. <br>
+      <a name="press">
+        <h3>Press</h3>
+      </a>
+      <p>Borderline's in the news! Click to read more. For all inquiries, please contact <a
+          href="mailto:borderline-team@mit.edu?Subject=Press" target="mail">borderline-team@mit.edu</a>. <br>
         <br> <a
           href="https://www3.bostonglobe.com/metro/2017/06/27/mit-students-create-mural-that-moves-when-viewed-through-smartphone/u1idI24UPjFoplIaPFroXP/story.html"
           target="bg">The Boston Globe</a>
