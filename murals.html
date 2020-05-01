@@ -181,8 +181,8 @@
   <div class="container-fluid">
     <div class="intro">
       <p>Click once or tap twice (mobile) to view the full size image.
-        Murals with the "AR" icon have augmented reality animations, viewable through
-        <a href="https://apps.apple.com/us/app/artivive/id1188737494" target="vive">Artivive</a>.
+        To view animations of <a href="#" onclick="showARMurals()">AR-enabled murals</a>, download <a
+          href="https://apps.apple.com/us/app/artivive/id1188737494" target="vive">Artivive</a>.
     </div>
     <hr>
     <div class="accordion" id="accordion">
@@ -358,9 +358,9 @@
 
             <div class="row">
               <div class="col-4 mural">
-                <img alt="Bean Love" src="./images/sp2019/BL7.jpg">
+                <img alt="Blob" src="./images/sp2019/BL7.jpg">
                 <div class="details">
-                  <p class="title">Bean Love</p>
+                  <p class="title">Blob</p>
                   <p>Muralist: Megan Fu</p>
                 </div>
               </div>
@@ -407,7 +407,6 @@
                 <img alt="Incandescent" src="./images/fa2018/Incandescent.png">
                 <div class="details">
                   <p class="title">Incandescent</p>
-                  <p>Fall 2018</p>
                   <p>Muralist and Animator: <br>Gloria Lin</p>
                 </div>
               </div>
@@ -606,6 +605,34 @@
         </div>
         <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
           <div class="card-body">
+            
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Girl" src="./images/sp2017/Girl.jpg" />
+                <div class="details">
+                  <p class="title">Girl</p>
+                  <p>Muralist: Ming Wang
+                    <br> Animator: Clare Liu
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Forged by Humans" src="./images/sp2017/ForgedByHumans.jpg">
+                <div class="details">
+                  <p class="title">Forged by Humans</p>
+                  <p>Muralist and Animator:<br> Elisa Young</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Flown the Coop" src="./images/sp2017/FlownTheCoop.jpg" />
+                <div class="details">
+                  <p class="title">Flown the Coop</p>
+                  <p>Muralist: Jierui Fang
+                    <br> Animator: Ivy Li</p>
+                </div>
+              </div>
+            </div>
+
             <div class="row">
               <div class="col-4 mural">
                 <img alt="Abyss or Blis" src="./images/sp2017/AbyssOrBliss.jpg">
@@ -629,33 +656,6 @@
                 <div class="details">
                   <p class="title">Cat's Cradle</p>
                   <p>Muralist and Animator:<br> Allan Gelman</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-4 mural">
-                <img alt="Girl" src="./images/sp2017/Girl.jpg" />
-                <div class="details">
-                  <p class="title">Girl</p>
-                  <p>Muralist: Ming Wang
-                    <br> Animator: Clare Liu
-                  </p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Forged By Human" src="./images/sp2017/ForgedByHumans.jpg">
-                <div class="details">
-                  <p class="title">Forged By Humans</p>
-                  <p>Muralist and Animator:<br> Elisa Young</p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Flown the Coop" src="./images/sp2017/FlownTheCoop.jpg" />
-                <div class="details">
-                  <p class="title">Flown the Coop</p>
-                  <p>Muralist: Jierui Fang
-                    <br> Animator: Ivy Li</p>
                 </div>
               </div>
             </div>
@@ -704,7 +704,7 @@
                 <div class="details">
                   <p class="title">Entanglement</p>
                   <p>Muralist: Emma Batson
-                    <br> Animators: Misha Jamy, Charleen Wang
+                    <br> Animators:<br> Misha Jamy, Charleen Wang
                   </p>
                 </div>
               </div>
@@ -815,17 +815,183 @@
                 <img alt="Dandelion" src="./images/sp2017/DandelionU.png">
                 <div class="details">
                   <p class="title">Untitled</p>
-                  <p>Muralist:<br> Julia Rue</p>
+                  <p>Muralist: Julia Rue</p>
                 </div>
               </div>
               <div class="col-4 mural">
                 <img alt="Untitled" src="./images/sp2017/Untitled.jpg" />
                 <div class="details">
                   <p class="title">Untitled</p>
-                  <p>Muralist:<br> Ivy Li</p>
+                  <p>Muralist: Ivy Li</p>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingAR">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed season-title" type="button" data-toggle="collapse"
+              data-target="#AR-Enabled" aria-expanded="false" aria-controls="AR-Enabled">
+              <i class="fas fa-plus float-left "></i>
+
+              AR-Enabled Murals
+            </button>
+          </h2>
+        </div>
+        <div id="AR-Enabled" class="collapse" aria-labelledby="headingAR">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Abyss or Blis" src="./images/sp2017/AbyssOrBliss.jpg">
+                <div class="details">
+                  <p class="title">Abyss or Bliss</p>
+                  <p>Muralist: Danny Gelman
+                    <br> Animators:<br> Danny Gelman, Lilia Poteat
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Galaxy Note 7" src="./images/sp2017/GalaxyNote7.jpg">
+                <div class="details">
+                  <p class="title">Galaxy Note 7</p>
+                  <p>Muralist: Elise McCormack
+                    <br> Animator: Sam Seaman</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Cat's Cradle" src="./images/sp2017/CatsCradle.jpg">
+                <div class="details">
+                  <p class="title">Cat's Cradle</p>
+                  <p>Muralist and Animator:<br> Allan Gelman</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Split" src="./images/fa2017/Split.jpg">
+                <div class="details">
+                  <p class="title">Split</p>
+                  <p>Muralist and Animator:<br> Elissa He</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="The Little Prince" src="./images/fa2017/TheLittlePrince.jpg">
+                <div class="details">
+                  <p class="title">The Little Prince</p>
+                  <p>Muralist and Animator:<br> Jessica Xu</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Incandescent" src="./images/fa2018/Incandescent.png">
+                <div class="details">
+                  <p class="title">Incandescent</p>
+                  <p>Muralist and Animator: <br>Gloria Lin</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Girl" src="./images/sp2017/Girl.jpg" />
+                <div class="details">
+                  <p class="title">Girl</p>
+                  <p>Muralist: Ming Wang
+                    <br> Animator: Clare Liu
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Forged by Humans" src="./images/sp2017/ForgedByHumans.jpg">
+                <div class="details">
+                  <p class="title">Forged by Humans</p>
+                  <p>Muralist and Animator:<br> Elisa Young</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Flown the Coop" src="./images/sp2017/FlownTheCoop.jpg" />
+                <div class="details">
+                  <p class="title">Flown the Coop</p>
+                  <p>Muralist: Jierui Fang
+                    <br> Animator: Ivy Li</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Stay Salty" src="./images/sp2017/StaySalty.jpg">
+                <div class="details">
+                  <p class="title">Stay Salty</p>
+                  <p>Muralist: Emma DeSoto
+                    <br> Animator: Lucy Zhang
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Iron Man" src="./images/sp2017/IronManU.jpg" />
+                <div class="details">
+                  <p class="title">Untitled</p>
+                  <p>Muralist: Meghana Bhat</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Faces" src="./images/sp2017/FacesU.jpg" />
+                <div class="details">
+                  <p class="title">Untitled</p>
+                  <p>Muralist: Lisa Coleman
+                    <br>Animator: Misha Jamy
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Statue of Leafberty" src="./images/sp2017/StatueOfLeafberty.jpg" />
+                <div class="details">
+                  <p class="title">Statue of Leafberty</p>
+                  <p>Muralist: Meghana Bhat</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Flower's Answer" src="./images/sp2017/FlowersAnswer.jpg" />
+                <div class="details">
+                  <p class="title">Flower's Answer</p>
+                  <p>Muralist and Animator:<br> Iris Fung</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Stop and Smell the Roses" src="./images/sp2017/Roses.jpg" />
+                <div class="details">
+                  <p class="title">Stop and Smell the Roses</p>
+                  <p>Muralist and Animator:<br> Helen He</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Poppies" src="./images/fa2017/Poppies.jpg">
+                <div class="details">
+                  <p class="title">Disillusionment of Poppies in the Wind</p>
+                  <p>Muralist and Animator:<br> Jacqueline Chen</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Entanglement" src="./images/sp2017/Entanglement.jpg" />
+                <div class="details">
+                  <p class="title">Entanglement</p>
+                  <p>Muralist: Emma Batson
+                    <br> Animators:<br> Misha Jamy, Charleen Wang
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -882,6 +1048,15 @@
       // popup modal dialog
       $('#imageModal').modal('show');
     });
+
+    //show AR Murals, hide all others
+    function showARMurals() {
+      $('.collapse.show:not(#AR-Enabled)').collapse('hide');
+      $('#AR-Enabled').collapse('show');
+      $('.season-title').find('i').removeClass('fa-minus');
+      $('.season-title').find('i').addClass('fa-plus');
+      $('#headingAR').find('i').toggleClass('fas fa-plus fas fa-minus');
+    }
 
     // keep images square
     function resizeMurals() {
