@@ -82,13 +82,13 @@ body p {
     display: block;
   }
 
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .dropdown:hover .dropdown-content {
       display: none !important;
     }
   }
 
-  #top-btn {
+#top-btn {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -102,9 +102,9 @@ body p {
     padding: 10px;
     border-radius: 10px;
     font-size: 14px;
-  }
+}
 
-  #top-btn:hover {
+#top-btn:hover {
     cursor: pointer;
     background-color: #ff7360;
   }
