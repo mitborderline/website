@@ -3,6 +3,7 @@ body {
     font-size: large;
     background-color: #454543;
     overflow-x: hidden;
+    color: white;
   }
 
 .navbar-brand{
@@ -85,8 +86,4 @@ body p {
     .dropdown:hover .dropdown-content {
       display: none !important;
     }
-  }
-
-  h3 {
-    color: white;
   }
