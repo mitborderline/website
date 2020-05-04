@@ -1,10 +1,11 @@
 <html>
 
 <head>
-  <title>Borderline</title>
+  <title>Blog</title>
   <link rel='icon' href='./images/assets/circleLogo.png' type='image/x-icon'>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -23,14 +24,26 @@
       width: 90%;
     }
 
+    h3 {
+      color: #34d4ae;
+    }
+
     h3,
     h5 {
       text-align: center;
     }
 
+    iframe {
+      margin: auto;
+    }
+
     @media only screen and (max-width: 600px) {
       .logo {
         width: 80%;
+      }
+
+      iframe {
+        height: 25%;
       }
     }
   </style>
@@ -60,9 +73,9 @@
             Featured
           </a>
           <div class="dropdown-content" id="dc">
-            <!-- <a href="projects.html">Projects</a>
+            <a href="projects.html">Projects</a>
             <a href="blog.html">Blog</a>
-            <a href="mural_blog.html">Artists</a> -->
+            <a href="mural_blog.html">Artists</a>
             <a href="featured.html#press">Press</a>
           </div>
         </li>
@@ -77,18 +90,205 @@
   </nav>
 
   <div class="container-fluid blog">
+    <button onclick="topFunction()" id="top-btn" title="Go to top">Go to Top</button>
     <br>
     <h3>Borderline Blog</h3>
-    <p>This page is still under construction. Check back later!</p>
+    <p>Offering a behind-the-scenes look at Borderline happenings. Check out what we've been up to!</p>
+    <br>
+    <hr>
 
-    <!-- <div class="article">
-      <a name="Brazil"><h5>Borderline x Brazil</h5></a>
-    </div> -->
-    
-    
+    <div class="article">
+      <h5>AR Marriage Proposal <br><span class="date">2020-05-03</span></h5>
+      <br>
+      <p>Borderline got the chance to help out with a very special moment. More details coming soon! Mural "Abyss or Bliss" by Danny Gelman.</p>
+      <div class="images">
+        <p><img width="60%" alt="Will You Marry Me" src="./images/blog/turtle-proposal.gif">
+        </p>
+      </div>
+      <br>
+      <a name="CPW">
+        <hr></a>
+      <br> <br>
+    </div>
+
+    <div class="article">
+      <h5>Borderline @ Kendall Square Discovery Market <br><span class="date">2018-08-27</span></h5>
+      <br>
+      <p>Borderline was honored to have the Office of the Arts at MIT present our work at the weekly Kendall Square
+        Discovery Market! The Kendall Discovery Market is a new blend of MIT innovators, local artists & artisan food
+        producers and features cool and impactful things that are happening at MIT, in a hands-on and interactive way,
+        with the goal to strengthen the public's understanding of MIT's vibrant presence, work, and future.</p>
+      <div class="images">
+        <p><img width="40%" alt="Kendall Square" src="./images/blog/kendall1.jpg">
+          <img width="40%" alt="Kendall Square" src="./images/blog/kendall2.jpg">
+        </p>
+      </div>
+      <br>
+      <a name="CPW">
+        <hr></a>
+      <br> <br>
+    </div>
+
+    <div class="article">
+      <h5>Campus Preview Weekend <br><span class="date">2018-04-14</span></h5>
+      <br>
+      <div class="images">
+        <p><img width="50%" alt="CPW Midway" src="./images/blog/cpw1.jpg"></p>
+      </div>
+      <p>Borderline had a great time welcoming the Class of 2022 at the 2018 Campus Preview Weekend. At our Activities
+        Midway booth, we demonstrated the augmented reality magic with some printed mural images, and we met some
+        artistic prefrosh at our event in the tunnels, "Communal Mural Memes for Artistically Inclined Teens."</p>
+      <div class="images">
+        <p><img width="40%" alt="Jierui at Midway" src="./images/blog/cpw2.jpg">
+          <img width="40%" alt="Prefrosh at Midway" src="./images/blog/cpw3.jpg"></p>
+      </div>
+      <div class="images">
+        <p><img width="40%" alt="Prefrosh Painting" src="./images/blog/cpw4.jpg">
+          <img width="40%" alt="Painting with Prefrosh" src="./images/blog/cpw6.jpg"></p>
+      </div>
+      <div class="images">
+        <p><img width="81%" alt="Final Mural!" src="./images/blog/cpw5.jpg">
+      </div>
+      <br>
+      <hr>
+      <br> <br>
+    </div>
+
+    <div class="article">
+      <h5>Finalist in HUB Madness 2018 <br><span class="date">2018-04-02</span></h5>
+      <br>
+      <p>Borderline advanced through three rounds of match-ups to Finals for HUB Madness 2018, a competition for
+        creative projects at the intersection of art, science, and tech in Boston. Borderline thanks all our supporters
+        who helped to cast a total of over 5500 votes for Borderline!</p>
+      <div class="images">
+        <p><img width="40%" alt="Borderline at Abide" src="./images/blog/hub.png">
+        </p>
+      </div>
+      <br>
+      <a name="birthday">
+        <hr></a>
+      <br> <br>
+    </div>
+
+    <div class="article">
+      <h5>Borderline's Birthday <br><span class="date">2018-03-17</span></h5>
+      <br>
+      <div class="images">
+        <p><img width="67%" alt="Graffiti Alley" src="./images/blog/birthday1.jpg"></p>
+      </div>
+      <p>Today we celebrated the one year anniversary of the Borderline project! It has been an exciting year of growth
+        and new experiences. In true Borderline style, we commemorated the formation of our community with boba,
+        Borderline logo cake (thanks Julia!), and graffiti art. Check out the art in person at the <a
+          href="https://www.atlasobscura.com/places/modica-way" target="graffiti">graffiti alley</a>! </p>
+      <div class="images">
+        <p><img width="40%" alt="Borderline at Abide" src="./images/blog/birthday3.jpg">
+          <img width="40%" alt="Graffiti Alley" src="./images/blog/birthday2.jpg"></p>
+      </div>
+      <div class="images">
+        <p><img width="22%" alt="Borderline Cake" src="./images/blog/birthday4.jpg">
+          <img width="60%" alt="Borderline Team" src="./images/blog/birthday5.jpg"></p>
+      </div>
+      <br>
+      <a name="Grand-Opening">
+        <hr></a>
+      <br> <br>
+    </div>
+
+    <div class="article">
+      <h5>Grand Opening Day <br><span class="date">2017-05-21</span></h5>
+      <br>
+      <div class="images">
+        <p><img width="70%" alt="Grand Opening Pamphlet" src="./images/blog/opening4.jpg">
+      </div>
+      <p>A huge thank you to everyone that came out for the Grand Opening! It was a fantastic success, with lots of art
+        and magic!</p>
+      <div class="images">
+        <p><img width="40%" alt="Grand Opening Pamphlet" src="./images/blog/opening2.jpg">
+          <img width="40%" alt="Grand Opening Pamphlet" src="./images/blog/opening3.jpg"></p>
+      </div>
+      <p>Some event pictures:
+      </p>
+      <div class="images">
+        <p><img width="40%" alt="Grand Opening Pamphlet" src="./images/blog/opening5.jpg">
+          <img width="40%" alt="Grand Opening Pamphlet" src="./images/blog/opening6.jpg"></p>
+      </div>
+      <div class="images">
+        <p><img width="40%" alt="Grand Opening Pamphlet" src="./images/blog/opening7.jpg">
+          <img width="40%" alt="Grand Opening Pamphlet" src="./images/blog/opening8.jpg"></p>
+      </div>
+      <div class="images">
+        <p><img width="60%" alt="Grand Opening Pamphlet" src="./images/blog/opening9.jpg"></p>
+      </div>
+      <br>
+      <hr>
+    </div>
+
+    <div class="article">
+      <h5>Augmented Reality Comes to Life! <br><span class="date">2017-05-21</span></h5>
+      <br>
+      <p class="italic"><b>Note:</b> The post below describes Borderline's original (proprietary) AR app. Since then,
+        Borderline has switched to the app Artivive for AR, and we are currently developing a new proprietary AR app.
+      </p>
+      <p>Thanks to the incredible efforts of Avery Lamp '20 and Jessie Wang '19, Borderline has both an iOS and Android
+        app!
+      </p>
+      <p>To use the app, go to the tunnels and look for the mural with the matching icon. Select the icon and hold your
+        phone up to the mural so that your you can see most of the mural on your screen through the camera. Enjoy!</p>
+      <p>Some demos:
+      </p>
+      <div class="images">
+        <p><img width="15%" alt="AR demo" src="./images/blog/demo1.gif">
+          <img width="15%" alt="AR demo" src="./images/blog/demo2.gif">
+          <img width="15%" alt="AR demo" src="./images/blog/demo3.gif">
+          <img width="15%" alt="AR demo" src="./images/blog/demo4.gif">
+          <img width="15%" alt="AR demo" src="./images/blog/demo5.gif"></p>
+      </div>
+      <br>
+      <hr>
+    </div>
+
+    <div class="article">
+      <h5>Prep Work <br><span class="date">2017-03-26</span></h5>
+      <br>
+      <p>Coordinating fifty people filled with undirected enthusiasm for your project turns out to be pretty tricky.
+
+        Props to everyone for turning around mural submissions within a week. We’ll be having some fantastic murals
+        painted.
+
+        Lots of murals means a Home Depot run to buy a lot of paint! We also needed some way to hold all our buckets of
+        paint, buckets of paint stirrers, buckets of buckets, etc. <br>Here’s a picture of fearless leader Julia Rue
+        building a
+        3’x3′ box, with generous application of the staple gun. </p>
+      <div class="images">
+        <p><img width="52%" alt="Borderline Presentation" src="./images/blog/prepwork1.jpg">
+          <img width="30%" alt="Julia and Box" src="./images/blog/prepwork2.jpg"></p>
+      </div>
+      <br>
+      <hr>
+    </div>
+
     <br>
   </div>
+  <script>
+    mybutton = document.getElementById("top-btn");
 
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 </body>
 
 </html>

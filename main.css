@@ -108,3 +108,18 @@ body p {
     cursor: pointer;
     background-color: #ff7360;
   }
+  .article {
+    display: inline-block;
+  }
+
+  .date {
+    color: #ff7360;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  .images {
+    text-align: center;
+  }
