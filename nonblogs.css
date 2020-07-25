@@ -11,3 +11,9 @@ body {
     display: inline-block;
     max-width: min(70%, 1000px);
   }
+
+  @media only screen and (max-width: 600px) {
+    .container-fluid {
+        max-width: 90%;
+    }
+  }
