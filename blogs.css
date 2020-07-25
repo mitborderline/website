@@ -9,6 +9,13 @@ p {
     font-size: 16px;
 }
 
+@media only screen and (max-width: 768px) {
+    p {
+        max-width: 100% !important;
+        font-size: large !important;
+    }
+}
+
 .images {
     text-align: center !important;
     margin-bottom: 10px;
