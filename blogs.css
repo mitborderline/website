@@ -21,3 +21,7 @@ p {
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
+nav {
+    text-align: left !important;
+}

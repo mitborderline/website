@@ -56,6 +56,24 @@
       object-fit: cover;
     }
 
+    body {
+      text-align: center;
+    }
+
+    p {
+      font-size: 20px !important;
+      text-align: left;
+    }
+
+    .accordion {
+      text-align: left;
+    }
+
+    .container-fluid {
+      display: inline-block;
+      max-width: max(70%, 1000px);
+    }
+
     @media only screen and (max-width: 600px) {
       .mural {
         padding: 0.5px;
@@ -78,7 +96,7 @@
         padding-top: 10% !important;
       }
 
-      .title {
+      .title, .details p {
         font-size: small !important;
       }
     }
@@ -90,8 +108,9 @@
     }
 
     .mural:hover .details {
-      display: block;
       cursor: pointer;
+      transition-duration: 0.8s;
+      opacity: 0.7;
     }
 
     .details {
@@ -107,9 +126,12 @@
       padding-left: 2%;
       padding-right: 2%;
       width: 98%;
-      display: none;
+      background-color: black;
+      opacity:0;
+    }
+
+    .details p {
       text-align: center;
-      background-color: rgb(0, 0, 0, 0.7);
     }
 
     .title {
@@ -1195,7 +1217,7 @@
         width = $(".card").width() / 3 - 10;
       }
       $('.mural').height(width);
-      $('.details').height(width - 15);
+      $('.details').height(width - 60);
     }
 
     // size and center full size image
