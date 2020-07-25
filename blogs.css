@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+    max-width: max(80%, 1000px);
+    display: inline-block;
+}
+
+.images {
+    text-align: center !important;
+}
