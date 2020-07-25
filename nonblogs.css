@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+  }
+
+  p {
+    font-size: 20px !important;
+    text-align: left;
+  }
+
+  .container-fluid {
+    display: inline-block;
+    max-width: min(70%, 1000px);
+  }
