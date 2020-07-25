@@ -17,3 +17,7 @@ body {
         max-width: 90%;
     }
   }
+
+  nav {
+    text-align: left !important;
+}
