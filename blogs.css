@@ -4,8 +4,9 @@ body {
 
 p {
     text-align: left;
-    max-width: max(80%, 1000px);
+    max-width: min(80%, 800px);
     display: inline-block;
+    font-size: 16px;
 }
 
 .images {
