@@ -60,7 +60,63 @@
     .accordion {
       text-align: left;
     }
+    
+        .mural:hover img {
+      /* border: 5px solid #34d4ae; */
+      cursor: pointer;
+      opacity: 0.5;
+    }
 
+    .mural:hover .details {
+      cursor: pointer;
+      transition-duration: 0.8s;
+      opacity: 0.7;
+    }
+
+    .details {
+      font: 'Capriola', sans-serif;
+      font-weight: bold;
+      font-size: 2vw;
+      color: #34d4ae;
+      position: absolute;
+      top: 8px;
+      left: 3px;
+      margin: auto;
+      width: 98%;
+      background-color: black;
+      opacity:0;
+    }
+
+    .title {
+      padding-top: 20%;
+      color: white;
+    }
+    
+    .details p {
+      text-align: center;
+    }
+
+
+    .close {
+      color: white;
+    }
+
+    .modal-dialog {
+      width: 100%;
+      margin: 0px;
+    }
+
+    #imageViewer {
+      max-height: 80vh;
+    }
+
+    #desiredSize {
+      display: none;
+      max-width: 80vw;
+      max-height: 80vh;
+    }
+
+    /* mobile only */
     @media only screen and (max-width: 600px) {
       .mural {
         padding: 0.5px;
@@ -82,66 +138,14 @@
         height: 100% !important;
         padding-top: 10% !important;
       }
+      
+      .title {
+        padding-top: 10%;
+      }
 
       .title, .details p {
         font-size: small !important;
       }
-    }
-
-    .mural:hover img {
-      /* border: 5px solid #34d4ae; */
-      cursor: pointer;
-      opacity: 0.5;
-    }
-
-    .mural:hover .details {
-      cursor: pointer;
-      transition-duration: 0.8s;
-      opacity: 0.7;
-    }
-
-    .details {
-      font: 'Capriola', sans-serif;
-      font-weight: bold;
-      font-size: 2vw;
-      color: #34d4ae;
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      margin: auto;
-      padding-top: 20%;
-      padding-left: 2%;
-      padding-right: 2%;
-      width: 98%;
-      background-color: black;
-      opacity:0;
-    }
-
-    .details p {
-      text-align: center;
-    }
-
-    .title {
-      color: white;
-    }
-
-    .close {
-      color: white;
-    }
-
-    .modal-dialog {
-      width: 100%;
-      margin: 0px;
-    }
-
-    #imageViewer {
-      max-height: 80vh;
-    }
-
-    #desiredSize {
-      display: none;
-      max-width: 80vw;
-      max-height: 80vh;
     }
   </style>
 </head>
@@ -1204,7 +1208,7 @@
         width = $(".card").width() / 3 - 10;
       }
       $('.mural').height(width);
-      $('.details').height(width - 60);
+      $('.details').height(width);
     }
 
     // size and center full size image
