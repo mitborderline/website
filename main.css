@@ -82,6 +82,10 @@ body p {
     display: block;
   }
 
+.images img{
+    padding-bottom: 10px;
+  }
+
 @media only screen and (max-width: 768px) {
     .dropdown:hover .dropdown-content {
       display: none !important;
