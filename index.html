@@ -17,16 +17,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="center-content.css">
 
   <style>
-    body {
+    .section-one{
       background-image: url("./images/assets/TunnelGradient.jpg");
-      background-position: center center;
-      background-attachment: fixed;
+      height:100%;
+      width:auto;
+      background-size: cover;
+    }
+
+    .section-two{
+      background-image:url("./images/assets/AR_video.gif");
+      min-height:100%;
+      min-width:100%;
       background-repeat: no-repeat;
       background-size: cover;
+      position: relative;
+    }
+
+    .section-three{
       background-color: #454543;
-      overflow-y: hidden;
+      height:100%;
+      width:100%;
+      position: relative;
+    }
+
+    .about-title{
+      padding: 50px 50px 20px;
+      text-align: left;
+    }
+
+    .about-description{
+      padding: 0px 50px;
+      width: 53%;
+      height: 70%;
+      overflow-y: scroll;
+      position: relative;
     }
 
     .logo {
@@ -49,9 +76,87 @@
       font-size: small;
     }
 
+    .contact{
+      position: relative;
+      text-align: center;
+      top:60%;
+    }
+    
+    #youTube {
+      height: 100%;
+    }
+    
+    .ar {
+      text-align: center;
+    }
+
+    .project {
+      padding: 10px;
+    }
+
+    .project img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .project:hover .project-titles {
+      transition-duration: 0.5s;
+      display: block;
+      cursor: pointer;
+    }
+
+    .project:hover img {
+      transition-duration: 0.5s;
+      cursor: pointer;
+      opacity: 0.2;
+    }
+
+    .project-titles {
+      font-family: 'Didact Gothic', sans-serif;
+      letter-spacing: 3px;
+      font-weight: bold;
+      font-size: 1.5vw;
+      color: white;
+      position: absolute;
+      top: 25%;
+      left: 5px;
+      margin: auto;
+      width: 98%;
+      display: none;
+      text-align: center;
+    }
+
+    .team-page {
+      width: 90%;
+    }
+
+    h6 {
+      color: #ff7360;
+    }
+
+    #gmap {
+      width: 100%;
+      height: 100%;
+    }
+    
     @media only screen and (max-width: 600px) {
       .logo {
         width: 80%;
+      }
+      .project-titles {
+        font-size: 10px;
+        display: block;
+        width: 90%;
+        top: 10%;
+      }
+
+      .project {
+        padding: 0;
+      }
+
+      .project img {
+        opacity: 0.3
       }
     }
   </style>
@@ -99,13 +204,205 @@
     </div>
   </nav>
 
-  <div>
+  <div class="section-one intro">
     <span class="credits">animation by Danny Gelman '20</span>
     <img class="logo" src="./images/assets/logoAnimation.gif" alt="Borderline">
+    <div class="contact">
+      <a href="mailto:borderline-team@mit.edu?Subject=Interest"
+        target="mail">borderline-team@mit.edu</a><br>
+      <a href="https://www.instagram.com/mitborderline/" target="_ig"><img width="24px" height="24px" alt="Instagram"
+          src="https://image.flaticon.com/icons/svg/174/174855.svg"></a>
+      <a href="https://www.facebook.com/mitborderline/" target="_fb"><img width="24px" height="24px" alt="Facebook"
+          src="https://image.flaticon.com/icons/svg/124/124010.svg"></a>
+    </div>
   </div>
+  <div class="section-two">
+    <div class="about-title">
+      <h1> About Us </h1>
+    </div>
+    <div class="about-description">
+      <p>The Borderline began as a project to cover the 200 foot long wall in the tunnels under the campus of MIT. The
+        tunnel is a commonly used route between MIT Buildings 66 and E17 during bad weather; it is a useful connection
+        to get from point A to point B, but Borderline aimed to make it a destination through art and technology.
+      </p>
+      <p>
+        In the spring of 2017, over 25 MIT-affiliated artists started painting murals in the tunnels. Since then,
+        Borderline has expanded to <a href="murals.html" target="murals">over 65 murals</a>
+        in the tunnels and Banana Lounge (26-110) on campus. More murals and
+        animations are being added every semester.
+      </p>
+      <p>Beyond the tunnels, Borderline has collaborated on <a href="featured.html" target="murals">projects</a> with
+        numerous organizations, such as the Museum of
+        Fine Arts in Boston and Porto Seguro Cultural Center in São Paulo, Brazil.
+        Borderline has been featured in
+        <a href="https://www3.bostonglobe.com/metro/2017/06/27/mit-students-create-mural-that-moves-when-viewed-through-smartphone/u1idI24UPjFoplIaPFroXP/story.html"
+          target="bg">The Boston Globe</a>,
+        <a href="https://www.vice.com/en_us/article/xw8bbn/mit-students-made-an-interactive-augmented-reality-mural"
+          target="vice">VICE Motherboard</a>, and other publications.
+      </p>
+      <p>The magic of Borderline comes in the form of augmented reality via the <a
+          href="https://apps.apple.com/us/app/artivive/id1188737494" target="vive">Artivive app</a>, available for
+        Android and iOS. Simply point your phone camera at the AR-enabled murals to unearth hidden animations!
+      </p>
+    </div>
+  </div>
+  <div class="section-three">
+    <div> 
+        <iframe id="youTube" style="width: 100%;" src="https://www.youtube.com/embed/0rUwgOZ4LUg" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <hr>
+    </div>
   </div>
 
-  <br>
+  <div class="container-fluid team-page">
+    <button onclick="topFunction()" id="top-btn" title="Go to top">Go to Top</button>
+    <br>
+    <br>
+    <div>
+      <a name="projects">
+        <h3>Projects</h3>
+      </a>
+      <div class="row">
+        <div class="col-3 project">
+          <a href="projects.html#Tunnel66">
+            <img alt="Tunnel 66" src="./images/projects/tunnel66/thumbnail.png" />
+            <div class="project-titles">
+              Tunnel 66
+            </div>
+          </a>
+        </div>
+        <div class="col-3 project">
+          <a href="projects.html#banana">
+            <img alt="Banana Lounge" src="./images/projects/banana/thumbnail.jpg">
+            <div class="project-titles">
+              UA Innovation <br> x <br> Borderline
+            </div>
+          </a>
+        </div>
+        <div class="col-3 project">
+          <a href="projects.html#computing">
+            <img alt="Stata Mural" src="./images/projects/computing/thumbnail.jpg" />
+            <div class="project-titles">
+              College of Computing Opening
+            </div>
+          </a>
+        </div>
+        <div class="col-3 project">
+          <!-- <a href="https://www.wbur.org/artery/2019/01/25/south-bay-correction-mural"> -->
+          <a href="projects.html#HOC">
+            <img alt="HOC Mural Project" src="./images/projects/prison/mural.jpg" />
+            <div class="project-titles">
+              HOC Mural Project
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 project">
+          <a href="projects.html#OneWorld">
+            <img alt="One World @ MIT" src="./images/projects/oneworld/thumbnail.jpg" />
+            <div class="project-titles">
+              One World <br>@ MIT
+            </div>
+          </a>
+        </div>
+        <div class="col-3 project">
+          <a href="projects.html#brazil">
+            <img alt="Borderline x Brazil" src="./images/projects/brazil/thumbnail.jpg">
+            <div class="project-titles">
+              Borderline <br>x<br> Brazil
+            </div>
+          </a>
+        </div>
+        <div class="col-3 project">
+          <a href="projects.html#MFA">
+            <img alt="Borderline at MFA" src="./images/projects/mfa/thumbnail.jpg" />
+            <div class="project-titles">
+              Borderline <br> at the MFA
+            </div>
+          </a>
+        </div>
+        <div class="col-3 project">
+          <a href="projects.html#AR-Campus-Landmarks">
+            <img alt="AR Campus Landmarks" src="./images/projects/campus/pset.jpg" />
+            <div class="project-titles">
+              AR Campus Landmarks
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <br>
+      <a name="blog">
+        <h3>Blogs</h3>
+      </a>
+
+      <div class="row">
+        <div class="col-3 project">
+          <a href="blog.html">
+            <img alt="Will You Marry Me?" src="./images/blog/proposal.jpg">
+            <div class="project-titles">
+              AR Marriage Proposal
+            </div>
+          </a>
+        </div>
+        <div class="col-3 project">
+          <a href="blog.html#CPW">
+            <img alt="CPW" src="./images/blog/cpw1.jpg">
+            <div class="project-titles">
+              Campus Preview Weekend
+            </div>
+          </a>
+        </div>
+        <div class="col-3 project">
+          <a href="blog.html#birthday">
+            <img alt="Borderline's Birthday" src="./images/blog/birthday1.jpg" />
+            <div class="project-titles">
+              Happy <br> Birthday, <br> Borderline!
+            </div>
+          </a>
+        </div>
+        <div class="col-3 project">
+          <a href="blog.html#Grand-Opening">
+            <img alt="Grand Opening" src="./images/blog/opening1.jpg" />
+            <div class="project-titles">
+              Tunnels <br> Grand Opening
+            </div>
+          </a>
+        </div>
+      </div>
+      <br>
+      
+<h3>Tunnels Location <br> </h3>
+
+<div class="row">
+  <div class="col-sm-3">
+    <img width="100%" alt="Tunnels Map" src="./images/assets/tunnelMap.jpg">
+  </div>
+  <div class="col-sm-9">
+    <iframe id="gmap"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47174.47155937263!2d-71.16149754530454!3d42.355218621588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a8dfa0f551%3A0x1d98765812e5e8c6!2s55%20Ames%20St%2C%20Cambridge%2C%20MA%2002142!5e0!3m2!1sen!2sus!4v1587864062719!5m2!1sen!2sus"
+      frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+      resizeProjects();
+    });
+
+    $(window).resize(function () {
+      resizeProjects();
+    });
+
+    // keep images square
+    function resizeProjects() {
+      let width = $('.project').width();
+      $('.project').height(width);
+      $('.details').height(width);
+    }
+</script>
 
 </body>
 
