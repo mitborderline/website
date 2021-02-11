@@ -26,6 +26,10 @@
     .container-fluid {
       margin: 0 1% 5% 1%;
     }
+    .card {
+      border: none !important;
+      background-color: transparent !important;
+    }
     .filterByYear {
       width: 100%;
       background-color: #25b391;
@@ -40,16 +44,21 @@
       background-color:#ff7360 !important;
       border-color: #ff7360 !important;
     }
-    .accordion,
+
+    .card-body {
+      padding: 0 !important;
+      background: none !important;
+    }
+    /* .accordion,
     .intro {
       color: white;
       width: 98%;
       font-size: large;
-    }
+    } */
 
-    .accordion .fas {
+    /* .accordion .fas {
       margin: 5px;
-    }
+    } */
 
     .card-header {
       padding: 0;
@@ -71,9 +80,9 @@
       object-fit: cover;
     }
 
-    .accordion {
+   /*  .accordion {
       text-align: left;
-    }
+    } */
 
     .mural:hover img {
       /* border: 5px solid #34d4ae; */
@@ -263,7 +272,7 @@
           </div>
     <hr>
       <div class="card">
-        <div id="fall2019Toggle" class="collapse show" aria-labelledby="heading1">
+        <div id="fall2019Toggle" class=" show" aria-labelledby="heading1">
           <div class="card-body">
             <div class="row">
               <div class="col-4 mural">
