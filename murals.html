@@ -21,12 +21,25 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="center-content.css">
 
-
+ 
   <style>
     .container-fluid {
       margin: 0 1% 5% 1%;
     }
-
+    .filterByYear {
+      width: 100%;
+      background-color: #25b391;
+      color: white;
+      margin-bottom: 15px;
+    }
+    .form-check-label {
+      font-size: 18px !important;
+      color: #ff7360 !important;
+    }
+    .form-check-input:checked {
+      background-color:#ff7360 !important;
+      border-color: #ff7360 !important;
+    }
     .accordion,
     .intro {
       color: white;
@@ -87,7 +100,9 @@
       background-color: black;
       opacity: 0;
     }
-
+    .background {
+      background-color:rgba(255, 255, 255, 0.733);
+    }
     .title {
       padding-top: 20%;
       color: white;
@@ -198,7 +213,15 @@
   <br>
 
   <!-- year toggle (stil in the works) -->
-<!--   <a type="checkbox" class="filterByYear btn btn" data-bs-toggle="collapse" href="#years"
+<!--    -->
+  <div class="container-fluid">
+    <div class="intro">
+      <p>Click once or tap twice (mobile) to view the full size image.
+        To view animations of <a href="#" onclick="showARMurals()">AR-enabled murals</a>, download <a
+          href="https://apps.apple.com/us/app/artivive/id1188737494" target="vive">Artivive</a>.
+        Discover the stories behind murals in <a href="mural_blog.html">Artist Spotlight</a>.
+    </div>
+    <a type="checkbox" class="filterByYear btn btn" data-bs-toggle="collapse" href="#years"
             id="btn-check-outlined" role="button" aria-expanded="false" aria-controls="years" autocomplete="off">
             Filter by Year!</a>
 
@@ -232,32 +255,15 @@
                   <label class="form-check-label" for="spring2017">Spring 2017</label>
                 </div>
                 <div class="form-check-inline form-switch">
-                  <input onclick="toggleYearShow(this.id)" class="form-check-input" type="checkbox" id="ar" checked>
-                  <label class="form-check-label" for="ar">AR-enabled Murals</label>
+                  <input onclick="toggleYearShow(this.id)" class="form-check-input" type="checkbox" id="AR-Enabled" checked>
+                  <label class="form-check-label" for="AR-Enabled">AR-enabled Murals</label>
                 </div>
               </div>
             </div>
-          </div> -->
-  <div class="container-fluid">
-    <div class="intro">
-      <p>Click once or tap twice (mobile) to view the full size image.
-        To view animations of <a href="#" onclick="showARMurals()">AR-enabled murals</a>, download <a
-          href="https://apps.apple.com/us/app/artivive/id1188737494" target="vive">Artivive</a>.
-        Discover the stories behind murals in <a href="mural_blog.html">Artist Spotlight</a>.
-    </div>
+          </div>
     <hr>
-    <div class="accordion" id="accordion">
       <div class="card">
-        <div class="card-header" id="headingOne">
-          <h2 class="mb-0">
-            <button class="btn btn-link season-title" type="button" data-toggle="collapse" data-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-              <i class="fas fa-minus float-left "></i>
-              Fall 2019
-            </button>
-          </h2>
-        </div>
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+        <div id="fall2019Toggle" class="collapse show" aria-labelledby="heading1">
           <div class="card-body">
             <div class="row">
               <div class="col-4 mural">
@@ -358,16 +364,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed season-title" type="button" data-toggle="collapse"
-              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <i class="fas fa-plus float-left "></i>
-              Spring 2019 (Banana Lounge)
-            </button>
-          </h2>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+        <div id="spring2019Toggle"  aria-labelledby="heading2">
           <div class="card-body">
             <div class="row">
               <div class="col-4 mural">
@@ -445,16 +442,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed season-title" type="button" data-toggle="collapse"
-              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <i class="fas fa-plus float-left "></i>
-              Fall 2018
-            </button>
-          </h2>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+        <div id="fall2018Toggle"  aria-labelledby="heading3">
           <div class="card-body">
 
             <div class="row">
@@ -553,17 +541,7 @@
       </div>
 
       <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed season-title" type="button" data-toggle="collapse"
-              data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              <i class="fas fa-plus float-left "></i>
-
-              Fall 2017
-            </button>
-          </h2>
-        </div>
-        <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+        <div id="fall2017Toggle"  aria-labelledby="heading4">
           <div class="card-body">
             <div class="row">
               <div class="col-4 mural">
@@ -659,16 +637,7 @@
       </div>
 
       <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed season-title" type="button" data-toggle="collapse"
-              data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              <i class="fas fa-plus float-left "></i>
-              Spring 2017
-            </button>
-          </h2>
-        </div>
-        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+        <div id="spring2017Toggle"  aria-labelledby="heading5" data-parent="#accordion">
           <div class="card-body">
 
             <div class="row">
@@ -914,17 +883,7 @@
       </div>
 
       <div class="card">
-        <div class="card-header" id="headingAR">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed season-title" type="button" data-toggle="collapse"
-              data-target="#AR-Enabled" aria-expanded="false" aria-controls="AR-Enabled">
-              <i class="fas fa-plus float-left "></i>
-
-              AR-Enabled Murals
-            </button>
-          </h2>
-        </div>
-        <div id="AR-Enabled" class="collapse" aria-labelledby="headingAR">
+        <div id="AR-EnabledToggle"  aria-labelledby="headingAR">
           <div class="card-body">
             <div class="row">
               <div class="col-4 mural">
@@ -1190,7 +1149,6 @@
       </div>
 
     </div>
-  </div>
 
   <br>
 
@@ -1279,6 +1237,40 @@
       $('.modal-dialog').css("left", (vw - width) / 2 + "px");
     }
 
+    var year_show = {
+      'all': true,
+      'fall2019': true,
+      'spring2019': true,
+      'fall2018': true,
+      'fall2017': true,
+      'spring2017': true,
+      'AR-Enabled': true,
+    }
+    function showHideAll() {
+      show_all = year_show['all'];
+      year_show.forEach(year => {
+        show_year = year_show[dorm];
+        if (show_all == show_year) {
+          $("#" + year + "Toggle").prop('checked', !show_year).change();
+          toggleYearShow(year);
+        }
+      });
+
+      year_show['all'] = !show_all;
+    }
+
+    
+    function toggleYearShow(year) {
+      show = year_show[year];
+
+      id = "#" + year + "Toggle";
+        if (show) {
+          $(id).hide();
+        } else {
+          $(id).show();
+        }
+      year_show[year] = !show;
+    }
   </script>
 
 </body>
