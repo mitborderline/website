@@ -19,42 +19,45 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="center-content.css">
 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <style>
-    .section-one{
+    .section-one {
       background-image: url("./images/assets/TunnelGradient.jpg");
-      height:100%;
-      width:auto;
+      height: 100%;
+      width: auto;
       background-size: cover;
     }
 
-    .section-two{
-      background-image:url("./images/assets/AR_video.gif");
-      min-height:100%;
-      min-width:100%;
+    .section-two {
+      background-image: url("./images/assets/AR_video.gif");
+      min-height: 100%;
+      min-width: 100%;
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
     }
 
-    .section-three{
+    .section-three {
       background-color: #454543;
-      height:100%;
-      width:100%;
+      height: 100%;
+      width: 100%;
       position: relative;
     }
 
-    .about-title{
+    .about-title {
       padding: 50px 50px 20px;
       text-align: left;
     }
 
-    .about-description{
+    .about-description {
       padding: 0px 50px;
       width: 53%;
       height: 70%;
       overflow-y: scroll;
       position: relative;
-      bottom:5%;
+      bottom: 5%;
     }
 
     .logo {
@@ -77,17 +80,29 @@
       font-size: small;
     }
 
-    .contact{
-      position: relative;
+    #contact {
+      position: absolute;
       text-align: center;
-      top:60%;
+      top: 65%;
       font-size: 1.5vw;
+      width: 100%;
     }
-    
+
+    i {
+      padding: 0 1% 0 1%;
+      color: white;
+    }
+
+    i:hover {
+      padding: 0 1% 0 1%;
+      color: #ff7360;
+    }
+
+
     #youTube {
       height: 100%;
     }
-    
+
     .ar {
       text-align: center;
     }
@@ -141,11 +156,12 @@
       width: 100%;
       height: 100%;
     }
-    
+
     @media only screen and (max-width: 600px) {
       .logo {
         width: 80%;
       }
+
       .project-titles {
         font-size: 10px;
         display: block;
@@ -167,7 +183,8 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-dark sticky">
     <!-- Brand/logo   -->
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="index.html">
+      <div class="text-logo">The Borderline</div>
       <img src="./images/assets/grayLogo.png" alt="Borderline" style="width: 80px;">
     </a>
 
@@ -180,10 +197,10 @@
     <!-- Links -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link" href="about.html">
+        <!-- <li class="nav-item"><a class="nav-link" href="about.html">
             About
-          </a></li>
-        <li class="nav-item dropdown"><a class="nav-link" href="featured.html">
+          </a></li> -->
+        <!-- <li class="nav-item dropdown"><a class="nav-link" href="featured.html">
             Featured
           </a>
           <div class="dropdown-content" id="dc">
@@ -192,12 +209,15 @@
             <a href="mural_blog.html">Artists</a>
             <a href="featured.html#press">Press</a>
           </div>
-        </li>
+        </li> -->
+        <!-- <li class="nav-item"><a class="nav-link" href="https://www.redbubble.com/people/mit-borderline/shop">
+            Stickers
+          </a></li> -->
+        <li class="nav-item"><a class="nav-link" href="featured.html">
+            Featured
+          </a></li>
         <li class="nav-item"><a class="nav-link" href="murals.html">
             Murals
-          </a></li>
-        <li class="nav-item"><a class="nav-link" href="https://www.redbubble.com/people/mit-borderline/shop">
-            Stickers
           </a></li>
         <li class="nav-item"><a class="nav-link" href="team.html">
             Team
@@ -209,15 +229,18 @@
   <div class="section-one intro">
     <span class="credits">animation by Danny Gelman '20</span>
     <img class="logo" src="./images/assets/logoAnimation.gif" alt="Borderline">
-    <div class="contact">
-      <a href="mailto:borderline-team@mit.edu?Subject=Interest"
-        target="mail">borderline-team@mit.edu</a><br>
-      <a href="https://www.instagram.com/mitborderline/" target="_ig"><img width="24px" height="24px" alt="Instagram"
-          src="https://image.flaticon.com/icons/svg/174/174855.svg"></a>
-      <a href="https://www.facebook.com/mitborderline/" target="_fb"><img width="24px" height="24px" alt="Facebook"
-          src="https://image.flaticon.com/icons/svg/124/124010.svg"></a>
-    </div>
+      <!-- <a href="http://borderline.mit.edu/" target="bl"><img alt="Borderline" src="circleLogo.png"
+            class="logo"></a> -->
+      <div id="contact">
+        <a href="mailto:borderline-team@mit.edu" target="mail"><i class="fa fa-2x fa-envelope-square"></i></a>
+        <a href="https://www.instagram.com/mitborderline/" target="ig"><i class="fa fa-2x fa-instagram"></i></a>
+        <a href="https://www.redbubble.com/people/mit-borderline/shop" target="gh"><i
+            class="fas fa-2x fa-store"></i></a>
+        <a href="https://www.facebook.com/mitborderline/" target="fb"><i class="fa fa-2x fa-facebook-square"></i></a>
+        <a href="https://github.com/mitborderline/" target="gh"><i class="fa fa-2x fa-github-square"></i></a>
+        </div>
   </div>
+
   <div class="section-two">
     <div class="about-title">
       <h1> About Us </h1>
@@ -250,9 +273,9 @@
     <br>
   </div>
   <div class="section-three">
-    <div> 
-        <iframe id="youTube" style="width: 100%;" src="https://www.youtube.com/embed/0rUwgOZ4LUg" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div>
+      <iframe id="youTube" style="width: 100%;" src="https://www.youtube.com/embed/0rUwgOZ4LUg" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <hr>
     </div>
   </div>
@@ -376,36 +399,36 @@
         </div>
       </div>
       <br>
-      
-<h3>Tunnels Location <br> </h3>
 
-<div class="row">
-  <div class="col-sm-3">
-    <img width="100%" alt="Tunnels Map" src="./images/assets/tunnelMap.jpg">
-  </div>
-  <div class="col-sm-9">
-    <iframe id="gmap"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47174.47155937263!2d-71.16149754530454!3d42.355218621588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a8dfa0f551%3A0x1d98765812e5e8c6!2s55%20Ames%20St%2C%20Cambridge%2C%20MA%2002142!5e0!3m2!1sen!2sus!4v1587864062719!5m2!1sen!2sus"
-      frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-  </div>
-</div>
+      <h3>Tunnels Location <br> </h3>
 
-<script>
-    $(document).ready(function () {
-      resizeProjects();
-    });
+      <div class="row">
+        <div class="col-sm-3">
+          <img width="100%" alt="Tunnels Map" src="./images/assets/tunnelMap.jpg">
+        </div>
+        <div class="col-sm-9">
+          <iframe id="gmap"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47174.47155937263!2d-71.16149754530454!3d42.355218621588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370a8dfa0f551%3A0x1d98765812e5e8c6!2s55%20Ames%20St%2C%20Cambridge%2C%20MA%2002142!5e0!3m2!1sen!2sus!4v1587864062719!5m2!1sen!2sus"
+            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
 
-    $(window).resize(function () {
-      resizeProjects();
-    });
+      <script>
+        $(document).ready(function () {
+          resizeProjects();
+        });
 
-    // keep images square
-    function resizeProjects() {
-      let width = $('.project').width();
-      $('.project').height(width);
-      $('.details').height(width);
-    }
-</script>
+        $(window).resize(function () {
+          resizeProjects();
+        });
+
+        // keep images square
+        function resizeProjects() {
+          let width = $('.project').width();
+          $('.project').height(width);
+          $('.details').height(width);
+        }
+      </script>
 
 </body>
 
