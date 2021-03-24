@@ -1261,10 +1261,21 @@
       'spring2017': true,
       'AR-Enabled': true,
     }
+
+    var year_names = [
+      "all",
+      "fall2019",
+      "spring2019",
+      "fall2018",
+      "fall2017",
+      "spring2017",
+      "AR-Enabled",
+    ]
+
     function showHideAll() {
       show_all = year_show['all'];
-      year_show.forEach(year => {
-        show_year = year_show[dorm];
+      year_names.forEach(year => {
+        show_year = year_show[year];
         if (show_all == show_year) {
           $("#" + year + "Toggle").prop('checked', !show_year).change();
           toggleYearShow(year);
