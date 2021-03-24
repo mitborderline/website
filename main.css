@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@300&display=swap');
 body {
-    font-family: 'Capriola', sans-serif;
+    font-family: /* 'Capriola', sans-serif; */'Open Sans', sans-serif;
     font-size: large;
     background-color: #454543;
     overflow-x: hidden;
@@ -37,7 +38,7 @@ a {
   }
 
 body p {
-    font-family: 'Didact Gothic', sans-serif;
+    font-family: /* 'Didact Gothic', sans-serif; */'Roboto', sans-serif;
   }
 
 .container-fluid {

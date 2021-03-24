@@ -8,9 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+   <!-- gets new bootstrap stylesheet -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
@@ -20,22 +21,44 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="center-content.css">
 
-
+ 
   <style>
     .container-fluid {
       margin: 0 1% 5% 1%;
     }
+    .card {
+      border: none !important;
+      background-color: transparent !important;
+    }
+    .filterByYear {
+      width: 100%;
+      background-color: #25b391;
+      color: white;
+      margin-bottom: 15px;
+    }
+    .form-check-label {
+      font-size: 18px !important;
+      color: #ff7360 !important;
+    }
+    .form-check-input:checked {
+      background-color:#ff7360 !important;
+      border-color: #ff7360 !important;
+    }
 
-    .accordion,
+    .card-body {
+      padding: 0 !important;
+      background: none !important;
+    }
+    /* .accordion,
     .intro {
       color: white;
       width: 98%;
       font-size: large;
-    }
+    } */
 
-    .accordion .fas {
+    /* .accordion .fas {
       margin: 5px;
-    }
+    } */
 
     .card-header {
       padding: 0;
@@ -48,7 +71,7 @@
     }
 
     .mural {
-      padding: 8px;
+      padding: /* 8px; */0;
     }
 
     .mural img {
@@ -57,15 +80,14 @@
       object-fit: cover;
     }
 
-    .accordion {
+   /*  .accordion {
       text-align: left;
-    }
+    } */
 
-    .mural:hover img {
-      /* border: 5px solid #34d4ae; */
+    /* .mural:hover img {
       cursor: pointer;
       opacity: 0.5;
-    }
+    } */
 
     .mural:hover .details {
       cursor: pointer;
@@ -73,20 +95,35 @@
       opacity: 0.7;
     }
 
+    .mural .animated {
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: none;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .mural:hover .animated {
+      display: block;
+    }
     .details {
       font: 'Capriola', sans-serif;
       font-weight: bold;
       font-size: 2vw;
       color: #34d4ae;
       position: absolute;
-      top: 8px;
-      left: 3px;
+      top: /* 8px; */0px;
+      left: /* 3px; */0px;
       margin: auto;
-      width: 98%;
+      width: /* 98%; */100%;
       background-color: black;
       opacity: 0;
     }
-
+    .background {
+      background-color:rgba(255, 255, 255, 0.733);
+    }
     .title {
       padding-top: 20%;
       color: white;
@@ -119,7 +156,7 @@
     /* mobile only */
     @media only screen and (max-width: 600px) {
       .mural {
-        padding: 0.5px;
+        padding: /* 0.5px; */0;
       }
 
       .container-fluid {
@@ -196,6 +233,8 @@
 
   <br>
 
+  <!-- year toggle (stil in the works) -->
+<!--    -->
   <div class="container-fluid">
     <div class="intro">
       <p>Click once or tap twice (mobile) to view the full size image.
@@ -203,19 +242,55 @@
           href="https://apps.apple.com/us/app/artivive/id1188737494" target="vive">Artivive</a>.
         Discover the stories behind murals in <a href="mural_blog.html">Artist Spotlight</a>.
     </div>
+    <a type="checkbox" class="filterByYear btn btn" data-bs-toggle="collapse" href="#years"
+            id="btn-check-outlined" role="button" aria-expanded="false" aria-controls="years" autocomplete="off">
+            Filter by Year!</a>
+
+          <div class="flex-container collapse background" id="years">
+            <div class="allRooms form-check-inline form-switch">
+              <input onclick="showHideAll()" class="form-check-input" type="checkbox" id="allYears" checked>
+              <label class="form-check-label" for="random">Show/Hide All Murals</label>
+            </div>
+            <div class="row" style="text-align: left;">
+              <div class="col-sm-6 togglecol">
+                <div class="form-check-inline form-switch">
+                  <input onclick="toggleYearShow(this.id)" class="form-check-input" type="checkbox" id="fall2019" checked>
+                  <label class="form-check-label" for="fall2019">Fall 2019</label>
+                </div> 
+                <br>
+                <div class="form-check-inline form-switch">
+                  <input onclick="toggleYearShow(this.id)" class="form-check-input" type="checkbox" id="spring2019" checked>
+                  <label class="form-check-label" for="spring2019">Spring 2019 (Banana Lounge)</label>
+                </div>
+                <br>
+                <div class="form-check-inline form-switch">
+                  <input onclick="toggleYearShow(this.id)" class="form-check-input" type="checkbox" id="fall2018" checked>
+                  <label class="form-check-label" for="fall2018">Fall 2018</label>
+                </div>
+                <br>
+              </div>
+              <div class="col-sm-6" style="text-align: left;">
+                <div class="form-check-inline form-switch">
+                  <input onclick="toggleYearShow(this.id)" class="form-check-input" type="checkbox" id="fall2017" checked>
+                  <label class="form-check-label" for="fall2017">Fall 2017</label>
+                </div>
+                <br>
+                <div class="form-check-inline form-switch">
+                  <input onclick="toggleYearShow(this.id)" class="form-check-input" type="checkbox" id="spring2017" checked>
+                  <label class="form-check-label" for="spring2017">Spring 2017</label>
+                </div>
+                <br>
+                <div class="form-check-inline form-switch">
+                  <input onclick="toggleYearShow(this.id)" class="form-check-input" type="checkbox" id="AR-Enabled" checked>
+                  <label class="form-check-label" for="AR-Enabled">AR-enabled Murals</label>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
     <hr>
-    <div class="accordion" id="accordion">
       <div class="card">
-        <div class="card-header" id="headingOne">
-          <h2 class="mb-0">
-            <button class="btn btn-link season-title" type="button" data-toggle="collapse" data-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-              <i class="fas fa-minus float-left "></i>
-              Fall 2019
-            </button>
-          </h2>
-        </div>
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+        <div id="fall2019Toggle" class=" show" aria-labelledby="heading1">
           <div class="card-body">
             <div class="row">
               <div class="col-4 mural">
@@ -316,16 +391,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed season-title" type="button" data-toggle="collapse"
-              data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <i class="fas fa-plus float-left "></i>
-              Spring 2019 (Banana Lounge)
-            </button>
-          </h2>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+        <div id="spring2019Toggle"  aria-labelledby="heading2">
           <div class="card-body">
             <div class="row">
               <div class="col-4 mural">
@@ -403,16 +469,7 @@
         </div>
       </div>
       <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed season-title" type="button" data-toggle="collapse"
-              data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <i class="fas fa-plus float-left "></i>
-              Fall 2018
-            </button>
-          </h2>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+        <div id="fall2018Toggle"  aria-labelledby="heading3">
           <div class="card-body">
 
             <div class="row">
@@ -496,12 +553,16 @@
                 </div>
               </div>
               <div class="col-4 mural">
-                <img alt="That Way!" src="./images/fa2018/BlendingIn.jpg">
-                <div class="details">
-                  <p class="title">Blending In</p>
+                <div class="original">
+                  <img alt="That Way!" src="./images/fa2018/BlendingIn.jpg">
+                </div>
+                <div class="animated ">
+                  <!-- <p class="title">Blending In</p>
                   <p>Muralist: Sarah Dohadwala <br>
                     Animator: Misha Jamy <br>
-                    (completed Spring 2018)</p>
+                    (completed Spring 2018)</p> -->
+                  <img src="./borderlinegifs/Chameleon_anim.gif"/>
+                  
                 </div>
               </div>
             </div>
@@ -511,31 +572,27 @@
       </div>
 
       <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed season-title" type="button" data-toggle="collapse"
-              data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              <i class="fas fa-plus float-left "></i>
-
-              Fall 2017
-            </button>
-          </h2>
-        </div>
-        <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+        <div id="fall2017Toggle"  aria-labelledby="heading4">
           <div class="card-body">
             <div class="row">
               <div class="col-4 mural">
-                <img alt="Split" src="./images/fa2017/Split.jpg">
-                <div class="details">
-                  <p class="title">Split</p>
-                  <p>Muralist and Animator:<br> Jude He</p>
+                <div class="original">
+                  <img alt="Split" src="./images/fa2017/Split.jpg">
+                </div>
+                <div class="animated ">
+                  <!-- <p class="title">Split</p>
+                  <p>Muralist and Animator:<br> Jude He</p> -->
+                  <img src="./borderlinegifs/Split_Elissa.gif"/>
                 </div>
               </div>
               <div class="col-4 mural">
-                <img alt="The Little Prince" src="./images/fa2017/TheLittlePrince.jpg">
-                <div class="details">
-                  <p class="title">The Little Prince</p>
-                  <p>Muralist and Animator:<br> Jessica Xu</p>
+                <div class="original">
+                  <img alt="The Little Prince" src="./images/fa2017/TheLittlePrince.jpg">
+                </div>
+                <div class="animated ">
+                  <!-- <p class="title">The Little Prince</p>
+                  <p>Muralist and Animator:<br> Jessica Xu</p> -->
+                  <img src="./borderlinegifs/Jessica Xu - The Little Prince animation.gif"/>
                 </div>
               </div>
               <div class="col-4 mural">
@@ -617,16 +674,7 @@
       </div>
 
       <div class="card">
-        <div class="card-header" id="headingThree">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed season-title" type="button" data-toggle="collapse"
-              data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              <i class="fas fa-plus float-left "></i>
-              Spring 2017
-            </button>
-          </h2>
-        </div>
-        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+        <div id="spring2017Toggle"  aria-labelledby="heading5" data-parent="#accordion">
           <div class="card-body">
 
             <div class="row">
@@ -872,17 +920,7 @@
       </div>
 
       <div class="card">
-        <div class="card-header" id="headingAR">
-          <h2 class="mb-0">
-            <button class="btn btn-link collapsed season-title" type="button" data-toggle="collapse"
-              data-target="#AR-Enabled" aria-expanded="false" aria-controls="AR-Enabled">
-              <i class="fas fa-plus float-left "></i>
-
-              AR-Enabled Murals
-            </button>
-          </h2>
-        </div>
-        <div id="AR-Enabled" class="collapse" aria-labelledby="headingAR">
+        <div id="AR-EnabledToggle"  aria-labelledby="headingAR">
           <div class="card-body">
             <div class="row">
               <div class="col-4 mural">
@@ -914,17 +952,23 @@
 
             <div class="row">
               <div class="col-4 mural">
-                <img alt="Split" src="./images/fa2017/Split.jpg">
-                <div class="details">
-                  <p class="title">Split</p>
-                  <p>Muralist and Animator:<br> Jude He</p>
+                <div class="original">
+                  <img alt="Split" src="./images/fa2017/Split.jpg">
+                </div>
+                <div class="animated ">
+                  <!-- <p class="title">Split</p>
+                  <p>Muralist and Animator:<br> Jude He</p> -->
+                  <img src="./borderlinegifs/Split_Elissa.gif"/>
                 </div>
               </div>
               <div class="col-4 mural">
-                <img alt="The Little Prince" src="./images/fa2017/TheLittlePrince.jpg">
-                <div class="details">
-                  <p class="title">The Little Prince</p>
-                  <p>Muralist and Animator:<br> Jessica Xu</p>
+                <div class="original">
+                  <img alt="The Little Prince" src="./images/fa2017/TheLittlePrince.jpg">
+                </div>
+                <div class="animated ">
+                  <!-- <p class="title">The Little Prince</p>
+                  <p>Muralist and Animator:<br> Jessica Xu</p> -->
+                  <img src="./borderlinegifs/Jessica Xu - The Little Prince animation.gif"/>
                 </div>
               </div>
               <div class="col-4 mural">
@@ -1148,7 +1192,6 @@
       </div>
 
     </div>
-  </div>
 
   <br>
 
@@ -1237,8 +1280,57 @@
       $('.modal-dialog').css("left", (vw - width) / 2 + "px");
     }
 
+    var year_show = {
+      'all': true,
+      'fall2019': true,
+      'spring2019': true,
+      'fall2018': true,
+      'fall2017': true,
+      'spring2017': true,
+      'AR-Enabled': true,
+    }
+
+    var year_names = [
+      "all",
+      "fall2019",
+      "spring2019",
+      "fall2018",
+      "fall2017",
+      "spring2017",
+      "AR-Enabled",
+    ]
+
+    function showHideAll() {
+      show_all = year_show['all'];
+      year_names.forEach(year => {
+        show_year = year_show[year];
+        if (show_all == show_year) {
+          $("#" + year + "Toggle").prop('checked', !show_year).change();
+          toggleYearShow(year);
+        }
+      });
+
+      year_show['all'] = !show_all;
+    }
+
+    
+    function toggleYearShow(year) {
+      show = year_show[year];
+
+      id = "#" + year + "Toggle";
+        if (show) {
+          $(id).hide();
+        } else {
+          $(id).show();
+        }
+      year_show[year] = !show;
+    }
   </script>
 
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+  integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+  integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </html>
