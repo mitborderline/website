@@ -1303,20 +1303,6 @@
       "AR-Enabled",
     ]
 
-    function showHideAll() {
-      show_all = year_show['all'];
-      year_names.forEach(year => {
-        show_year = year_show[year];
-        if (show_all == show_year) {
-          $("#" + year + "Toggle").prop('checked', !show_year).change();
-          toggleYearShow(year);
-        }
-      });
-
-      year_show['all'] = !show_all;
-    }
-
-    
     function toggleYearShow(year) {
       show = year_show[year];
 
@@ -1327,6 +1313,19 @@
           $(id).show();
         }
       year_show[year] = !show;
+    }
+
+    function showHideAll() {
+      show_all = year_show['all'];
+      year_names.forEach(year => {
+        show_year = year_show[year];
+        if (show_all == show_year) {
+          $("#" + year).prop('checked', !show_year).change();
+          toggleYearShow(year);
+        }
+      });
+
+      year_show['all'] = !show_all;
     }
   </script>
 
