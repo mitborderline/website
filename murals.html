@@ -84,11 +84,10 @@
       text-align: left;
     } */
 
-    .mural:hover img {
-      /* border: 5px solid #34d4ae; */
+    /* .mural:hover img {
       cursor: pointer;
       opacity: 0.5;
-    }
+    } */
 
     .mural:hover .details {
       cursor: pointer;
@@ -96,6 +95,19 @@
       opacity: 0.7;
     }
 
+    .mural .animated {
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: none;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .mural:hover .animated {
+      display: block;
+    }
     .details {
       font: 'Capriola', sans-serif;
       font-weight: bold;
@@ -541,12 +553,16 @@
                 </div>
               </div>
               <div class="col-4 mural">
-                <img alt="That Way!" src="./images/fa2018/BlendingIn.jpg">
-                <div class="details">
-                  <p class="title">Blending In</p>
+                <div class="original">
+                  <img alt="That Way!" src="./images/fa2018/BlendingIn.jpg">
+                </div>
+                <div class="animated ">
+                  <!-- <p class="title">Blending In</p>
                   <p>Muralist: Sarah Dohadwala <br>
                     Animator: Misha Jamy <br>
-                    (completed Spring 2018)</p>
+                    (completed Spring 2018)</p> -->
+                  <img src="./borderlinegifs/Chameleon_anim.gif"/>
+                  
                 </div>
               </div>
             </div>
@@ -560,17 +576,23 @@
           <div class="card-body">
             <div class="row">
               <div class="col-4 mural">
-                <img alt="Split" src="./images/fa2017/Split.jpg">
-                <div class="details">
-                  <p class="title">Split</p>
-                  <p>Muralist and Animator:<br> Jude He</p>
+                <div class="original">
+                  <img alt="Split" src="./images/fa2017/Split.jpg">
+                </div>
+                <div class="animated ">
+                  <!-- <p class="title">Split</p>
+                  <p>Muralist and Animator:<br> Jude He</p> -->
+                  <img src="./borderlinegifs/Split_Elissa.gif"/>
                 </div>
               </div>
               <div class="col-4 mural">
-                <img alt="The Little Prince" src="./images/fa2017/TheLittlePrince.jpg">
-                <div class="details">
-                  <p class="title">The Little Prince</p>
-                  <p>Muralist and Animator:<br> Jessica Xu</p>
+                <div class="original">
+                  <img alt="The Little Prince" src="./images/fa2017/TheLittlePrince.jpg">
+                </div>
+                <div class="animated ">
+                  <!-- <p class="title">The Little Prince</p>
+                  <p>Muralist and Animator:<br> Jessica Xu</p> -->
+                  <img src="./borderlinegifs/Jessica Xu - The Little Prince animation.gif"/>
                 </div>
               </div>
               <div class="col-4 mural">
@@ -930,17 +952,23 @@
 
             <div class="row">
               <div class="col-4 mural">
-                <img alt="Split" src="./images/fa2017/Split.jpg">
-                <div class="details">
-                  <p class="title">Split</p>
-                  <p>Muralist and Animator:<br> Jude He</p>
+                <div class="original">
+                  <img alt="Split" src="./images/fa2017/Split.jpg">
+                </div>
+                <div class="animated ">
+                  <!-- <p class="title">Split</p>
+                  <p>Muralist and Animator:<br> Jude He</p> -->
+                  <img src="./borderlinegifs/Split_Elissa.gif"/>
                 </div>
               </div>
               <div class="col-4 mural">
-                <img alt="The Little Prince" src="./images/fa2017/TheLittlePrince.jpg">
-                <div class="details">
-                  <p class="title">The Little Prince</p>
-                  <p>Muralist and Animator:<br> Jessica Xu</p>
+                <div class="original">
+                  <img alt="The Little Prince" src="./images/fa2017/TheLittlePrince.jpg">
+                </div>
+                <div class="animated ">
+                  <!-- <p class="title">The Little Prince</p>
+                  <p>Muralist and Animator:<br> Jessica Xu</p> -->
+                  <img src="./borderlinegifs/Jessica Xu - The Little Prince animation.gif"/>
                 </div>
               </div>
               <div class="col-4 mural">
