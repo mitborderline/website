@@ -58,7 +58,20 @@
       clear: both;
       display: table;
     }
+    .modal-dialog {
+      width: 100%;
+      margin: 0px;
+    }
 
+    #imageViewer {
+      max-height: 80vh;
+    }
+
+    #desiredSize {
+      display: none;
+      max-width: 80vw;
+      max-height: 80vh;
+    }
     @media only screen and (max-width: 600px) {
       .logo {
         width: 80%;
@@ -105,6 +118,15 @@
       background-color: transparent;
       text-align: center;
       width: 300px;
+    }
+    .project {
+      padding: 10px;
+    }
+    .project video {
+      cursor: pointer;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
     }
   </style>
 </head>
@@ -161,7 +183,213 @@
     </p>
     <br>
     <hr>
+    <div class="article">
+      <h5>Welcome Center Storywall<br><span class="date">2021-8-14</span></h5>
+      <br>
+      <div class="flex-container">
+        <img width="65%" alt="welcome_center_storywall" src="./images/projects/storywall/storywall.jpeg">
+      </div>
+      <p class="italic">
+        <b>Artists: Melody W, Sangita V, Rachel S, Raphi K, Mariela PC, Layal B, Alison F, Jessica P,  Sruthi P, 
+          Shardul C, Jimmy K, Laura C, Sohini K, Rucha K, Rihn H, Yijun Y, Margaret Z, Nina L, Vedang L, 
+          Raina T, Teresa G  </b><br>
 
+        <b>Coordinators:</b> Margaret Zheng, Jenny Zhang, Angela Zhang, Joyce An, Philena Liu, Yiming Chen,
+         Yijun Yang, Audrey Cui, Gloria Lin, Nina Li<br>
+        <b>Animators:</b> Yijun Yang, Audrey Cui, Zitong Chen, Juliana Covarrubias, Margaret Zheng, Jessica Wu, 
+        Alexis Huang, Yiming Chen, Aria Kydd, Alison Fang, Sebastian Garcia, Caroline Cunningham, 
+        Sruthi Parthasarathi, Claire Lu
+      </p>
+      <p>
+        Here at MIT, art and technology intersect. We see the Alchemist statue, a work of art built upon 
+        entangled numbers, greek letters, mathematical symbols, and more. We see the tunnels, an underground
+         system that connects traditional wall paintings with animated augmented reality. And now we see the
+          newly-furnished Welcome Center Storywall, which hosts the artistic surplus of our technology-driven 
+          students through a conglomeration of beautiful, unique, connected murals, because this is what is here at MIT.
+      </p>
+      <p>
+        Over the course of Spring ‘21, the Borderline team met extensively with MIT Admissions to discuss 
+        logistics for the Welcome Center Storywall Project. As a newly-constructed building meant to 
+        show people outside of MIT the lives of people within MIT, the theme “Here at MIT” shaped
+         the murals that now fill the Welcome Center building’s signature Storywall.
+      </p>
+      <p>
+        Muralists either worked remotely or in person, adhering to COVID restrictions by
+         coming to the Welcome Center to paint in shifts. From March to May, the Storywall 
+         gradually filled itself with the quirky, colorful, lively art created by this institute of technology. 
+      </p>
+      <p>
+        And, like MIT, nothing is ever static. These murals, like the Borderline tunnels, 
+        have been animated to further display the bustling life here at MIT.
+         Check out the murals -- and the muralists’ collection of experiences -- down below!
+      </p>
+     <div>
+      <div class="flex-container">
+        <div class="col-3 project storywall">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
+              <source src="storywall_animations/11 with mural storywall - Yiming Chen.mp4" type="video/mp4">
+              </video>
+            <div class="project-titles">
+              Muralist: Jessica Pan
+              <br/>
+              Animator: Yiming Chen
+            </div>
+        </div>
+        <div class="col-3 project storywall">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
+              <source src="storywall_animations/12-10fpsAnimation-withMural-FINAL - Sruthi Parthasarathi.mp4" type="video/mp4">
+              </video>
+            <div class="project-titles">
+              Muralist: 
+              <!-- FIND OUT MURALIST -->
+              <br/>
+              Animator: Sruthi Parthasarathi
+            </div>
+        </div>
+        <div class="col-3 project storywall">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
+              <source src="storywall_animations/AsItComes_Kidist_4K - Aria Kydd.mp4" type="video/mp4">
+              </video>
+            <div class="project-titles">
+              Muralist: 
+              <!-- FIND OUT MURALIST -->
+              <br/>
+              Animator: Aria Kydd
+            </div>
+        </div>
+        <div class="col-3 project storywall">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
+              <source src="storywall_animations/Beaver Bois Full BG - Alison Fang.mp4" type="video/mp4">
+              </video>
+            <div class="project-titles">
+              Muralist: Alison Fang
+              <br/>
+              Animator: Alison Fang
+            </div>
+        </div>
+        <div class="col-3 project storywall">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
+              <source src="storywall_animations/bzzbrain_w_mural - Claire Lu.mp4" type="video/mp4">
+              </video>
+            <div class="project-titles">
+              Muralist:
+              <!-- FIND OUT MURALIST -->
+              <br/>
+              Animator: Claire Lu
+            </div>
+        </div>
+        <div class="col-3 project storywall">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
+              <source src="storywall_animations/contruction lines anim (as seen) - Yi Jun Yang.mp4" type="video/mp4">
+              </video>
+            <div class="project-titles">
+              Muralist:
+              <!-- FIND OUT MURALIST -->
+              <br/>
+              Animator: Yijun Yang
+            </div>
+        </div>
+        <div class="col-3 project storywall">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
+              <source src="storywall_animations/grad_animation_muralbg - Alexis Huang.mp4" type="video/mp4">
+              </video>
+            <div class="project-titles">
+              Muralist:
+              <!-- FIND OUT MURALIST -->
+              <br/>
+              Animator: Alexis Huang
+            </div>
+        </div>
+        <div class="col-3 project storywall">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
+              <source src="storywall_animations/IMG_4470 - zitong chen.MP4" type="video/mp4">
+              </video>
+            <div class="project-titles">
+              Muralist:
+              <!-- FIND OUT MURALIST -->
+              <br/>
+              Animator: Zitong Chen
+            </div>
+        </div>
+        <div class="col-3 project storywall">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
+              <source src="storywall_animations/insideOfMITnormal - Jessica Wu.mp4" type="video/mp4">
+              </video>
+            <div class="project-titles">
+              Muralist:
+              <!-- FIND OUT MURALIST -->
+              <br/>
+              Animator: Jessica Wu
+            </div>
+        </div>
+        <div class="col-3 project storywall">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
+              <source src="storywall_animations/mural2 - Audrey C..mp4" type="video/mp4">
+              </video>
+            <div class="project-titles">
+              Muralist:
+              <!-- FIND OUT MURALIST -->
+              <br/>
+              Animator: Audrey Cui
+            </div>
+        </div>
+        <div class="col-3 project storywall">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
+              <source src="storywall_animations/mural5-muralBackground - Juliana Covarrubias.mp4" type="video/mp4">
+              </video>
+            <div class="project-titles">
+              Muralist:
+              <!-- FIND OUT MURALIST -->
+              <br/>
+              Animator: Juliana Covarrubias
+            </div>
+        </div>
+        <div class="col-3 project storywall">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
+              <source src="storywall_animations/mural_to_animate_video - Caroline Cunningham.mp4" type="video/mp4">
+              </video>
+            <div class="project-titles">
+              Muralist:
+              <!-- FIND OUT MURALIST -->
+              <br/>
+              Animator: Caroline Cunningham
+            </div>
+        </div>
+        <div class="col-3 project storywall">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
+              <source src="storywall_animations/MuralFourFireHydrantWithMuralBackground - Sebastian Garcia.mp4" type="video/mp4">
+              </video>
+            <div class="project-titles">
+              Muralist:
+              <!-- FIND OUT MURALIST -->
+              <br/>
+              Animator: Sebastian Garcia
+            </div>
+        </div>
+        <div class="col-3 project storywall">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
+              <source src="storywall_animations/wide_tim_margaret - Margaret Zheng.gif" type="video/gif">
+              </video>
+            <div class="project-titles">
+              Muralist: Margaret Zheng
+              <br/>
+              Animator: Margaret Zheng
+            </div>
+        </div>
+        <div class="col-3 project storywall">
+            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
+              <source src="storywall_animations/yen_yijun (as seen) - Yi Jun Yang.mp4" type="video/mp4">
+              </video>
+            <div class="project-titles">
+              Muralist:
+              <!-- FIND OUT MURALIST -->
+              <br/>
+              Animator: Yijun Yang
+            </div>
+        </div>
+      </div>
+     </div>
+    </div>
     <div class="article">
       <h5>RedBubble Sticker Workshop<br><span class="date">2020-11-10</span></h5>
       <br>
@@ -726,7 +954,47 @@
 
     <br>
   </div>
+
+  <div class="flex-container">
+    <div class="modal fade" id="imageModal">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <div class="modal-dialog">
+        <video id="imageViewer">
+          <source src="">
+          </video>
+      </div>
+    </div>
+  </div>
   <script>
+
+    // size and center full size image
+    function calculateImageViewer() {
+      // get desired and viewport width and height
+      let width = $('#desiredSize').width();
+      let height = $('#desiredSize').height();
+      let vw = window.innerWidth;
+      let vh = window.innerHeight;
+
+      //  alert(vw + ", " + vh + "; " + width + ", " + height);
+
+      // set imageViewer to desired width
+      $('#imageViewer').width(width);
+
+      // adjust image in the center
+      $('.modal-dialog').css("top", (vh - height) / 2 + "px");
+      $('.modal-dialog').css("left", (vw - width) / 2 + "px");
+    }
+
+    $('.storywall').on('click', function () {
+      let src = $(this).find('source').attr('src');
+      $('#imageViewer').attr('src', src);
+      $('#desiredSize').attr('src', src);
+
+      calculateImageViewer();
+
+      $('#imageModal').modal('show');
+      
+    });
     mybutton = document.getElementById("top-btn");
 
     // When the user scrolls down 20px from the top of the document, show the button
