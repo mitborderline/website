@@ -62,7 +62,18 @@
       width: 100%;
       margin: 0px;
     }
-
+    .image-fade:hover {
+      transition-duration: 0.8s;
+      opacity: 0.7;
+      display: none
+    }
+    .image-fade {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+    }
+    
     #imageViewer {
       max-height: 80vh;
     }
@@ -122,7 +133,12 @@
     .project {
       padding: 10px;
     }
-    .project video {
+    .project .video {
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+    .project video, .project img {
       cursor: pointer;
       width: 200px;
       height: 200px;
@@ -191,7 +207,7 @@
       </div>
       <p class="italic">
         <b>Artists: Melody W, Sangita V, Rachel S, Raphi K, Mariela PC, Layal B, Alison F, Jessica P,  Sruthi P, 
-          Shardul C, Jimmy K, Laura C, Sohini K, Rucha K, Rihn H, Yijun Y, Margaret Z, Nina L, Vedang L, 
+          Shardul C, Jimmy K, Laura C, Sohini K, Rucha K, Rihn, Yijun Y, Margaret Z, Nina L, Vedang L, 
           Raina T, Teresa G  </b><br>
 
         <b>Coordinators:</b> Margaret Zheng, Jenny Zhang, Angela Zhang, Joyce An, Philena Liu, Yiming Chen,
@@ -230,7 +246,7 @@
               <source src="storywall_animations/11 with mural storywall - Yiming Chen.mp4" type="video/mp4">
               </video>
             <div class="project-titles">
-              Muralist: Jessica Pan
+              Muralist: Jessica P, Sruthi P, Shardul C, Jimmy K, Laura C
               <br/>
               Animator: Yiming Chen
             </div>
@@ -251,8 +267,7 @@
               <source src="storywall_animations/AsItComes_Kidist_4K - Aria Kydd.mp4" type="video/mp4">
               </video>
             <div class="project-titles">
-              Muralist: 
-              <!-- FIND OUT MURALIST -->
+              Muralist: Kidist Adamu, Aria Kydd
               <br/>
               Animator: Aria Kydd
             </div>
@@ -272,8 +287,7 @@
               <source src="storywall_animations/bzzbrain_w_mural - Claire Lu.mp4" type="video/mp4">
               </video>
             <div class="project-titles">
-              Muralist:
-              <!-- FIND OUT MURALIST -->
+              Muralist: Vedang L, Raina T
               <br/>
               Animator: Claire Lu
             </div>
@@ -283,8 +297,7 @@
               <source src="storywall_animations/contruction lines anim (as seen) - Yi Jun Yang.mp4" type="video/mp4">
               </video>
             <div class="project-titles">
-              Muralist:
-              <!-- FIND OUT MURALIST -->
+              Muralist: Yijun Yang
               <br/>
               Animator: Yijun Yang
             </div>
@@ -294,8 +307,7 @@
               <source src="storywall_animations/grad_animation_muralbg - Alexis Huang.mp4" type="video/mp4">
               </video>
             <div class="project-titles">
-              Muralist:
-              <!-- FIND OUT MURALIST -->
+              Muralist: Xiaolu Guo
               <br/>
               Animator: Alexis Huang
             </div>
@@ -305,8 +317,7 @@
               <source src="storywall_animations/IMG_4470 - zitong chen.MP4" type="video/mp4">
               </video>
             <div class="project-titles">
-              Muralist:
-              <!-- FIND OUT MURALIST -->
+              Muralist: Teresa Gao
               <br/>
               Animator: Zitong Chen
             </div>
@@ -316,30 +327,36 @@
               <source src="storywall_animations/insideOfMITnormal - Jessica Wu.mp4" type="video/mp4">
               </video>
             <div class="project-titles">
-              Muralist:
-              <!-- FIND OUT MURALIST -->
+              Muralist: Sohini Kar, Rucha Kelkar
               <br/>
               Animator: Jessica Wu
             </div>
         </div>
+      <div class="col-3 project storywall">
+        <img src="storywall_images/Layal.jpg"/>
+        <div class="project-titles">
+          Muralist: Layal Barakat
+        </div>
+    </div>
         <div class="col-3 project storywall">
             <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
               <source src="storywall_animations/mural2 - Audrey C..mp4" type="video/mp4">
               </video>
             <div class="project-titles">
-              Muralist:
-              <!-- FIND OUT MURALIST -->
+              Muralist: Shuli Jones, Emily Caragay
               <br/>
               Animator: Audrey Cui
             </div>
         </div>
         <div class="col-3 project storywall">
-            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
-              <source src="storywall_animations/mural5-muralBackground - Juliana Covarrubias.mp4" type="video/mp4">
-              </video>
+            <div class="video">
+              <video autoplay loop muted preload>
+                <source src="storywall_animations/mural5-muralBackground - Juliana Covarrubias.mp4" type="video/mp4">
+                </video>
+              <img src="storywall_images/NinaLi-Rihn-YuMengZhang.JPG" class="image-fade">
+            </div>
             <div class="project-titles">
-              Muralist:
-              <!-- FIND OUT MURALIST -->
+              Muralists: Nina Li, Rihn, Yu Meng Zhang
               <br/>
               Animator: Juliana Covarrubias
             </div>
@@ -349,8 +366,7 @@
               <source src="storywall_animations/mural_to_animate_video - Caroline Cunningham.mp4" type="video/mp4">
               </video>
             <div class="project-titles">
-              Muralist:
-              <!-- FIND OUT MURALIST -->
+              Muralist: Farin Tavacoli
               <br/>
               Animator: Caroline Cunningham
             </div>
@@ -360,16 +376,18 @@
               <source src="storywall_animations/MuralFourFireHydrantWithMuralBackground - Sebastian Garcia.mp4" type="video/mp4">
               </video>
             <div class="project-titles">
-              Muralist:
-              <!-- FIND OUT MURALIST -->
+              Muralist: Raphi Kang
               <br/>
               Animator: Sebastian Garcia
             </div>
         </div>
         <div class="col-3 project storywall">
-            <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" class="video" loop preload>
-              <source src="storywall_animations/wide_tim_margaret - Margaret Zheng.gif" type="video/gif">
-              </video>
+            <div class="video">
+              <video loop autoplay muted preload>
+                <source src="storywall_animations/wide-tim-margaret-zheng.mp4" type="video/mp4">
+                </video>
+              <img src="storywall_images/Margaret Zheng.jpg" class="image-fade"/>
+            </div>
             <div class="project-titles">
               Muralist: Margaret Zheng
               <br/>
@@ -381,12 +399,29 @@
               <source src="storywall_animations/yen_yijun (as seen) - Yi Jun Yang.mp4" type="video/mp4">
               </video>
             <div class="project-titles">
-              Muralist:
-              <!-- FIND OUT MURALIST -->
+              Muralist: Yenthanh Le
               <br/>
               Animator: Yijun Yang
             </div>
         </div>
+      <div class="col-3 project storywall">
+        <img src="storywall_images/AmyZhong.JPG">
+        <div class="project-titles">
+          Muralist: Amy Zhong
+        </div>
+    </div>
+    <div class="col-3 project storywall">
+      <img src="storywall_images/MelodyWu.JPG">
+      <div class="project-titles">
+        Muralist: Melody Wu
+      </div>
+  </div>
+<div class="col-3 project storywall">
+  <img src="storywall_images/ShaynaAhteck.JPG">
+  <div class="project-titles">
+    Muralist: Shayna Ahteck
+  </div>
+</div>
       </div>
      </div>
     </div>
@@ -953,20 +988,22 @@
 
 
     <br>
-  </div>
-
-  <div class="flex-container">
-    <div class="modal fade" id="imageModal">
-      <button type="button" class="close" data-dismiss="modal">&times;</button>
-      <div class="modal-dialog">
-        <video id="imageViewer">
-          <source src="">
-          </video>
+  
+      <div class="modal fade" id="imageModal">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="modal-dialog">
+          <video id="imageViewer">
+            <source src="">
+            </video>
+        </div>
       </div>
-    </div>
+      <img id="desiredSize" src="">
   </div>
-  <script>
 
+  <script>
+  $(window).resize(function () {
+      calculateImageViewer();
+    });
     // size and center full size image
     function calculateImageViewer() {
       // get desired and viewport width and height
@@ -975,6 +1012,7 @@
       let vw = window.innerWidth;
       let vh = window.innerHeight;
 
+      console.log({ width, height, vw, vh})
       //  alert(vw + ", " + vh + "; " + width + ", " + height);
 
       // set imageViewer to desired width
@@ -986,7 +1024,7 @@
     }
 
     $('.storywall').on('click', function () {
-      let src = $(this).find('source').attr('src');
+      let src = $(this).find('source').attr('src') || $(this).find('img').attr('src');
       $('#imageViewer').attr('src', src);
       $('#desiredSize').attr('src', src);
 
