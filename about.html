@@ -60,6 +60,84 @@
         width: 90%;
       }
     }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .project {
+      padding: 10px;
+    }
+    .project .video {
+      position: relative;
+      width: 200px;
+      height: 200px;
+    }
+    .project video, .project img {
+      cursor: pointer;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+   /*  .accordion {
+      text-align: left;
+    } */
+
+    /* .mural:hover img {
+      cursor: pointer;
+      opacity: 0.5;
+    } */
+
+    .mural:hover .details {
+      cursor: pointer;
+      transition-duration: 0.8s;
+      opacity: 0.7;
+    }
+    .mural {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .mural .animated {
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: none;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .mural:hover .animated {
+      display: block;
+    }
+    .details {
+      font: 'Capriola', sans-serif;
+      font-weight: bold;
+      font-size: 2vw;
+      color: #34d4ae;
+      position: absolute;
+      top: /* 8px; */0px;
+      left: /* 3px; */0px;
+      margin: auto;
+      width: /* 98%; */100%;
+      background-color: black;
+      opacity: 0;
+    }
+    .background {
+      background-color:rgba(255, 255, 255, 0.733);
+    }
+      .title {
+      padding-top: 20%;
+      color: white;
+    }
+
+    .details p {
+      text-align: center;
+    }
+
   </style>
 </head>
 
@@ -135,12 +213,122 @@
           href="https://apps.apple.com/us/app/artivive/id1188737494" target="vive">Artivive app</a>, available for
         Android and iOS. Simply point your phone camera at the AR-enabled murals to unearth hidden animations!
       </p>
+
+    </div>
       <div class="ar">
         <video loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">Your browser does not
           support HTML5 video.
           <source src="https://oembed.vice.com/files/87cb4159cece173779e9c84d7fe15b95.mp4" type="video/mp4">
         </video>
       </div>
+      <div class="flex-container">
+        <div class="project storywall">
+            <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+              <source src="storywall_animations/11 with mural storywall - Yiming Chen.mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class="project storywall">
+            <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+              <source src="storywall_animations/12-10fpsAnimation-withMural-FINAL - Sruthi Parthasarathi.mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class="project storywall">
+            <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+              <source src="storywall_animations/AsItComes_Kidist_4K - Aria Kydd.mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class="project storywall">
+            <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+              <source src="storywall_animations/Beaver Bois Full BG - Alison Fang.mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class="project storywall">
+            <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+              <source src="storywall_animations/bzzbrain_w_mural - Claire Lu.mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class="project storywall">
+            <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+              <source src="storywall_animations/contruction lines anim (as seen) - Yi Jun Yang.mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class="project storywall">
+            <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+              <source src="storywall_animations/grad_animation_muralbg - Alexis Huang.mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class="project storywall">
+            <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+              <source src="storywall_animations/IMG_4470 - zitong chen.MP4" type="video/mp4">
+              </video>
+        </div>
+        <div class="project storywall">
+            <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+              <source src="storywall_animations/insideOfMITnormal - Jessica Wu.mp4" type="video/mp4">
+              </video>
+        </div>
+      <div class="project storywall">
+        <img src="storywall_images/Layal.jpg"/>
+    </div>
+        <div class="project storywall">
+            <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+              <source src="storywall_animations/mural2 - Audrey C..mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class="project storywall">
+            <div class="video">
+              <video loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+                <source src="storywall_animations/mural5-muralBackground - Juliana Covarrubias.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="project storywall">
+            <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+              <source src="storywall_animations/mural_to_animate_video - Caroline Cunningham.mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class="project storywall">
+            <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+              <source src="storywall_animations/MuralFourFireHydrantWithMuralBackground - Sebastian Garcia.mp4" type="video/mp4">
+              </video>
+        </div>
+        <div class="project storywall">
+            <div class="video">
+              <video loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+                <source src="storywall_animations/wide-tim-margaret-zheng.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="project storywall">
+            <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+              <source src="storywall_animations/yen_yijun (as seen) - Yi Jun Yang.mp4" type="video/mp4">
+              </video>
+        </div>
+      <div class="project storywall">
+        <img src="storywall_images/AmyZhong.JPG">
+    </div>
+    <div class="project storywall">
+      <img src="storywall_images/MelodyWu.JPG">
+  </div>
+<div class="project storywall">
+  <img src="storywall_images/ShaynaAhteck.JPG">
+</div>
+<div class="project">
+  <img alt="EmojiHourglass" src="./images/fa2019/EmojiHourglass.jpg">
+</div>
+<div class="project">
+  <img src="borderlinegifs/Over-Whale-Mingly_Amy_Zhong.gif">
+</div>
+<div class="project">
+  <img src="borderlinegifs/jenga_sam_ferguson.gif">
+</div>
+<div class="project">
+  <img src="borderlinegifs/Bouken_Skylar_Larsen.gif">
+</div>
+
+ 
+      </div>
+      
       <hr>
       <h5>Contact <br> <a href="mailto:borderline-team@mit.edu?Subject=Interest"
           target="mail">borderline-team@mit.edu</a><br>
