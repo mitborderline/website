@@ -130,7 +130,72 @@
       text-align: center;
       width: 300px;
     }
+
+    .flex-storywall {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .project .video, .project img {
+      cursor: pointer;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .project {
+      padding: 5px;
+    }
+
+    .project:hover .project-titles {
+      transition-duration: 0.5s;
+      display: block;
+      cursor: pointer;
+    }
+
+    .project:hover img {
+      transition-duration: 0.5s;
+      cursor: pointer;
+      opacity: 0.2;
+    }
+
+    .project-titles {
+      font-family: 'Didact Gothic', sans-serif;
+      letter-spacing: 3px;
+      font-weight: bold;
+      font-size: 1.5vw;
+      color: white;
+      position: absolute;
+      top: 25%;
+      left: 5px;
+      margin: auto;
+      width: 98%;
+      display: none;
+      text-align: center;
+    }
     
+    @media only screen and (max-width: 600px) {
+      .logo {
+        width: 80%;
+      }
+
+      .project-titles {
+        font-size: 10px;
+        display: block;
+        width: 90%;
+        top: 10%;
+      }
+
+      .project {
+        padding: 0;
+      }
+
+      .project img {
+        opacity: 0.3
+      }
+    }
   </style>
 </head>
 
@@ -192,6 +257,98 @@
       <div class="flex-container">
         <img width="65%" alt="welcome_center_storywall" src="./images/projects/storywall/storywall.jpeg">
       </div>
+      <div>
+  <div class="flex-storywall">
+    <div class="project storywall">
+        <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+          <source src="storywall_animations/11 with mural storywall - Yiming Chen.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="project storywall">
+        <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+          <source src="storywall_animations/12-10fpsAnimation-withMural-FINAL - Sruthi Parthasarathi.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="project storywall">
+        <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+          <source src="storywall_animations/AsItComes_Kidist_4K - Aria Kydd.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="project storywall">
+        <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+          <source src="storywall_animations/Beaver Bois Full BG - Alison Fang.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="project storywall">
+        <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+          <source src="storywall_animations/bzzbrain_w_mural - Claire Lu.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="project storywall">
+        <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+          <source src="storywall_animations/contruction lines anim (as seen) - Yi Jun Yang.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="project storywall">
+        <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+          <source src="storywall_animations/grad_animation_muralbg - Alexis Huang.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="project storywall">
+        <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+          <source src="storywall_animations/IMG_4470 - zitong chen.MP4" type="video/mp4">
+          </video>
+    </div>
+    <div class="project storywall">
+        <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+          <source src="storywall_animations/insideOfMITnormal - Jessica Wu.mp4" type="video/mp4">
+          </video>
+    </div>
+  <div class="project storywall">
+    <img src="storywall_images/Layal.jpg"/>
+</div>
+    <div class="project storywall">
+        <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+          <source src="storywall_animations/mural2 - Audrey C..mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="project storywall">
+          <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+            <source src="storywall_animations/mural5-muralBackground - Juliana Covarrubias.mp4" type="video/mp4">
+            </video>
+    </div>
+    <div class="project storywall">
+        <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+          <source src="storywall_animations/mural_to_animate_video - Caroline Cunningham.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="project storywall">
+        <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+          <source src="storywall_animations/MuralFourFireHydrantWithMuralBackground - Sebastian Garcia.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="project storywall">
+          <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+            <source src="storywall_animations/wide-tim-margaret-zheng.mp4" type="video/mp4">
+            </video>
+    </div>
+    <div class="project storywall">
+        <video class="video" loop="" muted="" webkit-playsinline="" playsinline="" autoplay="" preload="auto">
+          <source src="storywall_animations/yen_yijun (as seen) - Yi Jun Yang.mp4" type="video/mp4">
+          </video>
+    </div>
+  <div class="project storywall">
+    <img src="storywall_images/AmyZhong.JPG">
+</div>
+<div class="project storywall">
+  <img src="storywall_images/MelodyWu.JPG">
+</div>
+<div class="project storywall">
+<img src="storywall_images/ShaynaAhteck.JPG">
+</div>
+
+
+  </div>
       <p class="italic">
         <b>Artists: Melody W, Sangita V, Rachel S, Raphi K, Mariela PC, Layal B, Alison F, Jessica P,  Sruthi P, 
           Shardul C, Jimmy K, Laura C, Sohini K, Rucha K, Rihn, Yijun Y, Margaret Z, Nina L, Vedang L, 
