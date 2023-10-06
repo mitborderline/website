@@ -243,7 +243,6 @@
   <br>
 
   <!-- year toggle (stil in the works) -->
-<!--    -->
   <div class="container-fluid">
     <div class="intro">
       <p>Click once or tap twice (mobile) to view the full size image.
@@ -261,11 +260,29 @@
               <label class="form-check-label" for="random">Show/Hide All Murals</label>
             </div>
             <div class="row" style="text-align: left;">
+
               <div class="col-sm-6 togglecol">
+
+                <div class="form-check-inline form-switch">
+                  <input onclick="toggleYearShow(this.id)" class="form-check-input" type="checkbox" id="spring2023" checked>
+                  <label class="form-check-label" for="spring2023">Spring 2023</label>
+                </div>
+                <br>
+                <div class="form-check-inline form-switch">
+                  <input onclick="toggleYearShow(this.id)" class="form-check-input" type="checkbox" id="spring2022" checked>
+                  <label class="form-check-label" for="spring2022">Spring 2022</label>
+                </div>
+                <br>
                 <div class="form-check-inline form-switch">
                   <input onclick="toggleYearShow(this.id)" class="form-check-input" type="checkbox" id="storywall2020" checked>
                   <label class="form-check-label" for="storywall2020">Storywall 2020 (Welcome Center)</label>
                 </div>
+                <br>
+
+              </div>
+
+              <div class="col-sm-6 togglecol">
+ 
                 <div class="form-check-inline form-switch">
                   <input onclick="toggleYearShow(this.id)" class="form-check-input" type="checkbox" id="fall2019" checked>
                   <label class="form-check-label" for="fall2019">Fall 2019</label>
@@ -281,8 +298,11 @@
                   <label class="form-check-label" for="fall2018">Fall 2018</label>
                 </div>
                 <br>
+
               </div>
-              <div class="col-sm-6" style="text-align: left;">
+
+              <div class="col-sm-6 togglecol">
+
                 <div class="form-check-inline form-switch">
                   <input onclick="toggleYearShow(this.id)" class="form-check-input" type="checkbox" id="fall2017" checked>
                   <label class="form-check-label" for="fall2017">Fall 2017</label>
@@ -298,10 +318,680 @@
                   <label class="form-check-label" for="AR-Enabled">AR-enabled Murals</label>
                 </div>
                 <br>
+
               </div>
+
             </div>
           </div>
+      </div>
+
+      <!-- SPRING 2023 -->
+      <div class="card">
+            <div id="spring2023Toggle" class=" show" aria-labelledby="heading1">
+              <div class="card-body">
+    
+                <div class="row">
+      
+                  <div class="col-4 mural">
+                      <img alt="Spiderman" src="./images/sp2023/spiderman.png" />
+                      <div class="details">
+                        <p class="title">Spiderman</p>
+                        <p>Muralists: Helena Usey & Pyae Sone Hmine</p>
+                      </div>
+                  </div>
+      
+                  <div class="col-4 mural">
+                    <img alt="Girl & Koi Fish" src="./images/sp2023/girl.png" />
+                    <div class="details">
+                      <p class="title">Girl & Koi Fish</p>
+                      <p>Muralist: Angela Chen</p>
+                    </div>
+                  </div>
+      
+                  <div class="col-4 mural">
+                    <img alt="Jellyfish" src="./images/sp2023/jellyfish.png" />
+                    <div class="details">
+                      <p class="title">Jellyfish</p>
+                      <p>Muralist: Tiffany Louie</p>
+                    </div>
+                  </div>
+      
+                </div>
+
+                <div class="row">
+      
+                  <div class="col-4 mural">
+                      <img alt="Underwater" src="./images/sp2023/underwater.png" />
+                      <div class="details">
+                        <p class="title">Underwater</p>
+                        <p>Muralists: April Wu</p>
+                      </div>
+                  </div>
+      
+                  <div class="col-4 mural">
+                    <img alt="Blast Off" src="./images/sp2023/blast_off.png" />
+                    <div class="details">
+                      <p class="title">Blast Off</p>
+                      <p>Muralist: Unknown</p>
+                    </div>
+                  </div>
+      
+                  <div class="col-4 mural">
+                    <img alt="Happy & Sad" src="./images/sp2023/happy_sad.png" />
+                    <div class="details">
+                      <p class="title">Happy & Sad</p>
+                      <p>Muralist: Jade Durham</p>
+                    </div>
+                  </div>
+      
+                </div>
+                
+              </div>
+            </div>
+      </div>
+
+      <!-- SPRING 2022 -->
+      <div class="card">
+        <div id="spring2022Toggle" class=" show" aria-labelledby="heading1">
+          <div class="card-body">
+
+            <div class="row">
+
+              <div class="col-4 mural">
+                <img alt="Phoenix Rising From Flowers of Flames" src="./images/sp2022/phoenix_rising.jpg" />
+                <div class="details">
+                  <p class="title">Phoenix Rising From Flowers of Flames</p>
+                  <p>Muralist: Yu Meng Zhang</p>
+                </div>
+              </div>
+
+              <div class="col-4 mural">
+                <img alt="Periodic Table" src="./images/sp2022/periodic_table.jpg">
+                <div class="details">
+                  <p class="title">Periodic Table</p>
+                  <p>Muralist: Lindsay Bolino</p>
+                </div>
+              </div>
+
+              <div class="col-4 mural">
+                <img alt="Viatnamese Dragon" src="./images/sp2022/dragon.jpg" />
+                <div class="details">
+                  <p class="title">Viatnamese Dragon</p>
+                  <p>Muralist: Hong Nguyen</p>
+                </div>
+              </div>
+
+            </div>
+
+          <div class="row">
+
+            <div class="col-4 mural">
+                <img alt="Health of the Ocean" src="./images/sp2022/ocean.jpg" />
+                <div class="details">
+                  <p class="title">Health of the Ocean</p>
+                  <p>Muralist: Kitty Zeng</p>
+                </div>
+            </div>
+
+            <div class="col-4 mural">
+              <img alt="Octopus" src="./images/sp2022/octopus.jpg" />
+              <div class="details">
+                <p class="title">Octopus</p>
+                <p>Muralist: Michelle He</p>
+              </div>
+            </div>
+
+            <div class="col-4 mural">
+              <img alt="Happy Pink Alien & Grey Robot" src="./images/sp2022/happy_aliens.jpg" />
+              <div class="details">
+                <p class="title">Happy Pink Alien & Grey Robot</p>
+                <p>Muralist: Skylar Larsen</p>
+              </div>
+            </div>
+
           </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- STORYWALL 2020 -->
+      <div class="card">
+        <div id="storywall2020Toggle"  aria-labelledby="heading2">
+          <div class="card-body">
+
+            <div class="row">
+              <div class="col-4 mural">
+                <video  autoplay loop muted preload>
+                  <source src="storywall_animations/11 with mural storywall - Yiming Chen.mp4" type="video/mp4">
+                  </video>
+                <div class="details ">
+                  <p class="title">ESPortrait</p>
+                  <p>
+                    Muralist: Jessica P, Sruthi P, Shardul C, Jimmy K, Laura C
+                  <br/>
+                  Animator: Yiming Chen
+                  </p>
+                </div>
+            </div>
+            <div class="col-4 mural">
+                <video  autoplay loop muted preload>
+                  <source src="storywall_animations/12-10fpsAnimation-withMural-FINAL - Sruthi Parthasarathi.mp4" type="video/mp4">
+                  </video>
+                <div class="details">
+                  <p class="title">Reconnection</p>
+                  <p>
+                    Muralist: Margaret Zheng
+                  <br/>
+                  Animator: Sruthi Parthasarathi
+                  </p>
+                </div>
+            </div>
+            <div class="col-4 mural">
+                <video  autoplay loop muted preload>
+                  <source src="storywall_animations/AsItComes_Kidist_4K - Aria Kydd.mp4" type="video/mp4">
+                  </video>
+                <div class="details">
+                  <p class="title">Living Legacy</p>
+                  <p>
+                    Muralist: Kidist Adamu, Aria Kydd, Bukunmi Shodipo
+                    <br/>
+                    Animator: Aria Kydd
+                  </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                  <video  autoplay loop muted preload>
+                    <source src="storywall_animations/Beaver Bois Full BG - Alison Fang.mp4" type="video/mp4">
+                    </video>
+                  <div class="details">
+                    <p class="title">beaver bois!</p>
+                    <p>
+                      Muralist: Alison Fang
+                    <br/>
+                    Animator: Alison Fang
+                    </p>
+                  </div>
+              </div>
+              <div class="col-4 mural">
+                <video  autoplay loop muted preload>
+                  <source src="storywall_animations/bzzbrain_w_mural - Claire Lu.mp4" type="video/mp4">
+                  </video>
+                <div class="details">
+                  <p class="title">Brain Waves</p>
+                  <p>
+                    Muralist: Vedang L, Raina T
+                  <br/>
+                  Animator: Claire Lu
+                  </p>
+                </div>
+            </div>
+            <div class="col-4 mural">
+                <video  autoplay loop muted preload>
+                  <source src="storywall_animations/contruction lines anim (as seen) - Yi Jun Yang.mp4" type="video/mp4">
+                  </video>
+                <div class="details">
+                  <p class="title">Construction Lines</p>
+                  <p>
+                    Muralist: Yijun Yang
+                  <br/>
+                  Animator: Yijun Yang
+                  </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <video  autoplay loop muted preload>
+                  <source src="storywall_animations/grad_animation_muralbg - Alexis Huang.mp4" type="video/mp4">
+                  </video>
+                <div class="details">
+                  <p class="title">Commencement</p>
+                  <p>
+                    Muralist: Xiaolu Guo
+                  <br/>
+                  Animator: Alexis Huang
+                  </p>
+                </div>
+            </div>
+            <div class="col-4 mural">
+                <video  autoplay loop muted preload>
+                  <source src="storywall_animations/IMG_4470 - zitong chen.MP4" type="video/mp4">
+                  </video>
+                <div class="details">
+                  <p class="title">Untitled No. 1 Mvt. 4</p>
+                  <p>
+                    Muralist: Teresa Gao
+                  <br/>
+                  Animator: Zitong Chen
+                  </p>
+                </div>
+            </div>
+            <div class="col-4 mural">
+              <video  autoplay loop muted preload>
+                <source src="storywall_animations/insideOfMITnormal - Jessica Wu.mp4" type="video/mp4">
+                </video>
+              <div class="details">
+                <p class="title">Sempiternal</p>
+                <p>
+                  Muralist: Sohini Kar, Rucha Kelkar
+                <br/>
+                Animator: Jessica Wu
+                </p>
+              </div>
+          </div>
+            </div>
+
+            <div class="row">
+          <div class="col-4 mural">
+            <img src="storywall_images/Layal.jpg"/>
+            <div class="details">
+              <p class="title">MIT.jpg</p>
+              <p>
+                Muralist: Layal Barakat
+              </p>
+            </div>
+        </div>
+            <div class="col-4 mural">
+                <video  autoplay loop muted preload>
+                  <source src="storywall_animations/mural2 - Audrey C..mp4" type="video/mp4">
+                  </video>
+                <div class="details">
+                  <p class="title">More Than A Dorm</p>
+                  <p>
+                    Muralist: Shuli Jones, Emily Caragay
+                  <br/>
+                  Animator: Audrey Cui
+                  </p>
+                </div>
+            </div>
+            <div class="col-4 mural">
+                  <video autoplay loop muted preload>
+                    <source src="storywall_animations/mural5-muralBackground - Juliana Covarrubias.mp4" type="video/mp4">
+                    </video>
+                <div class="details">
+                  <p class="title">Rosie the Persevering Programmer</p>
+                  <p>
+                    Muralists: Nina Li, Rihn, Yu Meng Zhang
+                    <br/>
+                    Animator: Juliana Covarrubias
+                  </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <video autoplay loop muted preload>
+                  <source src="storywall_animations/mural_to_animate_video - Caroline Cunningham.mp4" type="video/mp4">
+                  </video>
+                <div class="details">
+                  <p class="title">Untitled</p>
+                  <p>
+                    Muralist: Farin Tavacoli
+                  <br/>
+                  Animator: Caroline Cunningham
+                  </p>
+                </div>
+            </div>
+            <div class="col-4 mural">
+                <video  autoplay loop muted preload>
+                  <source src="storywall_animations/MuralFourFireHydrantWithMuralBackground - Sebastian Garcia.mp4" type="video/mp4">
+                  </video>
+                <div class="details">
+                  <p class="title">Fire hydrant!</p>
+                  <p>
+                    Muralist: Raphi Kang
+                  <br/>
+                  Animator: Sebastian Garcia
+                  </p>
+                </div>
+            </div>
+            <div class="col-4 mural">
+                  <video loop preload>
+                    <source src="storywall_animations/wide-tim-margaret-zheng.mp4" type="video/mp4">
+                    </video>
+                <div class="details">
+                  <p class="title">A Wide Welcome</p>
+                  <P>
+                    Muralist: Margaret Zheng
+                  <br/>
+                  Animator: Margaret Zheng
+                  </P>
+                </div>
+            </div>
+            
+            </div>
+
+            <div class="row">
+            <div class="col-4 mural">
+              <video  autoplay loop muted preload>
+                <source src="storywall_animations/yen_yijun (as seen) - Yi Jun Yang.mp4" type="video/mp4">
+                </video>
+              <div class="details">
+                <p class="title">Time With You</p>
+                <p>
+                  Muralist: Yenthanh Le
+                <br/>
+                Animator: Yijun Yang
+                </p>
+              </div>
+          </div>
+            <div class="col-4 mural">
+              <img src="storywall_images/AmyZhong.JPG">
+              <div class="details">
+                <p class="title">sticky places</p>
+                <p>
+                  Muralist: Amy Zhong
+                </p>
+              </div>
+          </div>
+          <div class="col-4 mural">
+            <img src="storywall_images/MelodyWu.JPG">
+            <div class="details">
+              <p class="title">Biomaking: Mind, Hand, Heart</p>
+              <p>
+                Muralist: Melody Wu, Sangita Vasikaran
+              </p>
+            </div>
+          </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img src="storywall_images/ShaynaAhteck.JPG">
+                <div class="details">
+                  <p class="title">Glass: Forbidden Honey</p>
+                  <p>
+                    Muralist: Shayna Ahteck
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>  
+
+      <!-- AR ENABLED TOGGLE -->
+      <div class="card">
+        <div id="AR-EnabledToggle"  aria-labelledby="headingAR">
+          <div class="card-body">
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Abyss or Blis" src="./images/sp2017/AbyssOrBliss.jpg">
+                <div class="details">
+                  <p class="title">Abyss or Bliss</p>
+                  <p>Muralist: Danny Gelman
+                    <br> Animators:<br> Danny Gelman, Lilia Poteat
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Galaxy Note 7" src="./images/sp2017/GalaxyNote7.jpg">
+                <div class="details">
+                  <p class="title">Galaxy Note 7</p>
+                  <p>Muralist: Elise McCormack
+                    <br> Animator: Sam Seaman
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Cat's Cradle" src="./images/sp2017/CatsCradle.jpg">
+                <div class="details">
+                  <p class="title">Cat's Cradle</p>
+                  <p>Muralist and Animator:<br> Allan Gelman</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <div class="original">
+                  <img alt="Split" src="./images/fa2017/Split.jpg">
+                </div>
+                <div class="animated ">
+                  <!-- <p class="title">Split</p>
+                  <p>Muralist and Animator:<br> Jude He</p> -->
+                  <img src="./borderlinegifs/Split_Elissa.gif"/>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <div class="original">
+                  <img alt="The Little Prince" src="./images/fa2017/TheLittlePrince.jpg">
+                </div>
+                <div class="animated ">
+                  <!-- <p class="title">The Little Prince</p>
+                  <p>Muralist and Animator:<br> Jessica Xu</p> -->
+                  <img src="./borderlinegifs/Jessica Xu - The Little Prince animation.gif"/>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Incandescent" src="./images/fa2018/Incandescent.png">
+                <div class="details">
+                  <p class="title">Incandescent</p>
+                  <p>Muralist and Animator: <br>Gloria Lin</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Girl" src="./images/sp2017/Girl.jpg" />
+                <div class="details">
+                  <p class="title">Girl</p>
+                  <p>Muralist: Ming Wang
+                    <br> Animator: Clare Liu
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Forged by Humans" src="./images/sp2017/ForgedByHumans.jpg">
+                <div class="details">
+                  <p class="title">Forged by Humans</p>
+                  <p>Muralist and Animator:<br> Elisa Young</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Flown the Coop" src="./images/sp2017/FlownTheCoop.png" />
+                <div class="details">
+                  <p class="title">Flown the Coop</p>
+                  <p>Muralist: Jierui Fang
+                    <br> Animator: Ivy Li
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Stay Salty" src="./images/sp2017/StaySalty.jpg">
+                <div class="details">
+                  <p class="title">Stay Salty</p>
+                  <p>Muralist: Emma DeSoto
+                    <br> Animator: Lucy Zhang
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Iron Man" src="./images/sp2017/IronManU.jpg" />
+                <div class="details">
+                  <p class="title">Iron Man</p>
+                  <p>Muralist: Meghana Bhat<br>
+                    Animator: Michelle Yakubek</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Faces" src="./images/sp2017/FacesU.jpg" />
+                <div class="details">
+                  <p class="title">Untitled</p>
+                  <p>Muralist: Lisa Coleman
+                    <br>Animator: Misha Jamy
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Statue of Leafberty" src="./images/sp2017/StatueOfLeafberty.jpg" />
+                <div class="details">
+                  <p class="title">Statue of Leafberty</p>
+                  <p>Muralist and Animator:<br>
+                    Tara Lee</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Flower's Answer" src="./images/sp2017/FlowersAnswer.jpg" />
+                <div class="details">
+                  <p class="title">Flower's Answer</p>
+                  <p>Muralist and Animator:<br> Iris Fung</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Stop and Smell the Roses" src="./images/sp2017/Roses.jpg" />
+                <div class="details">
+                  <p class="title">Stop and Smell the Roses</p>
+                  <p>Muralist and Animator:<br> Helen He</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Poppies" src="./images/fa2017/Poppies.jpg">
+                <div class="details">
+                  <p class="title">Disillusionment of Poppies in the Wind</p>
+                  <p>Muralist and Animator:<br> Jacqueline Chen</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Entanglement" src="./images/sp2017/Entanglement.jpg" />
+                <div class="details">
+                  <p class="title">Entanglement</p>
+                  <p>Muralist: Emma Batson
+                    <br> Animator: Jessica Liu
+                  </p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Lilies" src="./images/fa2017/Lilies.jpg" />
+                <div class="details">
+                  <p class="title">Lilies</p>
+                  <p>Muralist: Rachel Wu <br>
+                    Animator: Juliana Chew</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Heart of Gold" src="./images/sp2017/HeartOfGold.jpg" />
+                <div class="details">
+                  <p class="title">Heart of Gold</p>
+                  <p>Muralist: Amy Liu <br>
+                    Animator: Meital Hoffman</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Peacock" src="./images/fa2017/Peacock.png">
+                <div class="details">
+                  <p class="title">Peacock</p>
+                  <p>Muralist and Animator:<br> Khanh Nguyen</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Einstein Quote" src="./images/sp2017/quote.png" />
+                <div class="details">
+                  <p class="title">Quote</p>
+                  <p>Muralist: Tara Lee <br>
+                    Animator: Kaitlyn Hennacy</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Meninism" src="./images/sp2017/Meninism.jpg" />
+                <div class="details">
+                  <p class="title">Meninism</p>
+                  <p>Muralist: Jessie Wang <br>
+                    Animator: Alyssa Dayan</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Quick Brown Fox" src="./images/sp2017/FoxU.png" />
+                <div class="details">
+                  <p class="title">Quick Brown Fox</p>
+                  <p>Muralists:<br> Julia Rue and Tara Lee <br>
+                    Animator: Carolyn Mei</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Untitled" src="./images/sp2017/Untitled.jpg" />
+                <div class="details">
+                  <p class="title">Untitled</p>
+                  <p>Muralist: Ivy Li <br>
+                    Animator: Christopher Miller</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Blending In" src="./images/fa2018/BlendingIn.jpg">
+                <div class="details">
+                  <p class="title">Blending In</p>
+                  <p>Muralist: Sarah Dohadwala <br>
+                    Animator: Misha Jamy</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Banana Fever" src="./images/sp2019/BL1.jpg">
+                <div class="details">
+                  <p class="title">Banana Fever</p>
+                  <p>Muralist: Dipo Doherty <br>
+                    Animator: Sharon Lin</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-4 mural">
+                <img alt="Afloat 2" src="./images/fa2018/Afloat2.jpg" />
+                <div class="details">
+                  <p class="title">Afloat Pt. 2</p>
+                  <p>Muralist and Animator:<br> Talia Blum</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Watermalone" src="./images/sp2017/Watermalone.jpg">
+                <div class="details">
+                  <p class="title">W a t e r m a l o n e</p>
+                  <p>Muralist: Megan Fu <br>
+                    Animator: Misha Jamy</p>
+                </div>
+              </div>
+              <div class="col-4 mural">
+                <img alt="Fatty" src="./images/sp2017/Fatty.jpg" />
+                <div class="details">
+                  <p class="title">Fatty</p>
+                  <p>Muralist: Yingni Wang <br>
+                    Animator: Wanyi "Sherry" Xiao</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- FALL 2019 -->
       <div class="card">
         <div id="fall2019Toggle" class=" show" aria-labelledby="heading1">
           <div class="card-body">
@@ -314,7 +1004,7 @@
                 </div>
               </div>
               <div class="col-4 mural">
-                <img alt="SucculentMineral" src="./images/fa2019/SucculentMineral.jpg">
+                <img alt="SucculentMineral" src="./images/fa2019/SucculentMineral.png">
                 <div class="details">
                   <p class="title">Succulent Mineral</p>
                   <p>Muralist: Jocelin Su</p>
@@ -406,6 +1096,8 @@
           </div>
         </div>
       </div>
+
+      <!-- SPRING 2019 -->
       <div class="card">
         <div id="spring2019Toggle"  aria-labelledby="heading2">
           <div class="card-body">
@@ -484,6 +1176,8 @@
           </div>
         </div>
       </div>
+
+      <!-- FALL 2018 -->
       <div class="card">
         <div id="fall2018Toggle"  aria-labelledby="heading3">
           <div class="card-body">
@@ -522,7 +1216,7 @@
                 </div>
               </div>
               <div class="col-4 mural">
-                <img alt="Freedom Doves" src="./images/fa2018/FreedomDoves.jpg" />
+                <img alt="Freedom Doves" src="./images/fa2018/FreedomDoves.png" />
                 <div class="details">
                   <p class="title">Freedom Doves</p>
                   <p>Muralist: Elaine Xiao</p>
@@ -588,6 +1282,7 @@
         </div>
       </div>
 
+      <!-- FALL 2017 -->
       <div class="card">
         <div id="fall2017Toggle"  aria-labelledby="heading4">
           <div class="card-body">
@@ -656,7 +1351,7 @@
                 </div>
               </div>
               <div class="col-4 mural">
-                <img alt="Peacock" src="./images/fa2017/Peacock.jpg">
+                <img alt="Peacock" src="./images/fa2017/Peacock.png">
                 <div class="details">
                   <p class="title">Peacock</p>
                   <p>Muralist and Animator:<br> Khanh Nguyen</p>
@@ -689,8 +1384,9 @@
             </div>
           </div>
         </div>
-      
+      </div>
 
+      <!-- SPRING 2017 -->
       <div class="card">
         <div id="spring2017Toggle"  aria-labelledby="heading5" data-parent="#accordion">
           <div class="card-body">
@@ -713,7 +1409,7 @@
                 </div>
               </div>
               <div class="col-4 mural">
-                <img alt="Flown the Coop" src="./images/sp2017/FlownTheCoop.jpg" />
+                <img alt="Flown the Coop" src="./images/sp2017/FlownTheCoop.png" />
                 <div class="details">
                   <p class="title">Flown the Coop</p>
                   <p>Muralist: Jierui Fang
@@ -834,7 +1530,7 @@
 
             <div class="row">
               <div class="col-4 mural">
-                <img alt="Blind Faith" src="./images/sp2017/BlindFaith.jpg">
+                <img alt="Blind Faith" src="./images/sp2017/BlindFaith.png">
                 <div class="details">
                   <p class="title">Blind Faith</p>
                   <p>Muralist: Addie Oh</p>
@@ -853,33 +1549,6 @@
                   <p class="title">Quick Brown Fox</p>
                   <p>Muralists:<br> Julia Rue and Tara Lee <br>
                     Animator: Carolyn Mei</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-4 mural">
-                <img alt="Watermalone" src="./images/sp2017/Watermalone.jpg">
-                <div class="details">
-                  <p class="title">W a t e r m a l o n e</p>
-                  <p>Muralist: Megan Fu <br>
-                    Animator: Misha Jamy</p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Statue of Leafberty" src="./images/sp2017/StatueOfLeafberty.jpg" />
-                <div class="details">
-                  <p class="title">Statue of Leafberty</p>
-                  <p>Muralist and Animator:<br>
-                    Tara Lee</p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Fatty" src="./images/sp2017/Fatty.jpg" />
-                <div class="details">
-                  <p class="title">Fatty</p>
-                  <p>Muralist: Yingni Wang <br>
-                    Animator: Wanyi "Sherry" Xiao</p>
                 </div>
               </div>
             </div>
@@ -917,7 +1586,7 @@
                 </div>
               </div>
               <div class="col-4 mural">
-                <img alt="Einstein Quote" src="./images/sp2017/Quote.jpg" />
+                <img alt="Einstein Quote" src="./images/sp2017/quote.png" />
                 <div class="details">
                   <p class="title">Quote</p>
                   <p>Muralist: Tara Lee <br>
@@ -933,381 +1602,9 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div id="storywall2020Toggle"  aria-labelledby="heading2">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-4 mural">
-                <video  autoplay loop muted preload>
-                  <source src="storywall_animations/11 with mural storywall - Yiming Chen.mp4" type="video/mp4">
-                  </video>
-                <div class="details ">
-                  <p class="title">ESPortrait</p>
-                  <p>
-                    Muralist: Jessica P, Sruthi P, Shardul C, Jimmy K, Laura C
-                  <br/>
-                  Animator: Yiming Chen
-                  </p>
-                </div>
-            </div>
-            <div class="col-4 mural">
-                <video  autoplay loop muted preload>
-                  <source src="storywall_animations/12-10fpsAnimation-withMural-FINAL - Sruthi Parthasarathi.mp4" type="video/mp4">
-                  </video>
-                <div class="details">
-                  <p class="title">Reconnection</p>
-                  <p>
-                    Muralist: Margaret Zheng
-                  <br/>
-                  Animator: Sruthi Parthasarathi
-                  </p>
-                </div>
-            </div>
-            <div class="col-4 mural">
-                <video  autoplay loop muted preload>
-                  <source src="storywall_animations/AsItComes_Kidist_4K - Aria Kydd.mp4" type="video/mp4">
-                  </video>
-                <div class="details">
-                  <p class="title">Living Legacy</p>
-                  <p>
-                    Muralist: Kidist Adamu, Aria Kydd, Bukunmi Shodipo
-                    <br/>
-                    Animator: Aria Kydd
-                  </p>
-                </div>
-            </div>
-            </div>
-            <div class="row">
-              <div class="col-4 mural">
-                  <video  autoplay loop muted preload>
-                    <source src="storywall_animations/Beaver Bois Full BG - Alison Fang.mp4" type="video/mp4">
-                    </video>
-                  <div class="details">
-                    <p class="title">beaver bois!</p>
-                    <p>
-                      Muralist: Alison Fang
-                    <br/>
-                    Animator: Alison Fang
-                    </p>
-                  </div>
-              </div>
-              <div class="col-4 mural">
-                <video  autoplay loop muted preload>
-                  <source src="storywall_animations/bzzbrain_w_mural - Claire Lu.mp4" type="video/mp4">
-                  </video>
-                <div class="details">
-                  <p class="title">Brain Waves</p>
-                  <p>
-                    Muralist: Vedang L, Raina T
-                  <br/>
-                  Animator: Claire Lu
-                  </p>
-                </div>
-            </div>
-            <div class="col-4 mural">
-                <video  autoplay loop muted preload>
-                  <source src="storywall_animations/contruction lines anim (as seen) - Yi Jun Yang.mp4" type="video/mp4">
-                  </video>
-                <div class="details">
-                  <p class="title">Construction Lines</p>
-                  <p>
-                    Muralist: Yijun Yang
-                  <br/>
-                  Animator: Yijun Yang
-                  </p>
-                </div>
-            </div>
-            </div>
-            <div class="row">
-              <div class="col-4 mural">
-                <video  autoplay loop muted preload>
-                  <source src="storywall_animations/grad_animation_muralbg - Alexis Huang.mp4" type="video/mp4">
-                  </video>
-                <div class="details">
-                  <p class="title">Commencement</p>
-                  <p>
-                    Muralist: Xiaolu Guo
-                  <br/>
-                  Animator: Alexis Huang
-                  </p>
-                </div>
-            </div>
-            <div class="col-4 mural">
-                <video  autoplay loop muted preload>
-                  <source src="storywall_animations/IMG_4470 - zitong chen.MP4" type="video/mp4">
-                  </video>
-                <div class="details">
-                  <p class="title">Untitled No. 1 Mvt. 4</p>
-                  <p>
-                    Muralist: Teresa Gao
-                  <br/>
-                  Animator: Zitong Chen
-                  </p>
-                </div>
-            </div>
-            <div class="col-4 mural">
-              <video  autoplay loop muted preload>
-                <source src="storywall_animations/insideOfMITnormal - Jessica Wu.mp4" type="video/mp4">
-                </video>
-              <div class="details">
-                <p class="title">Sempiternal</p>
-                <p>
-                  Muralist: Sohini Kar, Rucha Kelkar
-                <br/>
-                Animator: Jessica Wu
-                </p>
-              </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-4 mural">
-            <img src="storywall_images/Layal.jpg"/>
-            <div class="details">
-              <p class="title">MIT.jpg</p>
-              <p>
-                Muralist: Layal Barakat
-              </p>
-            </div>
-        </div>
-            <div class="col-4 mural">
-                <video  autoplay loop muted preload>
-                  <source src="storywall_animations/mural2 - Audrey C..mp4" type="video/mp4">
-                  </video>
-                <div class="details">
-                  <p class="title">More Than A Dorm</p>
-                  <p>
-                    Muralist: Shuli Jones, Emily Caragay
-                  <br/>
-                  Animator: Audrey Cui
-                  </p>
-                </div>
-            </div>
-            <div class="col-4 mural">
-                  <video autoplay loop muted preload>
-                    <source src="storywall_animations/mural5-muralBackground - Juliana Covarrubias.mp4" type="video/mp4">
-                    </video>
-                <div class="details">
-                  <p class="title">Rosie the Persevering Programmer</p>
-                  <p>
-                    Muralists: Nina Li, Rihn, Yu Meng Zhang
-                    <br/>
-                    Animator: Juliana Covarrubias
-                  </p>
-                </div>
-            </div>
-            </div>
-            <div class="row">
-              <div class="col-4 mural">
-                <video autoplay loop muted preload>
-                  <source src="storywall_animations/mural_to_animate_video - Caroline Cunningham.mp4" type="video/mp4">
-                  </video>
-                <div class="details">
-                  <p class="title">Untitled</p>
-                  <p>
-                    Muralist: Farin Tavacoli
-                  <br/>
-                  Animator: Caroline Cunningham
-                  </p>
-                </div>
-            </div>
-            <div class="col-4 mural">
-                <video  autoplay loop muted preload>
-                  <source src="storywall_animations/MuralFourFireHydrantWithMuralBackground - Sebastian Garcia.mp4" type="video/mp4">
-                  </video>
-                <div class="details">
-                  <p class="title">Fire hydrant!</p>
-                  <p>
-                    Muralist: Raphi Kang
-                  <br/>
-                  Animator: Sebastian Garcia
-                  </p>
-                </div>
-            </div>
-            <div class="col-4 mural">
-                  <video loop preload>
-                    <source src="storywall_animations/wide-tim-margaret-zheng.mp4" type="video/mp4">
-                    </video>
-                <div class="details">
-                  <p class="title">A Wide Welcome</p>
-                  <P>
-                    Muralist: Margaret Zheng
-                  <br/>
-                  Animator: Margaret Zheng
-                  </P>
-                </div>
-            </div>
-            
-            </div>
-          <div class="row">
-            <div class="col-4 mural">
-              <video  autoplay loop muted preload>
-                <source src="storywall_animations/yen_yijun (as seen) - Yi Jun Yang.mp4" type="video/mp4">
-                </video>
-              <div class="details">
-                <p class="title">Time With You</p>
-                <p>
-                  Muralist: Yenthanh Le
-                <br/>
-                Animator: Yijun Yang
-                </p>
-              </div>
-          </div>
-            <div class="col-4 mural">
-              <img src="storywall_images/AmyZhong.JPG">
-              <div class="details">
-                <p class="title">sticky places</p>
-                <p>
-                  Muralist: Amy Zhong
-                </p>
-              </div>
-          </div>
-          <div class="col-4 mural">
-            <img src="storywall_images/MelodyWu.JPG">
-            <div class="details">
-              <p class="title">Biomaking: Mind, Hand, Heart</p>
-              <p>
-                Muralist: Melody Wu, Sangita Vasikaran
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-4 mural">
-            <img src="storywall_images/ShaynaAhteck.JPG">
-            <div class="details">
-              <p class="title">Glass: Forbidden Honey</p>
-              <p>
-                Muralist: Shayna Ahteck
-              </p>
-            </div>
-          </div>
-        </div>
-            </div>
-          </div>
-        </div>  
-      </div>
-      <div class="card">
-        <div id="AR-EnabledToggle"  aria-labelledby="headingAR">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-4 mural">
-                <img alt="Abyss or Blis" src="./images/sp2017/AbyssOrBliss.jpg">
-                <div class="details">
-                  <p class="title">Abyss or Bliss</p>
-                  <p>Muralist: Danny Gelman
-                    <br> Animators:<br> Danny Gelman, Lilia Poteat
-                  </p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Galaxy Note 7" src="./images/sp2017/GalaxyNote7.jpg">
-                <div class="details">
-                  <p class="title">Galaxy Note 7</p>
-                  <p>Muralist: Elise McCormack
-                    <br> Animator: Sam Seaman
-                  </p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Cat's Cradle" src="./images/sp2017/CatsCradle.jpg">
-                <div class="details">
-                  <p class="title">Cat's Cradle</p>
-                  <p>Muralist and Animator:<br> Allan Gelman</p>
-                </div>
-              </div>
-            </div>
 
             <div class="row">
-              <div class="col-4 mural">
-                <div class="original">
-                  <img alt="Split" src="./images/fa2017/Split.jpg">
-                </div>
-                <div class="animated ">
-                  <!-- <p class="title">Split</p>
-                  <p>Muralist and Animator:<br> Jude He</p> -->
-                  <img src="./borderlinegifs/Split_Elissa.gif"/>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <div class="original">
-                  <img alt="The Little Prince" src="./images/fa2017/TheLittlePrince.jpg">
-                </div>
-                <div class="animated ">
-                  <!-- <p class="title">The Little Prince</p>
-                  <p>Muralist and Animator:<br> Jessica Xu</p> -->
-                  <img src="./borderlinegifs/Jessica Xu - The Little Prince animation.gif"/>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Incandescent" src="./images/fa2018/Incandescent.png">
-                <div class="details">
-                  <p class="title">Incandescent</p>
-                  <p>Muralist and Animator: <br>Gloria Lin</p>
-                </div>
-              </div>
-            </div>
 
-            <div class="row">
-              <div class="col-4 mural">
-                <img alt="Girl" src="./images/sp2017/Girl.jpg" />
-                <div class="details">
-                  <p class="title">Girl</p>
-                  <p>Muralist: Ming Wang
-                    <br> Animator: Clare Liu
-                  </p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Forged by Humans" src="./images/sp2017/ForgedByHumans.jpg">
-                <div class="details">
-                  <p class="title">Forged by Humans</p>
-                  <p>Muralist and Animator:<br> Elisa Young</p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Flown the Coop" src="./images/sp2017/FlownTheCoop.jpg" />
-                <div class="details">
-                  <p class="title">Flown the Coop</p>
-                  <p>Muralist: Jierui Fang
-                    <br> Animator: Ivy Li
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-4 mural">
-                <img alt="Stay Salty" src="./images/sp2017/StaySalty.jpg">
-                <div class="details">
-                  <p class="title">Stay Salty</p>
-                  <p>Muralist: Emma DeSoto
-                    <br> Animator: Lucy Zhang
-                  </p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Iron Man" src="./images/sp2017/IronManU.jpg" />
-                <div class="details">
-                  <p class="title">Iron Man</p>
-                  <p>Muralist: Meghana Bhat<br>
-                    Animator: Michelle Yakubek</p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Faces" src="./images/sp2017/FacesU.jpg" />
-                <div class="details">
-                  <p class="title">Untitled</p>
-                  <p>Muralist: Lisa Coleman
-                    <br>Animator: Misha Jamy
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
               <div class="col-4 mural">
                 <img alt="Statue of Leafberty" src="./images/sp2017/StatueOfLeafberty.jpg" />
                 <div class="details">
@@ -1316,152 +1613,11 @@
                     Tara Lee</p>
                 </div>
               </div>
-              <div class="col-4 mural">
-                <img alt="Flower's Answer" src="./images/sp2017/FlowersAnswer.jpg" />
-                <div class="details">
-                  <p class="title">Flower's Answer</p>
-                  <p>Muralist and Animator:<br> Iris Fung</p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Stop and Smell the Roses" src="./images/sp2017/Roses.jpg" />
-                <div class="details">
-                  <p class="title">Stop and Smell the Roses</p>
-                  <p>Muralist and Animator:<br> Helen He</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-4 mural">
-                <img alt="Poppies" src="./images/fa2017/Poppies.jpg">
-                <div class="details">
-                  <p class="title">Disillusionment of Poppies in the Wind</p>
-                  <p>Muralist and Animator:<br> Jacqueline Chen</p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Entanglement" src="./images/sp2017/Entanglement.jpg" />
-                <div class="details">
-                  <p class="title">Entanglement</p>
-                  <p>Muralist: Emma Batson
-                    <br> Animator: Jessica Liu
-                  </p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Lilies" src="./images/fa2017/Lilies.jpg" />
-                <div class="details">
-                  <p class="title">Lilies</p>
-                  <p>Muralist: Rachel Wu <br>
-                    Animator: Juliana Chew</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-4 mural">
-                <img alt="Heart of Gold" src="./images/sp2017/HeartOfGold.jpg" />
-                <div class="details">
-                  <p class="title">Heart of Gold</p>
-                  <p>Muralist: Amy Liu <br>
-                    Animator: Meital Hoffman</p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Peacock" src="./images/fa2017/Peacock.jpg">
-                <div class="details">
-                  <p class="title">Peacock</p>
-                  <p>Muralist and Animator:<br> Khanh Nguyen</p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Einstein Quote" src="./images/sp2017/Quote.jpg" />
-                <div class="details">
-                  <p class="title">Quote</p>
-                  <p>Muralist: Tara Lee <br>
-                    Animator: Kaitlyn Hennacy</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-4 mural">
-                <img alt="Meninism" src="./images/sp2017/Meninism.jpg" />
-                <div class="details">
-                  <p class="title">Meninism</p>
-                  <p>Muralist: Jessie Wang <br>
-                    Animator: Alyssa Dayan</p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Quick Brown Fox" src="./images/sp2017/FoxU.png" />
-                <div class="details">
-                  <p class="title">Quick Brown Fox</p>
-                  <p>Muralists:<br> Julia Rue and Tara Lee <br>
-                    Animator: Carolyn Mei</p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Untitled" src="./images/sp2017/Untitled.jpg" />
-                <div class="details">
-                  <p class="title">Untitled</p>
-                  <p>Muralist: Ivy Li <br>
-                    Animator: Christopher Miller</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-4 mural">
-                <img alt="Blending In" src="./images/fa2018/BlendingIn.jpg">
-                <div class="details">
-                  <p class="title">Blending In</p>
-                  <p>Muralist: Sarah Dohadwala <br>
-                    Animator: Misha Jamy</p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Fatty" src="./images/sp2017/Fatty.jpg" />
-                <div class="details">
-                  <p class="title">Fatty</p>
-                  <p>Muralist: Yingni Wang <br>
-                    Animator: Wanyi "Sherry" Xiao</p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Banana Fever" src="./images/sp2019/BL1.jpg">
-                <div class="details">
-                  <p class="title">Banana Fever</p>
-                  <p>Muralist: Dipo Doherty <br>
-                    Animator: Sharon Lin</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-4 mural">
-                <img alt="Afloat 2" src="./images/fa2018/Afloat2.jpg" />
-                <div class="details">
-                  <p class="title">Afloat Pt. 2</p>
-                  <p>Muralist and Animator:<br> Talia Blum</p>
-                </div>
-              </div>
-              <div class="col-4 mural">
-                <img alt="Watermalone" src="./images/sp2017/Watermalone.jpg">
-                <div class="details">
-                  <p class="title">W a t e r m a l o n e</p>
-                  <p>Muralist: Megan Fu <br>
-                    Animator: Misha Jamy</p>
-                </div>
-              </div>
             </div>
 
           </div>
         </div>
       </div>
-
-    <!-- </div> -->
 
   <br>
 
@@ -1552,6 +1708,8 @@
 
     var year_show = {
       'all': true,
+      'spring2023': true,
+      'spring2022': true,
       'storywall2020': true,
       'fall2019': true,
       'spring2019': true,
@@ -1563,6 +1721,8 @@
 
     var year_names = [
       "all",
+      "spring2023",
+      "spring2022",
       "storywall2020",
       "fall2019",
       "spring2019",
